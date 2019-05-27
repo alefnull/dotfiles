@@ -1,2 +1,2 @@
 # dotfiles
-yat another dotfiles repo
+yet another dotfiles repo
