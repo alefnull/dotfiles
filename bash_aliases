@@ -1,6 +1,7 @@
 # useful stuff
-alias dotrepo="cd /mnt/c/Users/alef/Documents/Projects/dotfiles"
-alias nf="neofetch"
+alias dotrepo="cd /mnt/c/Users/alef/Documents/Projects/dotfiles && git status"
+alias nf="clear && neofetch"
+alias vi="nvim"
 
 # fun stuff
 alias m="cmatrix -ab"
