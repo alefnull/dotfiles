@@ -124,4 +124,11 @@ fi
 ########################
 eval "$(thefuck --alias)"
 
-cd ~ && clear && nf
+cd ~ && nf
+
+### Bashhub.com Installation.
+### This Should be at the EOF. https://bashhub.com/docs
+if [ -f ~/.bashhub/bashhub.sh ]; then
+    source ~/.bashhub/bashhub.sh
+fi
+
