@@ -10,3 +10,6 @@ alias cls="clear && ls"
 # fun stuff
 alias m="cmatrix -ab"
 alias now="date +%r"
+
+# curl wttr.in -- up until the follow reminder (for minimalism's sake)
+alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
