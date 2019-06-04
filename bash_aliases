@@ -5,7 +5,7 @@ alias vi="nvim"
 alias cat="bat --theme TwoDark --style full"
 alias brc="nano ~/.bashrc"
 alias cls="clear && ls"
-
+alias ll="ls -Al"
 
 # fun stuff
 alias m="cmatrix -ab"
