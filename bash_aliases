@@ -7,6 +7,7 @@ alias cat="bat --theme TwoDark --style full"
 alias brc="nano ~/.bashrc"
 alias ll="ls -Al"
 alias cls="clear && ll"
+alias adb=adb.exe
 
 # fun stuff
 alias m="cmatrix -ab"
