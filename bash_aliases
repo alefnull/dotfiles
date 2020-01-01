@@ -1,10 +1,10 @@
 # useful stuff
-alias .repo="cd /mnt/c/Users/alef/Documents/Projects/dotfiles && git status"
+alias .repo="cd /mnt/d/Dev/GitHub/dotfiles && git status"
 alias nf="clear && neofetch"
 alias vi="nvim"
 alias vim="nvim"
-alias cat="bat --theme TwoDark --style full"
-alias brc="nano ~/.bashrc"
+alias cat="bat --theme OneHalfDark --style full"
+alias brc="code ~/.bashrc"
 alias ll="ls -Al"
 alias cls="clear && ll"
 alias adb=adb.exe

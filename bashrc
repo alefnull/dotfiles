@@ -118,11 +118,3 @@ fi
 ########################
 eval "$(thefuck --alias)"
 cd ~ && nf
-
-#########################
-# Bashhub | KEEP AT EOF #
-#########################
-if [ -f ~/.bashhub/bashhub.sh ]; then
-    source ~/.bashhub/bashhub.sh
-fi
-
