@@ -117,4 +117,4 @@ fi
 # user specified stuff #
 ########################
 eval "$(thefuck --alias)"
-cd ~ && nf
+# cd ~ && nf
