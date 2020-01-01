@@ -10,9 +10,8 @@ alias cls="clear && ll"
 alias adb=adb.exe
 
 # fun stuff
-alias m="cmatrix -ab"
+alias m="unimatrix -a -f -o -l kgc -s 90"
 alias now="date +%r"
-alias 2048="2048-in-terminal"
 
 # curl wttr.in -- up until the follow reminder (for minimalism's sake)
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
