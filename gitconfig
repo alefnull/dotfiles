@@ -1,6 +1,7 @@
+[credential]
+	helper = /mnt/d/Dev/wsl-wrappers/portable-git/mingw64/libexec/git-core/git-credential-manager.exe
 [user]
 	email = nullalef@gmail.com
 	name = alefnull
-
 [color]
-	ui = auto
+    ui = auto
