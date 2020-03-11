@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # useful stuff
 alias .repo="cd /mnt/d/Dev/GitHub/dotfiles && git status"
 alias nf="clear && neofetch"
@@ -8,6 +10,7 @@ alias brc="code ~/.bashrc"
 alias ll="ls -Al"
 alias cls="clear && ll"
 alias adb=adb.exe
+alias lint="standard --verbose | snazzy"
 
 # fun stuff
 alias m="unimatrix -a -f -o -l kgc -s 90"
