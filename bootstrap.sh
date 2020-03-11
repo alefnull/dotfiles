@@ -3,8 +3,8 @@
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # setup symlinks
-ln -s ${BASEDIR}/bashrc ~/.bashrc
-ln -s ${BASEDIR}/bash_aliases ~/.bash_aliases
-ln -s ${BASEDIR}/gitconfig ~/.gitconfig
-ln -s ${BASEDIR}/htop/htoprc ~/.htoprc
-ln -s ${BASEDIR}/neofetch/config.conf ~/neofetch/config.conf
+ln -s "${BASEDIR}"/bashrc ~/.bashrc
+ln -s "${BASEDIR}"/bash_aliases ~/.bash_aliases
+ln -s "${BASEDIR}"/gitconfig ~/.gitconfig
+ln -s "${BASEDIR}"/htop/htoprc ~/.htoprc
+ln -s "${BASEDIR}"/neofetch/config.conf ~/neofetch/config.conf
