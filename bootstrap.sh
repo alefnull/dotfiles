@@ -6,5 +6,5 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ln -s "${BASEDIR}"/bashrc ~/.bashrc
 ln -s "${BASEDIR}"/bash_aliases ~/.bash_aliases
 ln -s "${BASEDIR}"/gitconfig ~/.gitconfig
-ln -s "${BASEDIR}"/htop/htoprc ~/.htoprc
-ln -s "${BASEDIR}"/neofetch/config.conf ~/neofetch/config.conf
+ln -s "${BASEDIR}"/htop/htoprc ~/.config/htop/htoprc
+ln -s "${BASEDIR}"/neofetch/config.conf ~/.config/neofetch/config.conf
