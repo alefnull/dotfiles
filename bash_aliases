@@ -2,9 +2,9 @@
 
 # useful stuff
 alias .repo="cd /mnt/d/Dev/GitHub/dotfiles && git status"
-alias nf="clear && neofetch"
-alias vi="nvim"
-alias vim="nvim"
+alias cln="clear && neofetch && tdo"
+# alias vi="nvim"
+# alias vim="nvim"
 alias cat="bat --theme OneHalfDark --style full"
 alias brc="code ~/.bashrc"
 alias ll="ls -Al"
