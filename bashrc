@@ -132,3 +132,5 @@ export NVM_DIR="$HOME/.nvm"
 export TODO="$HOME/.tdon"
 source "/mnt/d/dev/GitHub/tdon.sh/tdon.sh"
 tdo
+eval "$(starship init bash)"
+
