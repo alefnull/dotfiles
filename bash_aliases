@@ -11,6 +11,7 @@ alias ll="ls -Al"
 alias cls="clear && ll"
 alias adb=adb.exe
 alias lint="standard --verbose | snazzy"
+alias reload="source ~/.bashrc"
 
 # fun stuff
 alias m="unimatrix -a -f -o -l kgc -s 90"
