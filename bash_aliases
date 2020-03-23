@@ -9,10 +9,13 @@ alias vim="nvim"
 alias cat="bat --theme OneHalfDark --style full"
 alias brc="code ~/.bashrc"
 alias ll="ls -Al"
+alias la="ls -A"
 alias cls="clear && ll"
 alias adb=adb.exe
 alias lint="standard --verbose | snazzy"
 alias reload="source ~/.bashrc"
+alias em="emacs"
+alias e="emacs"
 
 # fun stuff
 alias m="unimatrix -a -f -o -l kgc -s 90"
