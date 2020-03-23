@@ -13,7 +13,7 @@ alias la="ls -A"
 alias cls="clear && ll"
 alias adb=adb.exe
 alias lint="standard --verbose | snazzy"
-alias reload="source ~/.bashrc"
+alias reload="source ~/.bashrc && clnf"
 alias em="emacs"
 alias e="emacs"
 
