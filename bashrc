@@ -92,5 +92,6 @@ export TODO="$HOME/.tdon"
 source "/mnt/d/dev/GitHub/tdon.sh/tdon.sh"
 tdo "$@" | lolcat
 eval "$(starship init bash)"
-
+# export DISPLAY=:0.0
+eval "$(hub alias -s)"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
