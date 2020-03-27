@@ -1,0 +1,91 @@
+prompt_order = [
+    "username",
+    "hostname",
+    "directory",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "git_status",
+    "package",
+    "nodejs",
+    "python",
+    "memory_usage",
+    "aws",
+    "cmd_duration",
+    "line_break",
+    "jobs",
+    "battery",
+    "time",
+    "character",
+]
+
+add_newline = true
+
+[character]
+use_symbol_for_status = true
+symbol = "|>"
+style_success = "dimmed white"
+style_failure = "dimmed red"
+error_symbol = "🛑"
+
+[directory]
+truncation_length = 3
+truncate_to_repo = false
+style = "bold bright-red"
+
+[git_branch]
+symbol = " "
+style = "dimmed pink"
+
+[git_commit]
+prefix = "("
+suffix = ")"
+style = "bold green"
+only_detached = true
+
+[git_state]
+style = "bold white"
+
+[git_status]
+conflicted = "="
+conflicted_count.enabled = true
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+untracked = "?"
+untracked_count.enabled = true
+stashed = "$"
+stashed_count.enabled = true
+modified = "!"
+modified_count.enabled = true
+staged = "+"
+staged_count.enabled = true
+renamed = "»"
+renamed_count.enabled = true
+deleted = "✘"
+deleted_count.enabled = true
+show_sync_count = true
+prefix = "["
+suffix = "]"
+style = "bold dimmed red"
+
+[username]
+show_always = false
+
+[hostname]
+ssh_only = true
+
+[memory_usage]
+disabled = false
+threshold = 65
+show_swap = false
+style = "bold dimmed green"
+
+[time]
+disabled = true
+use_12hr = true
+format = "%I:%M%P"
+style = "dimmed white"
+
+[cmd_duration]
+style = "dimmed purple"
