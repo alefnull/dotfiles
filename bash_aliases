@@ -23,3 +23,7 @@ alias now="date +%r"
 
 # curl wttr.in -- up until the follow reminder (for minimalism's sake)
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
+
+# temporary COVID-19 tracker alias
+alias covid="curl https://covid19tracker.xyz/"
+alias covidus="curl https://covid19tracker.xyz/us"
