@@ -1,27 +1,22 @@
 #!/usr/bin/env bash
 
 # useful stuff
-alias .repo="cd /mnt/d/Dev/GitHub/dotfiles && git status"
+alias .repo="cd /mnt/d/dev/dotfiles && git status"
 alias cln="clear && tdo | lolcat"
 alias clnf="clear && neofetch && tdo | lolcat"
 alias vi="nvim"
-alias vim="nvim"
-alias cat="bat --theme OneHalfDark --style full"
+alias cat="batcat --theme OneHalfDark --style full"
 alias brc="code ~/.bashrc"
 alias ll="ls -Al"
 alias la="ls -A"
-alias cls="clear && ll"
-alias adb=adb.exe
+alias cls="clear && la"
 alias lint="standard --verbose | snazzy"
 alias reload="source ~/.bashrc && clnf"
 alias em="emacs"
 alias e="emacs"
 
 # fun stuff
-alias m="unimatrix -a -f -o -l kgc -s 90"
 alias now="date +%r"
-
-# curl wttr.in -- up until the follow reminder (for minimalism's sake)
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
 
 # temporary COVID-19 tracker alias
