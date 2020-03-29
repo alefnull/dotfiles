@@ -2,8 +2,7 @@
 
 # useful stuff
 alias .repo="cd /mnt/d/dev/dotfiles && git status"
-alias cln="clear && tdo | lolcat"
-alias clnf="clear && neofetch && tdo | lolcat"
+alias cln="clear && now && weather && tdo | lolcat"
 alias vi="nvim"
 alias cat="batcat --theme OneHalfDark --style full"
 alias brc="code ~/.bashrc"
@@ -11,7 +10,7 @@ alias ll="ls -Al"
 alias la="ls -A"
 alias cls="clear && la"
 alias lint="standard --verbose | snazzy"
-alias reload="source ~/.bashrc && clnf"
+alias reload="source ~/.bashrc && cln"
 alias em="emacs"
 alias e="emacs"
 
