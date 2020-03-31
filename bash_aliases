@@ -2,7 +2,8 @@
 
 # useful stuff
 alias .repo="cd /mnt/d/dev/dotfiles && git status"
-alias cln="clear && now && weather && tdo | lolcat"
+alias clr="clear"
+alias cln="clr && now && weather && tdo | lolcat"
 alias vi="nvim"
 alias cat="batcat --theme OneHalfDark --style full"
 alias brc="code ~/.bashrc"
