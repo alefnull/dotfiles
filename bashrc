@@ -1,17 +1,14 @@
 #!/usr/bin/env bash
 
 # If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+[[ $- == *i* ]] || return
 
-HISTCONTROL=ignoreboth
+shopt -s checkwinsize
 shopt -s histappend
+HISTCONTROL=ignoreboth
 HISTSIZE=10000
 HISTFILESIZE=10000
 HISTTIMEFORMAT="%T %t"
-shopt -s checkwinsize
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
@@ -41,6 +38,7 @@ fi
 unset color_prompt force_color_prompt
 
 # enable color support of ls and also add handy aliases
+# [[ -x /usr/bin/dircolors ]] && [[ -r ~/.dircolors ]] && eval '$(dircolors -b ~/.dircolors >/dev/null 2>&1' || eval '$(dircolors -b) >/dev/null 2>&1'
 if [ -x /usr/bin/dircolors ]; then
     if [ -r ~/.dircolors ]; then
       eval "$(dircolors -b ~/.dircolors)"
