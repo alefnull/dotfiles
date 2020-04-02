@@ -13,8 +13,6 @@ alias la="ls -A"
 alias cls="clear && la"
 alias lint="standard --verbose | snazzy"
 alias reload="source ~/.bashrc && cln"
-alias em="emacs"
-alias e="emacs"
 
 # fun stuff
 alias now="date +%r"
