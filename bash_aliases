@@ -15,6 +15,7 @@ alias cls="clear && la"
 alias reload="source ~/.bashrc && cln"
 alias gs="git status"
 alias gp="git push"
+alias gd="git diff"
 
 # fun stuff
 alias now="date +%r"
