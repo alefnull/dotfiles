@@ -65,7 +65,8 @@ fi
 ########################
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
-export PATH="$PATH:$HOME/.emacs.d/bin" # add Doom to PATH
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 export LIBGL_ALWAYS_INDIRECT=1
 export NVM_DIR="$HOME/.nvm"
