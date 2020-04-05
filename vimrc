@@ -17,14 +17,15 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
 Plug 'junegunn/goyo.vim'
 Plug 'kjwon15/vim-transparent'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'vim-utils/vim-man'
 Plug 'liuchengxu/vim-which-key'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -54,6 +55,7 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 " -| general settings |---------------------
 " ==========================================
 
+syntax on
 set hidden
 set noerrorbells
 set tabstop=4 softtabstop=4
@@ -79,7 +81,7 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
-set mouse=a
+set mouse=v
 set timeout
 set timeoutlen=500
 set ttimeout
@@ -107,9 +109,9 @@ if exists('+termguicolors')
 endif
 set background=dark
 
-colorscheme onehalfdark
+colorscheme onedark
 
-let g:lightline = { 'colorscheme': 'onehalfdark' }
+let g:lightline = { 'colorscheme': 'onedark' }
 let g:which_key_use_floating_win=0
 let g:indentLine_char='┆'
 
