@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 # useful stuff
-alias .repo="cd /mnt/d/dev/dotfiles && git status"
+alias .repo="cd ~/dev/dotfiles && git status"
 alias clr="clear"
 alias cln="clr && now | lolcat && echo '' && tdo | lolcat && echo ''"
 alias vi="nvim"
 alias vim="nvim"
-alias cat="batcat --theme OneHalfDark --style full"
+alias cat="bat --theme OneHalfDark --style full"
 alias brc="vi ~/.bashrc"
 alias vrc="vi ~/.config/nvim/init.vim"
 alias ll="ls -Al"

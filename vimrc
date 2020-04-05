@@ -8,6 +8,13 @@
 " -| install plugins |----------------------
 " ==========================================
 
+" first check that vim-plug is installed
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
@@ -65,7 +72,7 @@ set nowrap
 set ignorecase
 set smartcase
 set cursorline
-set cursorcolumn
+set nocursorcolumn
 set incsearch
 set noshowmode
 set cmdheight=2
