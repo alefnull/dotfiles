@@ -18,7 +18,8 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'joshdick/onedark.vim'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/indentLine'
 Plug 'junegunn/goyo.vim'
@@ -26,6 +27,9 @@ Plug 'kjwon15/vim-transparent'
 Plug 'vim-utils/vim-man'
 Plug 'liuchengxu/vim-which-key'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -33,9 +37,11 @@ call plug#end()
 " -| mappings |-----------------------------
 " ==========================================
 
-let mapleader=" " 
+let mapleader=" "
 nnoremap ; :
 inoremap ;; <Esc>
+nnoremap <down> ddp
+nnoremap <up> ddkP
 nnoremap <leader>te :TransparentEnable<CR>
 nnoremap <leader>td :TransparentDisable<CR>
 nnoremap <leader>f. :source $MYVIMRC<CR>
@@ -50,11 +56,15 @@ nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 nnoremap <silent> <leader>wh :split<CR>
 nnoremap <silent> <leader>wv :vsplit<CR>
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>bb :CtrlPBuffer<CR>
 
 " ==========================================
 " -| general settings |---------------------
 " ==========================================
 
+set listchars=eol:$,tab:>-,trail:~,space:␣
+set list
 syntax on
 set hidden
 set noerrorbells
@@ -81,7 +91,7 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
-set mouse=v
+set mouse=nv
 set timeout
 set timeoutlen=500
 set ttimeout
@@ -92,6 +102,13 @@ syntax on
 set splitright
 set splitbelow
 set number relativenumber
+if !&scrolloff
+    set scrolloff=3
+endif
+if !&sidescrolloff
+    set sidescrolloff=5
+endif
+set nostartofline
 
 " ==========================================
 " -| plugin/theme settings |----------------
@@ -103,15 +120,18 @@ let g:netrw_liststyle=3
 let g:netrw_winsize=20
 
 if exists('+termguicolors')
-	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-	set termguicolors
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
 endif
 set background=dark
 
 colorscheme onedark
 
-let g:lightline = { 'colorscheme': 'onedark' }
+let g:CtrlSpaceDefaultMappingKey = "<C-space> "
+let g:airline#extensions#tabline#enabled=0
+let g:airline_theme='onedark'
+" let g:airline_symbols_ascii=1
 let g:which_key_use_floating_win=0
 let g:indentLine_char='┆'
 
