@@ -24,9 +24,9 @@ force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-      color_prompt=yes
+        color_prompt=yes
     else
-      color_prompt=
+        color_prompt=
     fi
 fi
 
@@ -41,9 +41,9 @@ unset color_prompt force_color_prompt
 # [[ -x /usr/bin/dircolors ]] && [[ -r ~/.dircolors ]] && eval '$(dircolors -b ~/.dircolors >/dev/null 2>&1' || eval '$(dircolors -b) >/dev/null 2>&1'
 if [ -x /usr/bin/dircolors ]; then
     if [ -r ~/.dircolors ]; then
-      eval "$(dircolors -b ~/.dircolors)"
+        eval "$(dircolors -b ~/.dircolors)"
     else
-      eval "$(dircolors -b)"
+        eval "$(dircolors -b)"
     fi
     alias ls='ls --color=auto'
     alias grep='grep --color=auto'
@@ -53,11 +53,11 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # enable programmable completion features
 if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
+    if [ -f /usr/share/bash-completion/bash_completion ]; then
+        . /usr/share/bash-completion/bash_completion
+    elif [ -f /etc/bash_completion ]; then
+        . /etc/bash_completion
+    fi
 fi
 
 ########################
