@@ -3,3 +3,5 @@
 	name = alefnull
 [color]
     ui = auto
+[hub]
+	protocol = ssh
