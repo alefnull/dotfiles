@@ -29,6 +29,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -72,11 +73,13 @@ nnoremap <leader>ll :set list!<CR>
 " -| general settings |---------------------
 " ==========================================
 
+set laststatus=2
+set cmdheight=1
 set nospell
 set showmatch
 set visualbell
 set encoding=utf-8
-set listchars=eol:¬,tab:▸\ ,trail:~
+set listchars=eol:¬,tab:▸\ ,extends:›,precedes:‹,space:·,trail:~
 set list
 syntax on
 set hidden
@@ -145,11 +148,13 @@ set background=dark
 colorscheme onedark
 
 let g:CtrlSpaceDefaultMappingKey = "<C-space> "
+let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=0
 let g:airline_theme='onedark'
 let g:which_key_use_floating_win=0
 
 let g:startify_files_number = 5
+let g:startify_custom_header = 'startify#center(g:ascii)'
 let g:ascii = [
 \'//=====================================\\',
 \'||         :            -`             ||',
@@ -173,4 +178,3 @@ let g:ascii = [
 \'||       .ohhhhhs`            hm:      ||',
 \'\\=====================================//'
 \]
-let g:startify_custom_header = 'startify#center(g:ascii)'
