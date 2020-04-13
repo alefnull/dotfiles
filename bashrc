@@ -75,6 +75,7 @@ elif [ $agent_run_state = 1 ]; then
 fi
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
+export LESSHISTFILE=/dev/null
 export TODO="$HOME/.tdon"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
