@@ -3,7 +3,7 @@
 # useful stuff
 alias .repo="cd ~/dev/dotfiles && git status"
 alias clr="clear"
-alias cln="clr && now | lolcat && echo '' && tdo | lolcat && echo ''"
+alias cln="clr && now | lolcat && tdo | lolcat"
 alias vi="nvim"
 alias vim="nvim"
 alias cat="bat --theme OneHalfDark --style full"
