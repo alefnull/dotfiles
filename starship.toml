@@ -22,10 +22,10 @@ prompt_order = [
 add_newline = true
 
 [character]
-use_symbol_for_status = true
-symbol = "|>"
-style_success = "dimmed white"
-style_failure = "dimmed red"
+use_symbol_for_status = false
+symbol = " "
+style_success = "bold green"
+style_failure = "bold red"
 error_symbol = "🛑"
 
 [directory]
