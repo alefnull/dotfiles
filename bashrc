@@ -65,16 +65,13 @@ fi
 # user specified stuff #
 ########################
 
-# ssh-agent auto-launch (0 = agent running with key; 1 = w/o key; 2 = not run.)
-agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
-if   [ $agent_run_state = 2 ]; then
-    eval $(ssh-agent -s) > /dev/null 2>&1
-    ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
-elif [ $agent_run_state = 1 ]; then
-    ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
-fi
+eval `keychain --eval --agents ssh id_rsa`
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
+
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 export LESSHISTFILE=/dev/null
 export TODO="$HOME/.tdon"
 export VISUAL=nvim

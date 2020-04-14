@@ -182,4 +182,9 @@ let g:ascii = [
 " ==========================================
 " -| autocommands |-------------------------
 " ==========================================
-
+if has('wsl')
+    augroup WSLYank
+        autocmd!
+        autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+    augroup END
+end
