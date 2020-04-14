@@ -65,7 +65,7 @@ fi
 # user specified stuff #
 ########################
 
-eval `keychain --eval --agents ssh id_rsa`
+eval `keychain --eval --agents ssh id_rsa > /dev/null 2>&1`
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 
