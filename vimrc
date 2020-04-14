@@ -186,6 +186,7 @@ let s:clip = '/mnt/c/Windows/System32/clip.exe'
 if executable(s:clip)
     augroup WSLYank
         autocmd!
-        autocmd TextYankPost * if v:event.operator ==# 'y' || v:event.operator ==# 'd' | call system(s:clip, @0) | endif
+        " autocmd TextYankPost * if v:event.operator ==# 'y' || v:event.operator ==# 'd' | call system(s:clip, @0) | endif
+        autocmd TextYankPost * call system(s:clip, @0)
     augroup END
 endif

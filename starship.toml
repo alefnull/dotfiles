@@ -31,7 +31,7 @@ error_symbol = "🛑"
 [directory]
 truncation_length = 3
 truncate_to_repo = false
-style = "bold bright-red"
+style = "bold bright-green"
 
 [git_branch]
 symbol = " "
