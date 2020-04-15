@@ -68,6 +68,7 @@ nnoremap <silent> <c-l> :nohl<CR><c-l>
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>bb :CtrlPBuffer<CR>
 nnoremap <leader>ll :set list!<CR>
+nnoremap <leader>hc :helpclose<CR>
 
 " ==========================================
 " -| general settings |---------------------
@@ -181,6 +182,13 @@ let g:ascii = [
 
 " -| autocommands |-------------------------
 " ==========================================
+" always open help in vertical split 
+augroup vimrc_help
+    autocmd!
+    autocmd BufEnter *.txt if &buftype == 'help' | wincmd L | endif
+augroup END
+
+" enable yanking into windows clipboard via (y)ank and (d)elete ops
 let s:clip = '/mnt/c/Windows/System32/clip.exe'
 if executable(s:clip)
     augroup WSLYank
@@ -189,3 +197,4 @@ if executable(s:clip)
         autocmd TextYankPost * if v:event.operator ==# 'd' | call system(s:clip, @1) | endif
     augroup END
 endif
+
