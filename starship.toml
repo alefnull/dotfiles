@@ -24,7 +24,7 @@ add_newline = true
 [character]
 use_symbol_for_status = false
 symbol = " "
-style_success = "bold green"
+style_success = "bold bright-blue"
 style_failure = "bold red"
 error_symbol = "🛑"
 
