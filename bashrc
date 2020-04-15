@@ -55,6 +55,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # enable programmable completion features
 if ! shopt -oq posix; then
     if [ -f /usr/share/bash-completion/bash_completion ]; then
+        # shellcheck source=/usr/share/bash-completion/bash_completion
         . /usr/share/bash-completion/bash_completion
     elif [ -f /etc/bash_completion ]; then
         . /etc/bash_completion
@@ -65,8 +66,7 @@ fi
 # user specified stuff #
 ########################
 
-eval `keychain --eval --agents ssh id_rsa > /dev/null 2>&1`
-
+# shellcheck source=/home/alef/.bash_aliases
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
@@ -76,11 +76,16 @@ export LESSHISTFILE=/dev/null
 export TODO="$HOME/.tdon"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+DISPLAY=$(grep "nameserver" /etc/resolv.conf | awk '{print $2; exit;}'):0.0
+export DISPLAY
 export LIBGL_ALWAYS_INDIRECT=1
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# shellcheck disable=SC1090
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# shellcheck disable=SC1090
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# shellcheck source=/home/alef/dev/tdon.sh/tdon.sh
 source "$HOME/dev/tdon.sh/tdon.sh"
 eval "$(hub alias -s) > /dev/null 2>&1"
 eval "$(starship init bash) > /dev/null 2>&1"
+eval "keychain --eval --agents ssh id_rsa > /dev/null 2>&1"

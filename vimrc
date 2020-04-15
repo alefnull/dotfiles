@@ -30,6 +30,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
@@ -138,6 +139,8 @@ let g:netrw_winsize=20
 
 let g:goyo_width='65%'
 let g:goyo_height='85%'
+
+let g:syntastic_sh_shellcheck_args = "-x"
 
 if exists('+termguicolors')
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
