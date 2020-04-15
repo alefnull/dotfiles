@@ -8,3 +8,4 @@ ln -s "${BASEDIR}"/bash_aliases ~/.bash_aliases
 ln -s "${BASEDIR}"/gitconfig ~/.gitconfig
 ln -s "${BASEDIR}"/htop/htoprc ~/.config/htop/htoprc
 ln -s "${BASEDIR}"/vimrc ~/.config/nvim/init.vim
+ln -s "${BASEDIR}"/starship.toml ~/.config/starship.toml
