@@ -197,4 +197,3 @@ if executable(s:clip)
         autocmd TextYankPost * if v:event.operator ==# 'd' | call system(s:clip, @1) | endif
     augroup END
 endif
-
