@@ -17,9 +17,9 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'preservim/nerdcommenter'
 Plug 'joshdick/onedark.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/goyo.vim'
 Plug 'kjwon15/vim-transparent'
@@ -108,12 +108,13 @@ set noshowmode
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
+set showtabline=2
 set signcolumn=yes
 set mouse=nv
 set timeout
 set timeoutlen=500
 set ttimeout
-filetype on
+filetype off
 filetype plugin on
 filetype indent on
 syntax on
@@ -132,6 +133,9 @@ set nostartofline
 " -| plugin/theme settings |----------------
 " ==========================================
 
+set background=dark
+colorscheme onedark
+
 let g:netrw_banner=0
 let g:netrw_browse_split=2
 let g:netrw_liststyle=3
@@ -140,6 +144,13 @@ let g:netrw_winsize=20
 let g:goyo_width='65%'
 let g:goyo_height='85%'
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 let g:syntastic_sh_shellcheck_args = "-x"
 
 if exists('+termguicolors')
@@ -147,14 +158,55 @@ if exists('+termguicolors')
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
     set termguicolors
 endif
-set background=dark
 
-colorscheme onedark
+let g:lightline = {
+            \ 'active': {
+            \   'left': [ [ 'mode', 'paste', 'fugitive' ],
+            \             [ 'readonly', 'filetype', 'absolutepath', 'modified' ] ],
+            \   'right': [ [ 'fileformat', 'fileencoding' ],
+            \              [ 'percent' ],
+            \              [ 'lineinfo' ] ]
+            \ },
+            \ 'colorscheme': 'one',
+            \ 'component': {
+            \   'bufnum': 'buf %n',
+            \   'lineinfo': ' %3l:%-2v',
+            \ },
+            \ 'component_function': {
+            \   'readonly': 'LightlineReadonly',
+            \   'fugitive': 'LightlineFugitive',
+            \   'gitbranch': 'FugitiveHead',
+            \   'filetype': 'MyFiletype',
+            \   'fileformat': 'MyFileformat',
+            \ },
+            \ 'enable': {
+            \   'tabline': 1,
+            \ },
+            \ 'mode_map': {
+            \   'n' : 'normal',
+            \   'i' : 'insert',
+            \   'R' : 'replace',
+            \   'v' : 'visual',
+            \   'V' : 'v-line',
+            \   "\<C-v>" : 'v-block',
+            \   'c' : 'command',
+            \   's' : 'select',
+            \   'S' : 's-line',
+            \   "\<C-s>" : 's-block',
+            \   't' : 'terminal',
+            \ },
+            \ 'separator': { 'left': '', 'right': '' },
+            \ 'subseparator': { 'left': '', 'right': '' },
+            \ 'tab': {
+            \   'active': [ 'tabnum', 'filename', 'modified' ]
+            \ },
+            \ }
 
-let g:CtrlSpaceDefaultMappingKey = "<C-space> "
-let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled=0
-let g:airline_theme='onedark'
+let g:NERDSpaceDelims=1
+let g:NERDCommentEmptyLines=1
+let g:NERDTrimTrailingWhitespace=1
+let g:NERDToggleCheckAllLines=1
+
 let g:which_key_use_floating_win=0
 
 let g:startify_files_number = 5
@@ -183,8 +235,34 @@ let g:ascii = [
 \'\\=====================================//'
 \]
 
+" ==========================================
+" -| functions |----------------------------
+" ==========================================
+
+function! MyFiletype()
+    return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+    return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
+
+function! LightlineReadonly()
+    return &readonly ? '' : ''
+endfunction
+
+function! LightlineFugitive()
+    if exists('*FugitiveHead')
+        let branch = FugitiveHead()
+        return branch !=# '' ? ''.branch : ''
+    endif
+    return ''
+endfunction
+
+" ==========================================
 " -| autocommands |-------------------------
 " ==========================================
+
 " always open help in vertical split 
 augroup vimrc_help
     autocmd!
