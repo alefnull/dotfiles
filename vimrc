@@ -1,10 +1,4 @@
 " ==========================================
-" ░░░░░░█▀█░█░░░█▀▀░█▀▀░░░░█░█░▀█▀░█▄█░░░░░░
-" ░░░░░░█▀█░█░░░█▀▀░█▀▀░░░░▀▄▀░░█░░█░█░░░░░░
-" ░░░░░░▀░▀░▀▀▀░▀▀▀░▀░░░▀░░░▀░░▀▀▀░▀░▀░░░░░░
-" ==========================================
-"
-" ==========================================
 " -| install plugins |----------------------
 " ==========================================
 
@@ -23,11 +17,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/goyo.vim'
 Plug 'kjwon15/vim-transparent'
-Plug 'vim-utils/vim-man'
-Plug 'liuchengxu/vim-which-key'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
+Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-syntastic/syntastic'
@@ -62,14 +54,12 @@ nnoremap <leader>fs :write<CR>
 nnoremap <leader>f. :source $MYVIMRC<CR>
 nnoremap <leader>qq :quit<CR>
 nnoremap <silent> <leader>bd :bdelete<CR>
-nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 nnoremap <silent> <leader>wh :split<CR>
 nnoremap <silent> <leader>wv :vsplit<CR>
 nnoremap <silent> <c-l> :nohl<CR><c-l>
-nnoremap <Leader>o :CtrlP<CR>
-nnoremap <Leader>bb :CtrlPBuffer<CR>
 nnoremap <leader>ll :set list!<CR>
 nnoremap <leader>hc :helpclose<CR>
+nnoremap <leader>ut :UndotreeToggle<CR>
 
 " ==========================================
 " -| general settings |---------------------
@@ -106,15 +96,13 @@ set nocursorcolumn
 set incsearch
 set noshowmode
 set cmdheight=2
-set updatetime=300
-set shortmess+=c
 set showtabline=2
 set signcolumn=yes
 set mouse=nv
 set timeout
-set timeoutlen=500
+set timeoutlen=750
 set ttimeout
-filetype off
+filetype on
 filetype plugin on
 filetype indent on
 syntax on
@@ -204,10 +192,9 @@ let g:lightline = {
 
 let g:NERDSpaceDelims=1
 let g:NERDCommentEmptyLines=1
+let g:NERDDefaultAlign='left'
 let g:NERDTrimTrailingWhitespace=1
 let g:NERDToggleCheckAllLines=1
-
-let g:which_key_use_floating_win=0
 
 let g:startify_files_number = 5
 let g:startify_custom_header = 'startify#center(g:ascii)'
