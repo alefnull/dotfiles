@@ -53,6 +53,7 @@ nnoremap <silent> <leader>pg :PlugUpgrade<CR>
 nnoremap <silent> <leader>pc :PlugClean<CR>
 nnoremap <leader>ff :Vifm<CR>
 nnoremap <leader>fs :write<CR>
+nnoremap <leader>fq :wq<CR>
 nnoremap <leader>f. :source $MYVIMRC<CR>
 nnoremap <leader>qq :quit<CR>
 nnoremap <silent> <leader>bd :bdelete<CR>
