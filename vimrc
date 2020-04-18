@@ -23,6 +23,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-syntastic/syntastic'
+Plug 'vifm/vifm.vim'
 
 call plug#end()
 
@@ -50,6 +51,7 @@ nnoremap <silent> <leader>pi :PlugInstall<CR>
 nnoremap <silent> <leader>pu :PlugUpdate<CR>
 nnoremap <silent> <leader>pg :PlugUpgrade<CR>
 nnoremap <silent> <leader>pc :PlugClean<CR>
+nnoremap <leader>ff :Vifm<CR>
 nnoremap <leader>fs :write<CR>
 nnoremap <leader>f. :source $MYVIMRC<CR>
 nnoremap <leader>qq :quit<CR>
@@ -121,6 +123,11 @@ set nostartofline
 " -| plugin/theme settings |----------------
 " ==========================================
 
+let g:loaded_netrw=1
+let g:loaded_netrwPlugin=1
+
+let g:vifm_replace_netrw=1
+
 set background=dark
 colorscheme onedark
 
@@ -149,7 +156,7 @@ endif
 
 let g:lightline = {
             \ 'active': {
-            \   'left': [ [ 'mode', 'paste', 'fugitive' ],
+            \   'left': [ [ 'mode', 'paste', 'gitbranch' ],
             \             [ 'readonly', 'filetype', 'absolutepath', 'modified' ] ],
             \   'right': [ [ 'fileformat', 'fileencoding' ],
             \              [ 'percent' ],
@@ -162,8 +169,7 @@ let g:lightline = {
             \ },
             \ 'component_function': {
             \   'readonly': 'LightlineReadonly',
-            \   'fugitive': 'LightlineFugitive',
-            \   'gitbranch': 'FugitiveHead',
+            \   'gitbranch': 'LightlineFugitive',
             \   'filetype': 'MyFiletype',
             \   'fileformat': 'MyFileformat',
             \ },
