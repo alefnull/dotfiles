@@ -1,13 +1,13 @@
 [core]
-	editor = nvim
+    editor = nvim
 [user]
-	email = nullalef@gmail.com
-	name = alefnull
+    email = nullalef@gmail.com
+    name = alefnull
 [color]
     ui = auto
 [hub]
-	protocol = ssh
+    protocol = ssh
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 [mergetool "vimdiff"]
-	path = nvim
+    path = nvim
