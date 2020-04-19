@@ -24,6 +24,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-syntastic/syntastic'
 Plug 'vifm/vifm.vim'
+Plug 'vim-scripts/bash-support.vim'
 
 call plug#end()
 
@@ -63,7 +64,7 @@ nnoremap <leader>ff :Vifm<CR>
 nnoremap <leader>fs :write<CR>
 nnoremap <leader>fq :wq<CR>
 " buffer operations
-nnoremap <silent> <leader>bd :bdelete<CR>
+" nnoremap <silent> <leader>bd :bdelete<CR>
 " split operations
 nnoremap <silent> <leader>sh :split<CR>
 nnoremap <silent> <leader>sv :vsplit<CR>
@@ -74,7 +75,7 @@ nnoremap <leader>ut :UndotreeToggle<CR>
 " ctrl mappings
 nnoremap <silent> <c-l> :nohl<CR><c-l>
 " emergency quit
-nnoremap <leader>qq :q!<CR>
+nnoremap <leader>qq :qa!<CR>
 
 " ==========================================
 " -| general settings |---------------------
