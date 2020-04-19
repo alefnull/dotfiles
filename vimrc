@@ -267,6 +267,12 @@ endfunction
 " -| autocommands |-------------------------
 " ==========================================
 
+" entering insert mode automatically in gitcommit files
+augroup git_stuff
+    autocmd!
+    autocmd BufEnter * if &filetype == 'gitcommit' | startinsert | endif
+augroup END
+
 " always open help in vertical split 
 augroup vimrc_help
     autocmd!
