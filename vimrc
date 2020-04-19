@@ -31,87 +31,96 @@ call plug#end()
 " -| mappings |-----------------------------
 " ==========================================
 
+" primary mappings
 let mapleader=" "
-nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap ; :
+vnoremap ; :
 inoremap jk <esc>
+" putting arrow keys to good use (or no use at all)
 inoremap <left> <nop>
 inoremap <down> <nop>
 inoremap <up> <nop>
 inoremap <right> <nop>
 nnoremap <left> <nop>
-nnoremap <down> ddp
-nnoremap <up> ddkP
 nnoremap <right> <nop>
-nnoremap dc ddO
+nnoremap <up> ddkP
+nnoremap <down> ddp
+" shortcuts for quick vimrc and bashrc editing
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <leader>eb :vsplit ~/.bashrc<CR>
+" goyo
 nnoremap <silent> <leader>zz :Goyo<CR>
+" background transparency
 nnoremap <leader>te :TransparentEnable<CR>
 nnoremap <leader>td :TransparentDisable<CR>
+" vim-plug commands
 nnoremap <silent> <leader>pi :PlugInstall<CR>
 nnoremap <silent> <leader>pu :PlugUpdate<CR>
 nnoremap <silent> <leader>pg :PlugUpgrade<CR>
 nnoremap <silent> <leader>pc :PlugClean<CR>
+" file operations
 nnoremap <leader>ff :Vifm<CR>
 nnoremap <leader>fs :write<CR>
 nnoremap <leader>fq :wq<CR>
-nnoremap <leader>f. :source $MYVIMRC<CR>
-nnoremap <leader>qq :quit<CR>
+" buffer operations
 nnoremap <silent> <leader>bd :bdelete<CR>
-nnoremap <silent> <leader>wh :split<CR>
-nnoremap <silent> <leader>wv :vsplit<CR>
-nnoremap <silent> <c-l> :nohl<CR><c-l>
+" split operations
+nnoremap <silent> <leader>sh :split<CR>
+nnoremap <silent> <leader>sv :vsplit<CR>
+" misc mappings
 nnoremap <leader>ll :set list!<CR>
 nnoremap <leader>hc :helpclose<CR>
 nnoremap <leader>ut :UndotreeToggle<CR>
+" ctrl mappings
+nnoremap <silent> <c-l> :nohl<CR><c-l>
+" emergency quit
+nnoremap <leader>qq :q!<CR>
 
 " ==========================================
 " -| general settings |---------------------
 " ==========================================
 
-set laststatus=2
+filetype plugin indent on
 set cmdheight=1
-set nospell
-set showmatch
-set visualbell
+set cmdheight=2
+set cursorline
 set encoding=utf-8
-set listchars=eol:¬,tab:▸\ ,extends:›,precedes:‹,space:·,trail:~
-set list
-syntax on
-set hidden
-set noerrorbells
-set tabstop=4 softtabstop=4
-set shiftwidth=4
 set expandtab
-set smartindent
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,cp936,latin-1
 set fileformat=unix
 set fileformats=unix,dos,mac
-filetype off
-filetype plugin on
-filetype plugin indent on
-syntax on
-set nowrap
+set hidden
 set ignorecase
-set smartcase
-set cursorline
-set nocursorcolumn
 set incsearch
+set laststatus=2
+set list
+set listchars=eol:¬,tab:▸\ ,extends:›,precedes:‹,space:·,trail:~
+set mouse=nv
+set nocursorcolumn
+set noerrorbells
 set noshowmode
-set cmdheight=2
+set nospell
+set nowrap
+set number relativenumber
+set shiftwidth=4
+set showmatch
 set showtabline=2
 set signcolumn=yes
-set mouse=nv
+set smartcase
+set smartindent
+set splitbelow
+set splitright
+set tabstop=4 softtabstop=4
 set timeout
 set timeoutlen=750
 set ttimeout
-filetype on
-filetype plugin on
-filetype indent on
+set updatetime=250
+set visualbell
 syntax on
-set splitright
-set splitbelow
-set number relativenumber
+syntax on
+syntax on
+" keep extra lines above/below cursor when scrolling past top/bottom of buffer
 if !&scrolloff
     set scrolloff=3
 endif
@@ -129,16 +138,16 @@ let g:loaded_netrwPlugin=1
 
 let g:vifm_replace_netrw=1
 
-set background=dark
 colorscheme onedark
+set background=dark
 
 let g:netrw_banner=0
 let g:netrw_browse_split=2
 let g:netrw_liststyle=3
 let g:netrw_winsize=20
 
-let g:goyo_width='65%'
 let g:goyo_height='85%'
+let g:goyo_width='65%'
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -203,8 +212,6 @@ let g:NERDDefaultAlign='left'
 let g:NERDTrimTrailingWhitespace=1
 let g:NERDToggleCheckAllLines=1
 
-let g:startify_files_number = 5
-let g:startify_custom_header = 'startify#center(g:ascii)'
 let g:ascii = [
 \'//=====================================\\',
 \'||         :            -`             ||',
@@ -228,6 +235,8 @@ let g:ascii = [
 \'||       .ohhhhhs`            hm:      ||',
 \'\\=====================================//'
 \]
+let g:startify_custom_header = 'startify#center(g:ascii)'
+let g:startify_files_number = 5
 
 " ==========================================
 " -| functions |----------------------------

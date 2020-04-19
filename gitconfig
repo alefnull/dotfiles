@@ -7,3 +7,7 @@
     ui = auto
 [hub]
 	protocol = ssh
+[merge]
+	tool = vimdiff
+[mergetool "vimdiff"]
+	path = nvim

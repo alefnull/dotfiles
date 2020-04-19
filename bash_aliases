@@ -20,7 +20,7 @@ alias reload="source ~/.bashrc && cln"
 alias gc="git commit -a"
 alias gs="git status"
 alias gp="git push"
-alias gd="git diff"
+alias gd="git difftool -y"
 alias du="ncdu"
 
 # fun stuff
