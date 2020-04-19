@@ -34,6 +34,7 @@ call plug#end()
 
 " primary mappings
 let mapleader=" "
+let maplocalleader=","
 nnoremap ; :
 vnoremap ; :
 inoremap jk <esc>
