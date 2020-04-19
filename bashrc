@@ -80,6 +80,7 @@ DISPLAY=$(grep "nameserver" /etc/resolv.conf | awk '{print $2; exit;}'):0.0
 export DISPLAY
 export LIBGL_ALWAYS_INDIRECT=1
 export NVM_DIR="$HOME/.nvm"
+export RANGER_LOAD_DEFAULT_RC=false
 # shellcheck disable=SC1090
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # shellcheck disable=SC1090
