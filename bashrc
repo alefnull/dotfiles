@@ -127,3 +127,4 @@ source "$HOME/dev/tdon.sh/tdon.sh"
 eval "$(hub alias -s) > /dev/null 2>&1"
 eval "$(starship init bash) > /dev/null 2>&1"
 eval "keychain --eval --agents ssh id_rsa > /dev/null 2>&1"
+cln

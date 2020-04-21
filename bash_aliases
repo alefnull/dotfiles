@@ -15,7 +15,6 @@ alias ll="exa -alh --git"
 alias ls="exa"
 alias clr="clear"
 alias cls="clr && ll"
-alias cln="clr && fig omen | sed -e :a -e 's/^.\{1,77\}$/ & /;ta' | lolcat && now | sed -e :a -e 's/^.\{1,77\}$/ & /;ta' | lolcat"
 alias reload="source ~/.bashrc && cln"
 alias gc="git commit -a"
 alias gs="lazygit"
@@ -24,7 +23,9 @@ alias gd="git difftool -y"
 alias du="ncdu"
 
 # fun stuff
-alias now="date +%A,\ %B\ %d,\ %Y | sed -e :a -e 's/^.\{1,77\}$/ & /;ta' | lolcat && date +%r | sed -e :a -e 's/^.\{1,77\}$/ & /;ta' | lolcat"
+alias center="sed -e :a -e 's/^.\{1,77\}$/ & /;ta'"
+alias now="date +%A,\ %B\ %d,\ %Y | center | lolcat && date +%r | center | lolcat"
+alias cln="clr && fig omen | center | lolcat && now | center | lolcat"
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
 alias fig="toilet -k -f hash3d"
 alias news="newsboat -r"
