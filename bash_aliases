@@ -24,7 +24,7 @@ alias gd="git difftool -y"
 alias du="ncdu"
 
 # fun stuff
-alias now="date +%r"
+alias now="date +%A,\ %B\ %d,\ %Y | sed -e :a -e 's/^.\{1,77\}$/ & /;ta' | lolcat && date +%r | sed -e :a -e 's/^.\{1,77\}$/ & /;ta' | lolcat"
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
 alias fig="toilet -k -f hash3d"
 alias news="newsboat -r"
