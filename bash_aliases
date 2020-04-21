@@ -26,5 +26,5 @@ alias du="ncdu"
 # fun stuff
 alias now="date +%r"
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
-alias fig="toilet -k -f hash3d-ne.flf"
+alias fig="toilet -k -f hash3d"
 alias news="newsboat -r"
