@@ -106,6 +106,7 @@ di=::fi=:ln=:or=:ex=:\
 *.midi=:*.mka=:*.mp3=:*.mpc=:*.ogg=:*.ra=:\
 *.wav=:*.oga=:*.opus=:*.spx=:*.xspf=:*.pdf=:*.nix=:"
 
+export BROWSER="firefox"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
