@@ -34,7 +34,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-syntastic/syntastic'
 Plug 'vifm/vifm.vim'
 Plug 'vim-scripts/bash-support.vim'
-Plug 'VebbNix/lf-vim'
 
 call plug#end()
 
