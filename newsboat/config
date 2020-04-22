@@ -1,0 +1,42 @@
+auto-reload yes
+cleanup-on-quit yes
+download-full-page yes
+goto-first-unread no
+goto-next-feed no
+max-items 100
+openbrowser-and-mark-jumps-to-next-unread yes
+reload-threads 3
+save-path "~/.newsboat/articles"
+text-width 100
+toggleitemread-jumps-to-next-unread yes
+
+articlelist-format "%3f %D %?T?|%-17T| ?%-2> %t"
+articlelist-title-format ">= articles <= '%T' (%u / %t)"
+feedlist-format "%3n %10u %-2> %t"
+feedlist-title-format ">= feeds <= (%u / %t)"
+filebrowser-title-format ">= files <= (%O) %f"
+help-title-format ">= help <= (%u / %t)"
+itemview-title-format ">= reading <= '%T' (%F)"
+searchresult-title-format ">= search <= (%u / %t)"
+selectfilter-title-format ">= filters <= (%u / %t)"
+selecttag-title-format ">= tags <= (%u / %t)"
+urlview-title-format ">= urls <= (%u / %t)"
+
+color background color54 black
+color listnormal color54 black
+color listfocus color16 color54
+color listnormal_unread color25 black bold
+color listfocus_unread color254 color54 bold
+color info color232 color4 bold
+color article color254 black
+
+bind-key j next
+bind-key k prev
+bind-key j down article
+bind-key k up article
+bind-key j down help
+bind-key k up help
+bind-key J next article
+bind-key K prev article
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
