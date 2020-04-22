@@ -57,21 +57,25 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 nnoremap <up> ddkP
 nnoremap <down> ddp
+nnoremap <silent> <C-Left> :vert res -3<CR>
+nnoremap <silent> <C-Right> :vert res +3<CR>
+nnoremap <silent> <C-Up> :res +3<CR>
+nnoremap <silent> <C-Down> :res -3<CR>
 " shortcuts for quick vimrc and bashrc editing
-nnoremap <leader>ev :vsplit $MYVIMRC<CR>
-nnoremap <leader>eb :vsplit ~/.bashrc<CR>
+nnoremap <silent> <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <silent> <leader>eb :vsplit ~/.bashrc<CR>
 " goyo
 nnoremap <silent> <leader>zz :Goyo<CR>
 " background transparency
-nnoremap <leader>te :TransparentEnable<CR>
-nnoremap <leader>td :TransparentDisable<CR>
+nnoremap <silent> <leader>te :TransparentEnable<CR>
+nnoremap <silent> <leader>td :TransparentDisable<CR>
 " vim-plug commands
 nnoremap <silent> <leader>pi :PlugInstall<CR>
 nnoremap <silent> <leader>pu :PlugUpdate<CR>
 nnoremap <silent> <leader>pg :PlugUpgrade<CR>
 nnoremap <silent> <leader>pc :PlugClean<CR>
 " file operations
-nnoremap <leader>ff :Vifm<CR>
+nnoremap <silent> <leader>ff :Vifm<CR>
 nnoremap <leader>fs :write<CR>
 nnoremap <leader>fq :wq<CR>
 " buffer operations
@@ -79,12 +83,16 @@ nnoremap <leader>fq :wq<CR>
 " split operations
 nnoremap <silent> <leader>sh :split<CR>
 nnoremap <silent> <leader>sv :vsplit<CR>
+nnoremap <leader>wc <C-w>c
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wl <C-w>l
 " misc mappings
-nnoremap <leader>ll :set list!<CR>
-nnoremap <leader>hc :helpclose<CR>
-nnoremap <leader>ut :UndotreeToggle<CR>
-" ctrl mappings
-nnoremap <silent> <c-l> :nohl<CR><c-l>
+nnoremap <silent> <leader>ll :set list!<CR>
+nnoremap <silent> <leader>hc :helpclose<CR>
+nnoremap <silent> <leader>ut :UndotreeToggle<CR>
+nnoremap <silent> <leader>lc :nohl<CR>
 " emergency quit
 nnoremap <leader>qq :qa!<CR>
 
@@ -102,6 +110,7 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,cp936,latin-1
 set fileformat=unix
 set fileformats=unix,dos,mac
+set fillchars+=vert:⏽
 set hidden
 set ignorecase
 set incsearch
@@ -127,6 +136,10 @@ set tabstop=4 softtabstop=4
 set timeout
 set timeoutlen=750
 set ttimeout
+set undofile
+set undodir=$HOME/.vim/undohistory
+set undolevels=1000
+set undoreload=10000
 set updatetime=250
 set visualbell
 syntax on
@@ -145,8 +158,8 @@ set nostartofline
 " -| plugin/theme settings |----------------
 " ==========================================
 
-let g:loaded_netrw=1
-let g:loaded_netrwPlugin=1
+" let g:loaded_netrw=1
+" let g:loaded_netrwPlugin=1
 
 let g:vifm_replace_netrw=1
 
@@ -169,6 +182,24 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_sh_shellcheck_args = "-x"
+
+if !exists('g:undotree_WindowLayout')
+    let g:undotree_WindowLayout = 1
+endif
+
+" e.g. using 'd' instead of 'days' to save some space.
+if !exists('g:undotree_ShortIndicators')
+    let g:undotree_ShortIndicators = 0
+endif
+
+" undotree window width
+if !exists('g:undotree_SplitWidth')
+    if g:undotree_ShortIndicators == 1
+        let g:undotree_SplitWidth = 35
+    else
+        let g:undotree_SplitWidth = 40
+    endif
+endif
 
 if exists('+termguicolors')
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
