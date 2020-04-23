@@ -34,6 +34,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-syntastic/syntastic'
 Plug 'vifm/vifm.vim'
 Plug 'vim-scripts/bash-support.vim'
+Plug 'gko/vim-coloresque'
 
 call plug#end()
 
@@ -241,7 +242,7 @@ let g:lightline = {
             \   "\<C-s>" : 's-block',
             \   't' : 'terminal',
             \ },
-            \ 'separator': { 'left': '', 'right': '' },
+            \ 'separator': { 'left': '', 'right': '' },
             \ 'subseparator': { 'left': '', 'right': '' },
             \ 'tab': {
             \   'active': [ 'tabnum', 'filename', 'modified' ]
