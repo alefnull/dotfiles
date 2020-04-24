@@ -4,11 +4,11 @@ download-full-page yes
 goto-first-unread no
 goto-next-feed no
 max-items 100
-openbrowser-and-mark-jumps-to-next-unread yes
+openbrowser-and-mark-jumps-to-next-unread no
 reload-threads 3
 save-path "~/.newsboat/articles"
 text-width 100
-toggleitemread-jumps-to-next-unread yes
+toggleitemread-jumps-to-next-unread no
 
 articlelist-format "%3f %D %?T?|%-17T| ?%-2> %t"
 articlelist-title-format ">= articles <= '%T' (%u / %t)"
