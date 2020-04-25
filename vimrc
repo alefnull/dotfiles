@@ -35,6 +35,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'vifm/vifm.vim'
 Plug 'vim-scripts/bash-support.vim'
 Plug 'gko/vim-coloresque'
+Plug 'itchyny/vim-cursorword'
 
 call plug#end()
 
