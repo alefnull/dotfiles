@@ -3,6 +3,7 @@
 # useful stuff
 # alias dots="cd ~/dev/dotfiles && git status && ll"
 alias dot='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias dots='dot status'
 alias dotdiff='dot difftool -y'
 alias v="nvim"
 alias vi="nvim"
