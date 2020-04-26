@@ -1,1 +1,8 @@
 .dots
+.bash_history
+.cache
+.local/share
+.ssh
+.vim
+.vscode-server
+.wget-hsts

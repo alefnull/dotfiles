@@ -1,12 +1,44 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
+#===============================================================================
+#
+#          FILE: bootstrap.sh
+#
+#         USAGE: ./bootstrap.sh (insert 'curl <github-raw-url-here> | /bin/bash' command here)
+#
+#   DESCRIPTION: a basic script to pull down bare repo of dotfiles and do some setup
+#
+#       OPTIONS: ---
+#  REQUIREMENTS: bash, curl, git, ??
+#        AUTHOR: alefnull (nullalef@gmail.com), 
+#       CREATED: 04/26/20 01:52
+#===============================================================================
 
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+set -e
+set -o nounset
 
-# setup symlinks
-ln -s "${BASEDIR}"/bashrc ~/.bashrc
-ln -s "${BASEDIR}"/bash_aliases ~/.bash_aliases
-ln -s "${BASEDIR}"/gitconfig ~/.gitconfig
-ln -s "${BASEDIR}"/htop/htoprc ~/.config/htop/htoprc
-ln -s "${BASEDIR}"/vimrc ~/.config/nvim/init.vim
-ln -s "${BASEDIR}"/starship.toml ~/.config/starship.toml
-ln -s "${BASEDIR}"/newsboat/config ~/.newsboat/config
+dotdir="$HOME"/.dots
+if [ -d "$dotdir" ]; then
+    echo "$dotdir already exists. aborting."
+    exit 1
+else
+    mkdir -p "$dotdir"
+fi
+
+git clone --bare git@github.com:alefnull/dotfiles.git "$dotdir"
+
+function dot {
+    /usr/bin/git --git-dir="$dotdir"/ --work-tree="$HOME" "$@"
+}
+
+
+if dot checkout
+then
+    echo "dotfiles successfully checked out.";
+else
+    echo "existing files found. backing up to '$dotdir'.";
+    dot checkout 2>&1 | grep -E "\s+\." | awk "{'print $1'}" | xargs -I{} mv {} .backup-cfg/{}
+fi;
+
+dot checkout
+dot config status.showUntrackedFiles no
+exit 0
