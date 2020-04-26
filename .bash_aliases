@@ -26,7 +26,7 @@ alias du="ncdu"
 
 # fun stuff
 alias center="sed -e :a -e 's/^.\{1,77\}$/ & /;ta'"
-alias ck="fortune -e education science linux anarchism computers news drugs paradoxum politics magic disclaimer wisdom law"
+alias ck="fortune -e education science linux computers news drugs politics magic wisdom law"
 alias now="date +%A,\ %B\ %d,\ %Y | center && date +%r | center"
 alias cln="clr && fig omen | center | lolcat && now | center && echo '' && ck | center"
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
