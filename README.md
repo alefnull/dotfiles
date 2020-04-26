@@ -1,5 +1,5 @@
 # dotfiles
-## yet another dotfiles repo
+### yet another dotfiles repo
 ### (NOTE: this repo is now being managed locally as a bare git repo. for more info see [this write-up](https://www.atlassian.com/git/tutorials/dotfiles))
 
 this is not one of those "my dotfiles are here for your use" kind of repositories. this is more of a publicly accessible playground for me.
