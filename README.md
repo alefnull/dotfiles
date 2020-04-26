@@ -8,6 +8,6 @@ i'm not a developer by trade, but simply enjoy using the terminal for its own sa
 
 that said, if (by some strange, masochistic urge) you happen to find any use for what exists here, obviously feel free to take it for yourself to do with what you choose.
 
-## "one-click" setup
+### "one-click" setup
 
 `curl -Ls https://git.io/nulldots | /usr/bin/env bash`
