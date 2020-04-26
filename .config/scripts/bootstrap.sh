@@ -1,44 +1,20 @@
 #!/usr/bin/env bash 
-#===============================================================================
-#
-#          FILE: bootstrap.sh
-#
-#         USAGE: ./bootstrap.sh (insert 'curl <github-raw-url-here> | /bin/bash' command here)
-#
-#   DESCRIPTION: a basic script to pull down bare repo of dotfiles and do some setup
-#
-#       OPTIONS: ---
-#  REQUIREMENTS: bash, curl, git, ??
-#        AUTHOR: alefnull (nullalef@gmail.com), 
-#       CREATED: 04/26/20 01:52
-#===============================================================================
 
 set -e
 set -o nounset
 
-dotdir="$HOME"/.dots
-if [ -d "$dotdir" ]; then
-    echo "$dotdir already exists. aborting."
+dot_dir="$HOME"/.dots
+if [ -d "$dot_dir" ]; then
+    echo "$dot_dir already exists. aborting."
     exit 1
-else
-    mkdir -p "$dotdir"
 fi
 
-git clone --bare git@github.com:alefnull/dotfiles.git "$dotdir"
+mkdir -p "$dot_dir"
+git clone --bare git@github.com:alefnull/dotfiles.git "$dot_dir"
 
-function dot {
-    /usr/bin/git --git-dir="$dotdir"/ --work-tree="$HOME" "$@"
-}
+which_git="$(which git)"
+function dot { "$which_git" --git-dir="$dot_dir"/ --work-tree="$HOME" "$@"; }
 
-
-if dot checkout
-then
-    echo "dotfiles successfully checked out.";
-else
-    echo "existing files found. backing up to '$dotdir'.";
-    dot checkout 2>&1 | grep -E "\s+\." | awk "{'print $1'}" | xargs -I{} mv {} .backup-cfg/{}
-fi;
-
-dot checkout
 dot config status.showUntrackedFiles no
+dot checkout -f
 exit 0
