@@ -10,4 +10,6 @@ that said, if (by some strange, masochistic urge) you happen to find any use for
 
 ### "one-click" setup ([.config/scripts/install_dotfiles.sh](https://github.com/alefnull/dotfiles/blob/master/.config/scripts/install_dotfiles.sh))
 
+i do NOT recommend running this command on your system. this is only for my own reference/use
+
 `curl -Ls https://git.io/nulldots | /usr/bin/env bash`
