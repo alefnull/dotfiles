@@ -2,23 +2,23 @@
 
 # useful stuff
 # alias dots="cd ~/dev/dotfiles && git status && ll"
-alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias dot='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias dotdiff='dot difftool -y'
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
-alias fm="ranger"
 alias cat="bat --theme OneHalfDark --style full"
-alias brc="vi ~/dev/dotfiles/bashrc"
-alias bls="vi ~/dev/dotfiles/bash_aliases"
-alias vrc="vi ~/dev/dotfiles/vimrc"
-alias ll="exa -alh --git"
+alias brc='nvim $HOME/.bashrc'
+alias bls='nvim $HOME/.bash_aliases'
+alias vrc='nvim $HOME/.config/nvim/init.vim'
 # alias la="ls -A"
 alias ls="exa"
+alias ll="exa -alh --git"
 alias clr="clear"
 alias cls="clr && ll"
-alias reload="source ~/.bashrc"
-alias gc="git commit -a"
-alias gs="lazygit"
+alias reload='source $HOME/.bashrc'
+alias gc="git commit"
+alias gs="git status"
 alias gp="git push"
 alias gd="git difftool -y"
 alias du="ncdu"
