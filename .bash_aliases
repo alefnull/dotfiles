@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # useful stuff
-alias dots="cd ~/dev/dotfiles && git status && ll"
+# alias dots="cd ~/dev/dotfiles && git status && ll"
+alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
@@ -24,7 +25,7 @@ alias du="ncdu"
 
 # fun stuff
 alias center="sed -e :a -e 's/^.\{1,77\}$/ & /;ta'"
-alias ck="fortune -e education science tao linux anarchism computers news literature pratchett drugs paradoxum politics magic disclaimer wisdom law"
+alias ck="fortune -e education science tao linux anarchism computers news literature drugs paradoxum politics magic disclaimer wisdom law"
 alias now="date +%A,\ %B\ %d,\ %Y | center && date +%r | center"
 alias cln="clr && fig omen | center | lolcat && now | center && echo '' && ck | center"
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
