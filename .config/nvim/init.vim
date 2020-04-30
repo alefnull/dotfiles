@@ -15,28 +15,36 @@
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  augroup install_plug
+      autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  augroup END
 endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'preservim/nerdcommenter'
-Plug 'joshdick/onedark.vim'
+" gui
+Plug 'airblade/vim-gitgutter'
+Plug 'gko/vim-coloresque'
 Plug 'itchyny/lightline.vim'
-Plug 'mhinz/vim-startify'
+Plug 'itchyny/vim-cursorword'
+Plug 'joshdick/onedark.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'kjwon15/vim-transparent'
-" Plug 'sheerun/vim-polyglot'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'machakann/vim-highlightedyank'
 Plug 'mbbill/undotree'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
-Plug 'vim-syntastic/syntastic'
-Plug 'vifm/vifm.vim'
-Plug 'vim-scripts/bash-support.vim'
-Plug 'gko/vim-coloresque'
-Plug 'itchyny/vim-cursorword'
+Plug 'wadackel/vim-dogrun'
+" misc
+Plug 'dense-analysis/ale'
 Plug 'fadein/vim-figlet'
+Plug 'maximbaz/lightline-ale'
+Plug 'preservim/nerdcommenter'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-scripts/bash-support.vim'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
@@ -45,8 +53,8 @@ call plug#end()
 " ==========================================
 
 " primary mappings
-let mapleader=" "
-let maplocalleader=","
+let mapleader=' '
+let maplocalleader=','
 nnoremap ; :
 vnoremap ; :
 inoremap jk <esc>
@@ -77,7 +85,7 @@ nnoremap <silent> <leader>pu :PlugUpdate<CR>
 nnoremap <silent> <leader>pg :PlugUpgrade<CR>
 nnoremap <silent> <leader>pc :PlugClean<CR>
 " file operations
-nnoremap <silent> <leader>ff :Vifm<CR>
+nnoremap <silent> <leader>ff :Ranger<CR>
 nnoremap <leader>fs :write<CR>
 nnoremap <leader>fq :wq<CR>
 " buffer operations
@@ -97,6 +105,8 @@ nnoremap <silent> <leader>ut :UndotreeToggle<CR>
 nnoremap <silent> <leader>lc :nohl<CR>
 " emergency quit
 nnoremap <leader>qq :qa!<CR>
+nnoremap <silent> <C-k> <Plug>(ale_previous_wrap)
+nnoremap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " ==========================================
 " -| general settings |---------------------
@@ -107,12 +117,16 @@ set cmdheight=1
 set cmdheight=2
 set cursorline
 set encoding=utf-8
+scriptencoding utf-8
 set expandtab
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,cp936,latin-1
 set fileformat=unix
 set fileformats=unix,dos,mac
 set fillchars+=vert:⏽
+set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
+            \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+            \,sm:block-blinkwait175-blinkoff150-blinkon175
 set hidden
 set ignorecase
 set incsearch
@@ -160,10 +174,8 @@ set nostartofline
 " -| plugin/theme settings |----------------
 " ==========================================
 
-" let g:loaded_netrw=1
-" let g:loaded_netrwPlugin=1
-
-let g:vifm_replace_netrw=1
+let g:ranger_map_keys=0
+let g:highlightedyank_highlight_duration=750
 
 colorscheme onedark
 set background=dark
@@ -183,7 +195,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_sh_shellcheck_args = "-x"
+let g:syntastic_sh_shellcheck_args = '-x'
 
 if !exists('g:undotree_WindowLayout')
     let g:undotree_WindowLayout = 1
@@ -213,7 +225,7 @@ let g:lightline = {
             \ 'active': {
             \   'left': [ [ 'mode', 'paste', 'gitbranch' ],
             \             [ 'readonly', 'filetype', 'absolutepath', 'modified' ] ],
-            \   'right': [ [ 'fileformat', 'fileencoding' ],
+            \   'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok', 'fileformat', 'fileencoding' ],
             \              [ 'percent' ],
             \              [ 'lineinfo' ] ]
             \ },
@@ -222,11 +234,25 @@ let g:lightline = {
             \   'bufnum': 'buf %n',
             \   'lineinfo': ' %3l:%-2v',
             \ },
+            \ 'component_expand': {
+            \   'linter_checking': 'lightline#ale#checking',
+            \   'linter_infos': 'lightline#ale#infos',
+            \   'linter_warnings': 'lightline#ale#warnings',
+            \   'linter_errors': 'lightline#ale#errors',
+            \   'linter_ok': 'lightline#ale#ok',
+            \ },
             \ 'component_function': {
             \   'readonly': 'LightlineReadonly',
             \   'gitbranch': 'LightlineFugitive',
             \   'filetype': 'MyFiletype',
             \   'fileformat': 'MyFileformat',
+            \ },
+            \ 'component_type': {
+            \   'linter_checking': 'right',
+            \   'linter_infos': 'right',
+            \   'linter_warnings': 'warning',
+            \   'linter_errors': 'error',
+            \   'linter_ok': 'right',
             \ },
             \ 'enable': {
             \   'tabline': 1,
@@ -250,6 +276,12 @@ let g:lightline = {
             \   'active': [ 'tabnum', 'filename', 'modified' ]
             \ },
             \ }
+
+let g:lightline#ale#indicator_checking = "\uf110"
+let g:lightline#ale#indicator_infos = "\uf129"
+let g:lightline#ale#indicator_warnings = "\uf071"
+let g:lightline#ale#indicator_errors = "\uf05e"
+let g:lightline#ale#indicator_ok = "\uf00c"
 
 let g:NERDSpaceDelims=1
 let g:NERDCommentEmptyLines=1
