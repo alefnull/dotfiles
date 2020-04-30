@@ -32,9 +32,10 @@ error_symbol = "🛑"
 truncation_length = 3
 truncate_to_repo = false
 style = "bold bright-green"
+use_logical_path = true
 
 [git_branch]
-symbol = " "
+symbol = "⚡ "
 style = "dimmed pink"
 
 [git_commit]
