@@ -174,16 +174,10 @@ set nostartofline
 " -| plugin/theme settings |----------------
 " ==========================================
 
-let g:ranger_map_keys=0
 let g:highlightedyank_highlight_duration=750
 
 colorscheme onedark
 set background=dark
-
-let g:netrw_banner=0
-let g:netrw_browse_split=2
-let g:netrw_liststyle=3
-let g:netrw_winsize=20
 
 let g:goyo_height='85%'
 let g:goyo_width='65%'
