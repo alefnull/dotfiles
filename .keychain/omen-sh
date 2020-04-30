@@ -1,2 +1,0 @@
-SSH_AUTH_SOCK=/tmp/ssh-p2Ld89qHohsN/agent.79; export SSH_AUTH_SOCK;
-SSH_AGENT_PID=80; export SSH_AGENT_PID;
