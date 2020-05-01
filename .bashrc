@@ -70,7 +70,7 @@ export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
 export MANPATH="$MANPATH:/home/linuxbrew/.linuxbrew/share/man"
 export INFOPATH="$INFOPATH:/home/linuxbrew/.linuxbrew/share/info"
 export LESSHISTFILE=/dev/null
-[[ -f "$HOME"/.tdon ]] && export TODO="$HOME/.tdon" || return
+[[ -f "$HOME"/.tdon ]] && export TODO="$HOME/.tdon"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 DISPLAY=$(grep "nameserver" /etc/resolv.conf | awk '{print $2; exit;}'):0.0
@@ -82,7 +82,7 @@ export NVM_DIR="$HOME/.nvm"
 # shellcheck disable=SC1090
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # shellcheck source=/home/alef/dev/tdon.sh/tdon.sh
-[[ -f "$HOME"/dev/tdon.sh/tdon.sh ]] && source "$HOME/dev/tdon.sh/tdon.sh" || return
+[[ -f "$HOME"/dev/tdon.sh/tdon.sh ]] && source "$HOME/dev/tdon.sh/tdon.sh"
 eval "$(hub alias -s) > /dev/null 2>&1"
 eval "$(starship init bash) > /dev/null 2>&1"
 eval "keychain --eval --agents ssh id_rsa > /dev/null 2>&1"
