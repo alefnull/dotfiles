@@ -46,6 +46,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/bash-support.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'justinmk/vim-sneak'
+Plug 'rhysd/committia.vim'
 
 call plug#end()
 
@@ -73,8 +74,10 @@ nnoremap <silent> <C-Right> :vert res +3<CR>
 nnoremap <silent> <C-Up> :res +3<CR>
 nnoremap <silent> <C-Down> :res -3<CR>
 " shortcuts for quick vimrc and bashrc editing
-nnoremap <silent> <leader>ev :vsplit $MYVIMRC<CR>
-nnoremap <silent> <leader>eb :vsplit ~/.bashrc<CR>
+" nnoremap <silent> <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <silent> <leader>ev :tabnew $MYVIMRC<CR>
+" nnoremap <silent> <leader>eb :vsplit ~/.bashrc<CR>
+nnoremap <silent> <leader>eb :tabnew ~/.bashrc<CR>
 " goyo
 nnoremap <silent> <leader>zz :Goyo<CR>
 " background transparency
@@ -86,11 +89,12 @@ nnoremap <silent> <leader>pu :PlugUpdate<CR>
 nnoremap <silent> <leader>pg :PlugUpgrade<CR>
 nnoremap <silent> <leader>pc :PlugClean<CR>
 " file operations
-nnoremap <silent> <leader>ff :Ranger<CR>
+nnoremap <silent> <leader>ff :call ToggleNetrw()<CR>
 nnoremap <leader>fs :write<CR>
 nnoremap <leader>fq :wq<CR>
 " buffer operations
 " nnoremap <silent> <leader>bd :bdelete<CR>
+nnoremap <silent> <leader><tab> :tabn<CR>
 " split operations
 nnoremap <silent> <leader>sh :split<CR>
 nnoremap <silent> <leader>sv :vsplit<CR>
@@ -175,6 +179,14 @@ set nostartofline
 " -| plugin/theme settings |----------------
 " ==========================================
 
+let g:committia_open_only_vim_starting=1
+let g:committia_min_window_width=80
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 20
+
 let g:highlightedyank_highlight_duration=750
 
 let g:sneak#label=1
@@ -190,7 +202,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_sh_shellcheck_args = '-x'
 
@@ -221,7 +233,8 @@ endif
 let g:lightline = {
             \ 'active': {
             \   'left': [ [ 'mode', 'paste', 'gitbranch' ],
-            \             [ 'readonly', 'filetype', 'absolutepath', 'modified' ] ],
+            \             [ 'readonly', 'filetype' ],
+            \             [ 'absolutepath', 'modified' ] ],
             \   'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok', 'fileformat', 'fileencoding' ],
             \              [ 'percent' ],
             \              [ 'lineinfo' ] ]
@@ -229,7 +242,7 @@ let g:lightline = {
             \ 'colorscheme': 'one',
             \ 'component': {
             \   'bufnum': 'buf %n',
-            \   'lineinfo': ' %3l:%-2v',
+            \   'lineinfo': '%3l:%-2v',
             \ },
             \ 'component_expand': {
             \   'linter_checking': 'lightline#ale#checking',
@@ -315,6 +328,24 @@ let g:startify_files_number = 5
 " ==========================================
 " -| functions |----------------------------
 " ==========================================
+
+let g:NetrwIsOpen=0
+
+function! ToggleNetrw()
+    if g:NetrwIsOpen
+        let i = bufnr('$')
+        while (i >= 1)
+            if (getbufvar(i, '&filetype') ==? 'netrw')
+                silent exe 'bwipeout ' . i 
+            endif
+            let i-=1
+        endwhile
+        let g:NetrwIsOpen=0
+    else
+        let g:NetrwIsOpen=1
+        silent Lexplore
+    endif
+endfunction
 
 function! MyFiletype()
     return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
