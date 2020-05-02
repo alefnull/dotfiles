@@ -11,3 +11,10 @@
     tool = vimdiff
 [mergetool "vimdiff"]
     path = nvim
+[alias]
+	switch = !/home/alef/.local/bin/legit switch
+	sync = !/home/alef/.local/bin/legit sync
+	publish = !/home/alef/.local/bin/legit publish
+	unpublish = !/home/alef/.local/bin/legit unpublish
+	undo = !/home/alef/.local/bin/legit undo
+	branches = !/home/alef/.local/bin/legit branches
