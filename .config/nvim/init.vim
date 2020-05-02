@@ -45,6 +45,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/bash-support.vim'
 Plug 'vim-syntastic/syntastic'
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
@@ -55,8 +56,8 @@ call plug#end()
 " primary mappings
 let mapleader=' '
 let maplocalleader=','
-nnoremap ; :
-vnoremap ; :
+" nnoremap ; :
+" vnoremap ; :
 inoremap jk <esc>
 " putting arrow keys to good use (or no use at all)
 inoremap <left> <nop>
@@ -175,6 +176,8 @@ set nostartofline
 " ==========================================
 
 let g:highlightedyank_highlight_duration=750
+
+let g:sneak#label=1
 
 colorscheme onedark
 set background=dark
