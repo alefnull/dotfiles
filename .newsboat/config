@@ -22,16 +22,20 @@ selectfilter-title-format ">= filters <= (%u / %t)"
 selecttag-title-format ">= tags <= (%u / %t)"
 urlview-title-format ">= urls <= (%u / %t)"
 
-color background color54 black
-color listnormal color54 black
-color listfocus color16 color54
-color listnormal_unread color25 black bold
-color listfocus_unread color254 color54 bold
-color info color232 color4 bold
 color article color254 black
+color background color54 black
+color info color232 color4 bold
+color listfocus color16 color54
+color listfocus_unread color254 color54 bold
+color listnormal color54 black
+color listnormal_unread color25 black bold
 
+bind-key SPACE toggle-article-read
+bind-key h quit articlelist
 bind-key j next
 bind-key k prev
+bind-key l open
+bind-key h quit article
 bind-key j down article
 bind-key k up article
 bind-key j down help
