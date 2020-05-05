@@ -6,3 +6,6 @@
 .vim
 .vscode-server
 .wget-hsts
+.keychain
+.sudo_as_admin_successful
+.tdon
