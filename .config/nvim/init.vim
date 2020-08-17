@@ -35,18 +35,20 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'mbbill/undotree'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
+Plug 'szw/vim-maximizer'
 Plug 'wadackel/vim-dogrun'
 " misc
 Plug 'dense-analysis/ale'
 Plug 'fadein/vim-figlet'
+Plug 'justinmk/vim-sneak'
 Plug 'maximbaz/lightline-ale'
 Plug 'preservim/nerdcommenter'
+Plug 'rhysd/committia.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'svermeulen/vim-macrobatics'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/bash-support.vim'
 Plug 'vim-syntastic/syntastic'
-Plug 'justinmk/vim-sneak'
-Plug 'rhysd/committia.vim'
 
 call plug#end()
 
@@ -69,6 +71,7 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 nnoremap <up> ddkP
 nnoremap <down> ddp
+" resizing
 nnoremap <silent> <C-Left> :vert res -3<CR>
 nnoremap <silent> <C-Right> :vert res +3<CR>
 nnoremap <silent> <C-Up> :res +3<CR>
@@ -103,6 +106,7 @@ nnoremap <leader>wh <C-w>h
 nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
+nnoremap <silent> <leader>mx :MaximizerToggle<CR>
 " misc mappings
 nnoremap <silent> <leader>ll :set list!<CR>
 nnoremap <silent> <leader>hc :helpclose<CR>
