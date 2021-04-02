@@ -3,7 +3,7 @@
 # If not running interactively, don't do anything
 [[ $- == *i* ]] || return
 
-# set -o vi
+set -o emacs
 shopt -s checkwinsize
 shopt -s histappend
 HISTCONTROL=ignoreboth
