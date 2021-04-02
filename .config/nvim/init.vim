@@ -49,6 +49,7 @@ Plug 'svermeulen/vim-macrobatics'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/bash-support.vim'
 Plug 'vim-syntastic/syntastic'
+Plug 'sophacles/vim-processing'
 
 call plug#end()
 

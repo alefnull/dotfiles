@@ -3,7 +3,7 @@
 # If not running interactively, don't do anything
 [[ $- == *i* ]] || return
 
-set -o vi
+# set -o vi
 shopt -s checkwinsize
 shopt -s histappend
 HISTCONTROL=ignoreboth
@@ -66,6 +66,7 @@ fi
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export BROWSER="firefox"
+export PATH="$PATH:/mnt/d/Programs/processing/processing-java"
 export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
 export MANPATH="$MANPATH:/home/linuxbrew/.linuxbrew/share/man"
 export INFOPATH="$INFOPATH:/home/linuxbrew/.linuxbrew/share/info"

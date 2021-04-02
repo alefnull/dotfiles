@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # useful stuff
+alias repos='cd /mnt/d/Backups/OneDrive/Documents/GitHub/'
 # alias dots="cd ~/dev/dotfiles && git status && ll"
 alias dot='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 alias dots='echo currently tracked dotfiles: && echo --------------------------- && dot ls-tree -r master --name-only --full-tree ~'
