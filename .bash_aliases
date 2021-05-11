@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # useful stuff
-alias repos='cd /mnt/d/Backups/OneDrive/Documents/GitHub/'
+alias repos='cd /mnt/c/Users/alefnull/OneDrive/Documents/GitHub/'
 # alias dots="cd ~/dev/dotfiles && git status && ll"
 alias dot='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 alias dots='echo currently tracked dotfiles: && echo --------------------------- && dot ls-tree -r master --name-only --full-tree ~'
@@ -9,7 +9,7 @@ alias dotdiff='dot difftool -y'
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
-alias cat="bat --theme OneHalfDark --style full"
+alias cat="batcat --theme OneHalfDark --style full"
 alias brc='nvim $HOME/.bashrc'
 alias bls='nvim $HOME/.bash_aliases'
 alias vrc='nvim $HOME/.config/nvim/init.vim'
