@@ -19,7 +19,7 @@ function dot { "$which_git" --git-dir="$dot_dir"/ --work-tree="$HOME" "$@"; }
 
 echo "setting repo config status.showUntrackedFiles no"
 dot config status.showUntrackedFiles no
-echo "forcing checkout of master branch"
+echo "forcing checkout of main branch"
 dot checkout -f
 echo "all finished!"
 exit 0
