@@ -2,6 +2,7 @@
 
 # useful stuff
 alias repos='cd /mnt/c/Users/alefnull/OneDrive/Documents/GitHub/'
+alias src='cd /mnt/c/Users/alefnull/source/'
 # alias dots="cd ~/dev/dotfiles && git status && ll"
 alias dot='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 alias dots='echo currently tracked dotfiles: && echo --------------------------- && dot ls-tree -r main --name-only --full-tree ~'
@@ -13,7 +14,7 @@ alias cat="batcat --theme OneHalfDark --style full"
 alias brc='nvim $HOME/.bashrc'
 alias bls='nvim $HOME/.bash_aliases'
 alias vrc='nvim $HOME/.config/nvim/init.vim'
-# alias la="ls -A"
+alias la="ls -a"
 alias ls="exa"
 alias ll="exa -alh --git"
 alias clr="clear"
