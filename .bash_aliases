@@ -34,3 +34,8 @@ alias cln="clr && fig zephyr | center | lolcat && echo && ck | center"
 alias weather="curl --fail --silent --show-error wttr.in/?1q | sed '/Follow/Q'" 2>&1
 alias fig="toilet -k -f hash3d"
 alias news="newsboat -r"
+
+# geeky stuff
+alias envs="ssh alefnull@envs.net"
+alias b="byobu"
+

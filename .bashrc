@@ -51,7 +51,6 @@ export LESSHISTFILE=/dev/null
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export LIBGL_ALWAYS_INDIRECT=1
-export BITLY_TOKEN="3a73f51b667668b4934459a5dd4712e0ae7efbd5"
 eval "$(hub alias -s) > /dev/null 2>&1"
 eval "keychain --eval --agents ssh id_ed25519 > /dev/null 2>&1"
 cln
