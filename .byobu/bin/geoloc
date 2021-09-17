@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# tmux module to grab location data of machine's ip address
+# and print it to the status bar using printf
+
+IP=$(curl -s https://ipinfo.io/ip)
+
+if [ -f ~/.byobu/cache/locdata.json ]; then
+    # use jq to parse cached data for .geoplugin_city, .geoplugin_regionCode, and .geoplugin_countryCode
+    CITY=$(jq -r '.geoplugin_city' ~/.byobu/cache/locdata.json)
+    REGION=$(jq -r '.geoplugin_regionCode' ~/.byobu/cache/locdata.json)
+    COUNTRY=$(jq -r '.geoplugin_countryCode' ~/.byobu/cache/locdata.json)
+
+    # print to status bar
+    printf "[%s, %s (%s)]" "$CITY" "$REGION" "$COUNTRY"
+
+else 
+    if [ ! -d ~/.byobu/cache ]; then
+        mkdir -p ~/.byobu/cache
+    fi
+    curl -s http://www.geoplugin.net/json.gp?ip="$IP" > ~/.byobu/cache/locdata.json
+fi
+

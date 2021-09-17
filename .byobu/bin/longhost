@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+USER=$(whoami)
+HOST=$(hostname)
+printf "[%s@%s] " "$USER" "$HOST"
+
