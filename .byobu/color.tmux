@@ -1,4 +1,4 @@
 BYOBU_DARK="default"
-BYOBU_LIGHT="green"
+BYOBU_LIGHT="cyan"
 BYOBU_ACCENT="default"
-BYOBU_HIGHLIGHT="green"
+BYOBU_HIGHLIGHT="cyan"
