@@ -7,7 +7,7 @@ alias src='cd /mnt/c/Users/alefnull/source/'
 alias dot='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 alias dots='echo currently tracked dotfiles: && echo --------------------------- && dot ls-tree -r main --name-only --full-tree ~'
 alias dotdiff='dot difftool -y'
-# alias v="nvim"
+alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 alias cat="batcat --theme OneHalfDark --style full"
