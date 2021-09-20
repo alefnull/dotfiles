@@ -18,3 +18,5 @@
 	unpublish = !/home/alef/.local/bin/legit unpublish
 	undo = !/home/alef/.local/bin/legit undo
 	branches = !/home/alef/.local/bin/legit branches
+[init]
+	defaultBranch = main
