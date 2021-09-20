@@ -50,6 +50,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/bash-support.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'sophacles/vim-processing'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -93,7 +95,9 @@ nnoremap <silent> <leader>pu :PlugUpdate<CR>
 nnoremap <silent> <leader>pg :PlugUpgrade<CR>
 nnoremap <silent> <leader>pc :PlugClean<CR>
 " file operations
-nnoremap <silent> <leader>ff :call ToggleNetrw()<CR>
+" nnoremap <silent> <leader>ff :call ToggleNetrw()<CR>
+nnoremap <silent> <leader>ff :Files<CR>
+nnoremap <silent> <leader>bb :Buffers<CR>
 nnoremap <leader>fs :write<CR>
 nnoremap <leader>fq :wq<CR>
 " buffer operations
