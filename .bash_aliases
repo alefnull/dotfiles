@@ -40,4 +40,6 @@ alias news="newsboat -r"
 # geeky stuff
 alias envs="ssh alefnull@envs.net"
 alias b="byobu"
+alias ebup="sshfs alefnull@envs.net:/home/alefnull/public_html/ /mnt/envs/ && cd /mnt/envs/"
+alias ebdown="fusermount -u /mnt/envs/"
 
