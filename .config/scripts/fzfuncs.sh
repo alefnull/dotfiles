@@ -1,20 +1,42 @@
 #!/usr/bin/env bash
 # -*- coding: utf-8 -*-
 
-# fz - a set of tools using FZF and AG to manage files and navigate directories quickly
-#
-# usage: fz [command] [search pattern]
-#
-# commands:
-#    fze - open file in editor
-#    fzd - cd to directory/file
-#    fzb - checkout git branch, including remote branches
-#    fzc - git commit browser
-#    fzg - create gitignore file from gitiignore.io
-#    fzm - manpage explorer
+usage() {
+    echo "fz - a set of tools using FZF and AG to manage files and navigate directories quickly"
+    echo ""
+    echo "usage: fz [command] [search pattern]"
+    echo ""
+    echo "commands:"
+    echo "   fz  - print usage info"
+    echo "   fze - open file in editor"
+    echo "   fzd - cd to directory/file"
+    echo "   fzb - checkout git branch, including remote branches"
+    echo "   fzc - git commit browser"
+    echo "   fzg - create gitignore file from gitiignore.io"
+    echo "   fzm - manpage explorer"
+}
 
 # functions
 # =========
+# fz - print usage info
+fz() {
+  # if no arguments, print usage info
+  if [ $# -eq 0 ]; then
+      usage
+  fi
+  # if one argument, run corresponding command, passing the rest of the arguments
+  if [ $# -eq 1 ]; then
+    case $1 in
+      e) fze "${@:2}" ;;
+      d) fzd "${@:2}" ;;
+      b) fzb "${@:2}" ;;
+      c) fzc "${@:2}" ;;
+      g) fzg "${@:2}" ;;
+      m) fzm "${@:2}" ;;
+      *) echo "unknown command: $1" ;;
+    esac
+  fi
+}
 
 # fze - open file in editor
 fze() {
@@ -111,3 +133,4 @@ fzm() {
     man $1
   fi
 }
+
