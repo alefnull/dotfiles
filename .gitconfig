@@ -1,5 +1,6 @@
 [core]
     editor = nvim
+	excludesfile = /home/alef/.gitignore
 [user]
     email = nullalef@gmail.com
     name = alefnull
