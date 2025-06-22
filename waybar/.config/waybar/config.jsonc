@@ -32,16 +32,16 @@
     ],
     "modules-right": [
         "tray",
+	"power-profiles-daemon",
         //"custom/storage",
         //"memory",
         //"cpu",
         //"pulseaudio",
         //"custom/screenshot_t",
         "backlight",
-        "wireplumber",
         "battery",
-	"power-profiles-daemon",
         //"custom/weather",
+        "wireplumber",
         "clock#date",
         "custom/power"
     ],
@@ -52,7 +52,7 @@
     // -------------------------------------------------------------------------
 
     "power-profiles-daemon": {
-        "format": "{icon}",
+        "format": "{icon} ",
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
         "tooltip": true,
         "format-icons": {
@@ -236,10 +236,11 @@
     },*/
 
     "clock#date": {
-        "format": "󰥔  {:%I:%M %p  /    %A, %b %e}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        /*"format": "󰥔  {:%I:%M %p  /    %A, %b %e}",*/
+        "format": "{:%I:%M %p / %A, %b %e}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n\n<tt><small>{calendar}</small></tt>",
 	"calendar": {
-	    "mode": "month",
+	    "mode": "year",
 	    "mode-mon-col": 3,
 	}
     },
@@ -379,7 +380,7 @@
         //on-click: "${wpctl} set-mute @DEFAULT_AUDIO_SINK@ toggle";
         //on-scroll-down: "${wpctl} set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 0.04+";
         //on-scroll-up: "${wpctl} set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 0.04-";
-        "format": "<span foreground='#fab387'>{icon}</span>  {volume}%",
+        "format": "{icon} {volume}%",
         "format-muted": " ",
         "format-source": "",
         "format-source-muted": "",

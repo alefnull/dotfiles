@@ -1,9 +1,9 @@
 @import url("colors.css");
 
 * {
-    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;  /* Slightly smaller font size */
-    font-weight: 600;
+    font-family: "JetBrainsMono Nerd Font", "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;  /* Slightly smaller font size */
+    font-weight: 900;
     margin: 0;
     padding: 0;
     transition-property: background-color;
@@ -24,7 +24,7 @@
     /*background-color: #0b0b0f;*/
     background-color: transparent;
     /*color: #dadada;*/
-    color: @color15;
+    color: @foreground;
     transition-property: background-color;
     transition-duration: 0.5s;
     border-radius: 0px;
@@ -36,13 +36,13 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    padding: 0px 6px;  /* Adjusted padding to reduce height */
-    margin: 1px;    /* Reduced margin slightly */
+    padding: 0px 8px;  /* Adjusted padding to reduce height */
+    margin: 0px;    /* Reduced margin slightly */
     border-radius: 0px;
     color: @color15;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
-    font-size: 16px;  /* Slightly smaller font size */
+    font-size: 15px;  /* Slightly smaller font size */
     /*border: 2px solid @color15;*/
 }
 
@@ -50,34 +50,38 @@ window#waybar.hidden {
     /*background: #1D1F3F;*/
     color: @color0;
     background: @color15;
-    border: 2px solid @color8;
+    margin: 0;
+    /*border: 2px solid @color8;*/
 }
 
 #workspaces button:hover {
     /*background: #333333;*/
     background: @color8;
     color: @color15;
+    margin: 0;
 }
 
 #workspaces button.urgent {
     /*background-color: #eb4d4b;*/
     background-color: @color3;
+    margin: 0;
 }
 
 #workspaces {
     background-color: transparent;
     border-radius: 0px;
-    padding: 0px 2px;  /* Adjusted padding to reduce height */
+    padding: 2px;  /* Adjusted padding to reduce height */
+    margin: 0px;
 }
 
 #window {
     background-color: transparent;
-    font-size: 16px;   /* Slightly smaller font size */
+    font-size: 15px;   /* Slightly smaller font size */
     font-weight: 600;
     color: @color15;
     border-radius: 0px;
     padding: 0px 8px;  /* Reduced padding */
-    margin: 1px;
+    margin: 0px;
     opacity: 1;
 }
 
@@ -113,6 +117,7 @@ window#waybar.hidden {
     color: @color15;
     border-radius: 0px;
     padding: 0px 2px;  /* Adjusted padding */
+    margin: 1px;
 }
 
 #clock {
@@ -120,6 +125,7 @@ window#waybar.hidden {
     background-color: transparent;
     color: @color15;
     padding: 0 4px;  /* Adjusted padding */
+    margin: 1px;
 }
 
 #custom-screenshot_t {
@@ -137,7 +143,7 @@ window#waybar.hidden {
 #tray {
     background-color: transparent;
     border-radius: 0px;
-    padding: 0 8px;  /* Adjusted padding */
+    padding: 0px 8px;  /* Adjusted padding */
 }
 
 #cpu {
@@ -156,6 +162,13 @@ window#waybar.hidden {
     background-color: transparent;
     border-radius: 0px;
     padding: 0 2px;
+}
+
+#power-profiles-daemon {
+    background-color: transparent;
+    color: @foreground;
+    border-radius: 0px;
+    padding: 0 4px;
 }
 
 #custom-storage {
@@ -214,7 +227,7 @@ window#waybar.hidden {
 .modules-center {
     background-color: @color0;
     color: @color15;
-    padding: 0;
+    padding: 1px;
     border-radius: 0px;
     border: 2px solid @color15;
     margin: 0px 16px 0px 16px;
@@ -223,7 +236,7 @@ window#waybar.hidden {
 .modules-right {
     background-color: @color0;
     color: @color15;
-    padding: 0;
+    padding: 1px;
     border-radius: 0px;
     border: 2px solid @color15;
     margin: 0px 16px 0px 16px;
