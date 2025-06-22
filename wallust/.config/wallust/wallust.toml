@@ -1,0 +1,15 @@
+backend = "fast-resize"
+color_space = "labmixed" # idc about this one..
+palette = "ansidark16"
+check_contrast = true
+
+[templates]
+kitty = { src = "kitty.conf", dst = "~/.config/kitty/colors.conf" }
+waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }
+hyprland = { src = "hyprland.conf", dst = "~/.config/hypr/config/wallust-colors.conf" }
+wofi = { src = "waybar-colors.css", dst = "~/.config/wofi/colors.css" }
+vscode = { src = 'vscode.json', dst = '~/.cache/wallust/colors.json' }
+vscode2 = { src = 'vscode', dst = '~/.cache/wallust/colors' }
+neopywal = { src = 'neopywal-colors.vim', dst = '~/.cache/wallust/neopywal-colors.vim' }
+vencord = { src = 'colors-discord.css', dst = '~/.config/Vencord/themes/wallust.theme.css' }
+wlogout = { src = 'waybar-colors.css', dst = '~/.config/wlogout/colors.css' }
