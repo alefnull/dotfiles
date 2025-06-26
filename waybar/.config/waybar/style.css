@@ -302,14 +302,6 @@ label:focus {
     color: #f53c3c;
 }
 
-#network {
-    color: #b48ead;
-}
-
-#network.disconnected {
-    color: #f53c3c;
-}
-
 #custom-media {
     background-color: transparent;
     color: #2a5c45;

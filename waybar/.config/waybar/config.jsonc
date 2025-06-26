@@ -32,17 +32,18 @@
     ],
     "modules-right": [
         "tray",
-	"power-profiles-daemon",
+	"network",
+	//"power-profiles-daemon",
         //"custom/storage",
         //"memory",
         //"cpu",
         //"pulseaudio",
         //"custom/screenshot_t",
-        "backlight",
-        "battery",
-        //"custom/weather",
         "wireplumber",
+        "backlight",
+        //"custom/weather",
         "clock#date",
+        "battery",
         "custom/power"
     ],
 
@@ -130,7 +131,7 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
+        "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-icons": [
             "",
@@ -141,7 +142,7 @@
         ]
     },
     "network": {
-        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-wifi": " ",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format": "",
@@ -329,7 +330,7 @@
             "7": "七",
             "8": "八",
             "9": "九",
-            "10": "十",
+            "10": "十"
         },
 	"persistent-workspaces": {
             "1": [],
@@ -339,14 +340,16 @@
         "on-scroll-up": "hyprctl dispatch workspace e-1 1>/dev/null",
         "on-scroll-down": "hyprctl dispatch workspace e+1 1>/dev/null",
         "sort-by-number": true,
-        "active-only": false,
+        "active-only": false
     },
 
     "hyprland/window": {
         "max-length": 100,
         "separate-outputs": true,
+	"icon": false,
+	"icon-size": 16,
 	"rewrite": {
-	    "(.*) - fish": "> [ $1 ]",
+	    /*"(.*) - fish": "> [ $1 ]",*/
 	    "": "nihil"
 	}
     },

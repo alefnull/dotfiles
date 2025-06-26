@@ -3,17 +3,19 @@
 * {
     font-family: "JetBrainsMono Nerd Font", "Hack", monospace;
     font-size: 16px;
+    border: none;
 }
 
 window {
     border-radius: 0px;
-    border: 1px solid @foreground;
+    border: 2px solid @foreground
 }
 
 #input {
     margin: 5px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid @foreground;
+    background-color: @background;
     color: @foreground;
 }
 
@@ -22,7 +24,7 @@ window {
 }
 
 #outer-box {
-    margin: 3px;
+    margin: 2px;
     padding: 10px;
     background-color: @background;
 }
