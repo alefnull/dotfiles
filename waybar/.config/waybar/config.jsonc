@@ -219,7 +219,7 @@
             "spotify": "",
             "default": "🎜"
         },
-        "escape": true,
+        "escape": true
         //"exec": "~/.config/waybar/mediaplayer.py" // Script in resources folder
         // "exec": "~/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
@@ -242,7 +242,7 @@
         "tooltip-format": "<big>{:%B %Y}</big>\n\n<tt><small>{calendar}</small></tt>",
 	"calendar": {
 	    "mode": "year",
-	    "mode-mon-col": 3,
+	    "mode-mon-col": 3
 	}
     },
 
@@ -252,7 +252,7 @@
       "exec": {
         "pre": "if unit_status=\"$(systemctl --user is-active gammastep)\"; then\nstatus=\"$unit_status ($(journalctl --user -u gammastep.service -g 'Period: ' | tail -1 | cut -d ':' -f6 | xargs))\"\nelse\nstatus=\"$unit_status\"\nfi",
         "alt": "${status:-inactive}",
-        "tooltip": "Gammastep is $status",
+        "tooltip": "Gammastep is $status"
       },
       "format": "{icon}",
       "format-icons": {
@@ -266,9 +266,9 @@
         "active (Day)": " ",
         "active (Daytime)": " ",
         "active (Transition (Day)": " ",
-        "active (Transition (Daytime)": " ",
+        "active (Transition (Daytime)": " "
       },
-      "on-click": "systemctl --user is-active gammastep && systemctl --user stop gammastep || systemctl --user start gammastep",
+      "on-click": "systemctl --user is-active gammastep && systemctl --user stop gammastep || systemctl --user start gammastep"
     },
 
     "cpu": {
@@ -397,7 +397,7 @@
             "portable": " ",
             "car": " ",
             "default": [" ", " ", " "]
-        },
+        }
     },
 
     "tray": {
