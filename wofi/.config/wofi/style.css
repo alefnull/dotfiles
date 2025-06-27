@@ -4,16 +4,17 @@
     font-family: "JetBrainsMono Nerd Font", "Hack", monospace;
     font-size: 16px;
     border: none;
+    border-radius: 0px;
 }
 
 window {
     border-radius: 0px;
-    border: 2px solid @foreground
+    border: 1px solid @foreground
 }
 
 #input {
     margin: 5px;
-    border-radius: 8px;
+    border-radius: 0px;
     border: 1px solid @foreground;
     background-color: @background;
     color: @foreground;
