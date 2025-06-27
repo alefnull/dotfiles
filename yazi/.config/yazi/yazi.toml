@@ -1,0 +1,12 @@
+[mgr]
+show_hidden = true
+ratio = [2, 4, 3]
+linemode = "permissions"
+scrolloff = 5
+
+[preview]
+tab_size = 2
+image_filter = "nearest"
+
+[tasks]
+image_bound = [0, 0]
