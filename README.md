@@ -8,4 +8,4 @@ that said, if (by some strange, masochistic urge) you happen to find any use for
 
 ### usage
 
-`GNU Stow` is now required. just clone the repo somewhere in your home directory (like `~/dotfiles`), cd into it, and run `stow *`. it should automatically link all files to their correct locations in `~/.config`
+`GNU Stow` is now required. just clone the repo somewhere in your home directory (like `~/dotfiles`), cd into it, and run `stow {package}`. it should automatically link all files for that package to their correct locations in `~/.config`
