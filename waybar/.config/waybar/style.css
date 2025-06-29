@@ -4,31 +4,23 @@
     font-family: "JetBrainsMono Nerd Font", "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;  /* Slightly smaller font size */
     font-weight: 900;
-    margin: 0;
-    padding: 0;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-}
-
-/* Reset all styles */
-* {
     border: none;
     border-radius: 0px;
     min-height: 0;
     margin: 0;
     box-shadow: 0 0 0 0;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 /* The whole bar */
 #waybar {
-    /*background-color: #0b0b0f;*/
     background-color: transparent;
-    /*color: #dadada;*/
     color: @foreground;
     transition-property: background-color;
     transition-duration: 0.5s;
     border-radius: 0px;
-    /*border: 2px solid @color15;*/
 }
 
 window#waybar.hidden {
@@ -43,11 +35,9 @@ window#waybar.hidden {
     background-color: transparent;
     transition: all 0.3s ease-in-out;
     font-size: 15px;  /* Slightly smaller font size */
-    /*border: 2px solid @color15;*/
 }
 
 #workspaces button.active {
-    /*background: #1D1F3F;*/
     color: @color0;
     background: @color15;
     margin: 0;
@@ -55,14 +45,12 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-    /*background: #333333;*/
     background: @color8;
     color: @color15;
     margin: 0;
 }
 
 #workspaces button.urgent {
-    /*background-color: #eb4d4b;*/
     background-color: @color3;
     margin: 0;
 }
@@ -86,22 +74,12 @@ window#waybar.hidden {
 }
 
 #battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
 #backlight,
 #network,
-#pulseaudio,
 #wireplumber,
 #custom-media,
-#mode,
-#idle_inhibitor,
-#mpd,
 #bluetooth,
-#custom-hyprPicker,
 #custom-power-menu,
-#custom-spotify,
 #custom-weather,
 #custom-weather.severe,
 #custom-weather.sunnyDay,
@@ -121,23 +99,10 @@ window#waybar.hidden {
 }
 
 #clock {
-    /*background-color: #1D1F3F;*/
     background-color: transparent;
     color: @color15;
     padding: 0 4px;  /* Adjusted padding */
     margin: 1px;
-}
-
-#custom-screenshot_t {
-    background-color: transparent;
-    border-radius: 0px;
-    padding: 0 8px;
-}
-
-#custom-spotify {
-    background-color: transparent;
-    border-radius: 0px;
-    padding: 0 8px;
 }
 
 #tray {
@@ -146,42 +111,10 @@ window#waybar.hidden {
     padding: 0px 8px;  /* Adjusted padding */
 }
 
-#cpu {
-    color: #fb958b;
-    background-color: transparent;
-    padding: 0 8px;
-}
-
-#memory {
-    color: #ebcb8b;
-    background-color: transparent;
-    padding: 0 8px;
-}
-
 #custom-power {
     background-color: transparent;
     border-radius: 0px;
     padding: 0 2px;
-}
-
-#power-profiles-daemon {
-    background-color: transparent;
-    color: @foreground;
-    border-radius: 0px;
-    padding: 0 4px;
-}
-
-#custom-storage {
-    background-color: transparent;
-    border-radius: 0px;
-    padding: 0 8px;
-}
-
-#custom-launcher {
-    background-color: transparent;
-    color: #6a92d7;
-    border-radius: 0px;
-    padding: 0 8px;  /* Adjusted padding */
 }
 
 #custom-weather.severe {
@@ -252,24 +185,6 @@ window#waybar.hidden {
     margin-right: 0;
 }
 
-#pulseaudio {
-    color: #7d9bba;
-}
-
-#clock {
-    color: @color15;
-}
-
-#battery {
-    color: @color15;
-}
-
-#battery.charging,
-#battery.full,
-#battery.plugged {
-    color: @color15;
-}
-
 @keyframes blink {
     to {
         background-color: rgba(30, 34, 42, 0.5);
@@ -286,34 +201,12 @@ window#waybar.hidden {
     animation-direction: alternate;
 }
 
-label:focus {
-    background-color: #000000;
-}
-
-#disk {
-    background-color: transparent;
-}
-
 #bluetooth {
-    color: #707d9d;
+    color: @color15;
 }
 
 #bluetooth.disconnected {
-    color: #f53c3c;
-}
-
-#custom-media {
-    background-color: transparent;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: transparent;
-}
-
-#custom-media.custom-vlc {
-    background-color: transparent;
+    color: @color1;
 }
 
 #temperature {
@@ -331,37 +224,4 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: transparent;
-}
-
-#idle_inhibitor {
-    background-color: transparent;
-}
-
-#idle_inhibitor.activated {
-    background-color: transparent;
-    color: #2d3436;
-}
-
-#language {
-    background: transparent;
-    color: #740864;
-    padding: 0 0px;
-    margin: 0 3px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: transparent;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 0px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
 }
