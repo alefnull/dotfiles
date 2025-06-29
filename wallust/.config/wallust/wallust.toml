@@ -12,3 +12,4 @@ vscode = { src = 'vscode.json', dst = '~/.cache/wallust/colors.json' }
 vscode2 = { src = 'vscode', dst = '~/.cache/wallust/colors' }
 neopywal = { src = 'neopywal-colors.vim', dst = '~/.cache/wallust/neopywal-colors.vim' }
 wlogout = { src = 'waybar-colors.css', dst = '~/.config/wlogout/colors.css' }
+vencord = { src = 'colors-discord.css', dst = '~/.config/Vencord/themes/wallust.theme.css' }
