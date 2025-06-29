@@ -2,42 +2,34 @@
     // -------------------------------------------------------------------------
     // Global configuration
     // -------------------------------------------------------------------------
-
     "layer": "top",
-
     "position": "top",
-
     "height": 32,
-
     "margin-top": 2,
     "margin-left": 2,
     "margin-bottom": 0,
     "margin-right": 2,
-
     "spacing": 5, // Gaps between modules
-
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock#date",
     ],
     "modules-right": [
         "tray",
-	"network",
+        "network",
         "wireplumber",
         "backlight",
         //"custom/weather",
-        "clock#date",
+        "custom/weather",
         "battery",
         "custom/power"
     ],
-
-
     // -------------------------------------------------------------------------
     // Modules
     // -------------------------------------------------------------------------
-
     "temperature": {
         // "thermal-zone": 1,
         "interval": 4,
@@ -46,12 +38,15 @@
         // "format-critical": " {temperatureC}°C",
         "format-critical": "  {temperatureC}°C",
         "format": "{icon}  {temperatureC}°C",
-        "format-icons": ["", "", ""],
+        "format-icons": [
+            "",
+            "",
+            ""
+        ],
         "max-length": 7,
         "min-length": 7,
         "on-click": "xsensors"
     },
-
     "battery": {
         "interval": 2,
         "states": {
@@ -70,7 +65,6 @@
             ""
         ]
     },
-
     "network": {
         "format-wifi": " ",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
@@ -84,56 +78,53 @@
         "tooltip-format-wifi": " {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
         "interval": 10
     },
-
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
         "format-alt": "{percent}% {icon}",
         "format-alt-click": "click-right",
         //"format-icons": ["", ""],
-        "format-icons": ["", ""],
+        "format-icons": [
+            "",
+            ""
+        ],
         "on-scroll-down": "brightnessctl s 5%-",
         "on-scroll-up": "brightnessctl s +5%"
     },
-
     "custom/weather": {
         "format": "{}",
         "format-alt": "{alt}: {}",
         "format-alt-click": "click-right",
         "interval": 3600,
-        "exec": "curl -s 'https://wttr.in/?format=1'",
+        "exec": "curl -s 'https://wttr.in/?format=1' | tr -s ' '",
         //"return-type": "json",
         //"exec": "~/.config/waybar/modules/weather.sh",
         "exec-if": "ping wttr.in -c1"
     },
-
     "custom/pacman": {
         "format": "<big>􏆲</big>  {}",
-        "interval": 3600,                     // every hour
-        "exec": "checkupdates | wc -l",       // # of updates
-        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "interval": 3600, // every hour
+        "exec": "checkupdates | wc -l", // # of updates
+        "exec-if": "exit 0", // always run; consider advanced run conditions
         "on-click": "alacritty -e 'paru'; pkill -SIGRTMIN+8 waybar", // update system
         "signal": 8,
         "max-length": 5,
         "min-length": 3
     },
-
     "custom/power": {
         "format": " 󰐥 ",
         "tooltip": false,
         "on-click": "wlogout"
     },
-
     "clock#date": {
         /*"format": "󰥔  {:%I:%M %p  /    %A, %b %e}",*/
         "format": "{:%I:%M %p / %A, %b %e}",
         "tooltip-format": "<big>{:%B %Y}</big>\n\n<tt><small>{calendar}</small></tt>",
-	"calendar": {
-	    "mode": "year",
-	    "mode-mon-col": 3
-	}
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3
+        }
     },
-
     "hyprland/workspaces": {
         "all-outputs": true,
         "format": "{name}",
@@ -149,26 +140,24 @@
             "9": "九",
             "10": "十"
         },
-	"persistent-workspaces": {
+        "persistent-workspaces": {
             "1": [],
-	    "2": [],
-	    "3": []
-	},
+            "2": [],
+            "3": []
+        },
         "sort-by-number": true,
         "active-only": false
     },
-
     "hyprland/window": {
-        "max-length": 100,
+        "max-length": 80,
         "separate-outputs": true,
-	"icon": false,
-	"icon-size": 16,
-	"rewrite": {
-	    /*"(.*) - fish": "> [ $1 ]",*/
-	    "": "nihil"
-	}
+        "icon": false,
+        "icon-size": 16,
+        "rewrite": {
+            /*"(.*) - fish": "> [ $1 ]",*/
+            "": "nihil"
+        }
     },
-
     "wireplumber": {
         "on-click": "pavucontrol",
         //"on-click-right": "amixer sset Master toggle 1>/dev/null",
@@ -183,10 +172,13 @@
             "phone": " ",
             "portable": " ",
             "car": " ",
-            "default": [" ", " ", " "]
+            "default": [
+                " ",
+                " ",
+                " "
+            ]
         }
     },
-
     "tray": {
         "icon-size": 24,
         "spacing": 5

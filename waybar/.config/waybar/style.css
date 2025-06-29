@@ -2,8 +2,8 @@
 
 * {
     font-family: "JetBrainsMono Nerd Font", "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 16px;
+    font-weight: 600;
     border: none;
     border-radius: 0px;
     min-height: 0;
@@ -36,7 +36,6 @@ window#waybar.hidden {
     color: @color15;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
-    font-size: 15px;
     /* Slightly smaller font size */
 }
 
@@ -68,7 +67,6 @@ window#waybar.hidden {
 
 #window {
     background-color: transparent;
-    font-size: 15px;
     /* Slightly smaller font size */
     font-weight: 600;
     color: @color15;
