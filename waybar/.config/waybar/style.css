@@ -2,7 +2,7 @@
 
 * {
     font-family: "JetBrainsMono Nerd Font", "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;  /* Slightly smaller font size */
+    font-size: 15px;
     font-weight: 900;
     border: none;
     border-radius: 0px;
@@ -24,17 +24,20 @@
 }
 
 window#waybar.hidden {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 #workspaces button {
-    padding: 0px 8px;  /* Adjusted padding to reduce height */
-    margin: 0px;    /* Reduced margin slightly */
+    padding: 0px 8px;
+    /* Adjusted padding to reduce height */
+    margin: 0px;
+    /* Reduced margin slightly */
     border-radius: 0px;
     color: @color15;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
-    font-size: 15px;  /* Slightly smaller font size */
+    font-size: 15px;
+    /* Slightly smaller font size */
 }
 
 #workspaces button.active {
@@ -58,17 +61,20 @@ window#waybar.hidden {
 #workspaces {
     background-color: transparent;
     border-radius: 0px;
-    padding: 2px;  /* Adjusted padding to reduce height */
+    padding: 2px;
+    /* Adjusted padding to reduce height */
     margin: 0px;
 }
 
 #window {
     background-color: transparent;
-    font-size: 15px;   /* Slightly smaller font size */
+    font-size: 15px;
+    /* Slightly smaller font size */
     font-weight: 600;
     color: @color15;
     border-radius: 0px;
-    padding: 0px 8px;  /* Reduced padding */
+    padding: 0px 8px;
+    /* Reduced padding */
     margin: 0px;
     opacity: 1;
 }
@@ -94,21 +100,24 @@ window#waybar.hidden {
     background-color: transparent;
     color: @color15;
     border-radius: 0px;
-    padding: 0px 2px;  /* Adjusted padding */
+    padding: 0px 2px;
+    /* Adjusted padding */
     margin: 1px;
 }
 
 #clock {
     background-color: transparent;
     color: @color15;
-    padding: 0 4px;  /* Adjusted padding */
+    padding: 0 4px;
+    /* Adjusted padding */
     margin: 1px;
 }
 
 #tray {
     background-color: transparent;
     border-radius: 0px;
-    padding: 0px 8px;  /* Adjusted padding */
+    padding: 0px 8px;
+    /* Adjusted padding */
 }
 
 #custom-power {
@@ -176,12 +185,12 @@ window#waybar.hidden {
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
@@ -217,11 +226,11 @@ window#waybar.hidden {
     background-color: transparent;
 }
 
-#tray > .passive {
+#tray>.passive {
     -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
     -gtk-icon-effect: highlight;
     background-color: transparent;
 }
