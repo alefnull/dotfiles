@@ -13,3 +13,5 @@ vscode2 = { src = 'vscode', dst = '~/.cache/wallust/colors' }
 neopywal = { src = 'neopywal-colors.vim', dst = '~/.cache/wallust/neopywal-colors.vim' }
 wlogout = { src = 'waybar-colors.css', dst = '~/.config/wlogout/colors.css' }
 vencord = { src = 'colors-discord.css', dst = '~/.config/Vencord/themes/wallust.theme.css' }
+spicetify = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/text/color.ini' }
+spicetify2 = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/nightlight/color.ini' }
