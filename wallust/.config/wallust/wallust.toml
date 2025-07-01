@@ -10,7 +10,7 @@ hyprland = { src = "hyprland.conf", dst = "~/.config/hypr/config/wallust-colors.
 wofi = { src = "waybar-colors.css", dst = "~/.config/wofi/colors.css" }
 vscode = { src = 'vscode.json', dst = '~/.cache/wallust/colors.json' }
 vscode2 = { src = 'vscode', dst = '~/.cache/wallust/colors' }
-neopywal = { src = 'neopywal-colors.vim', dst = '~/.cache/wallust/neopywal-colors.vim' }
+neopywal = { src = 'colors_neopywal.vim', dst = '~/.cache/wallust/colors_neopywal.vim' }
 wlogout = { src = 'waybar-colors.css', dst = '~/.config/wlogout/colors.css' }
 vencord = { src = 'colors-discord.css', dst = '~/.config/Vencord/themes/wallust.theme.css' }
 spicetify = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/text/color.ini' }
