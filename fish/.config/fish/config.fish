@@ -1,8 +1,7 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
+set -gx EDITOR nvim
+set -gx GIT_EDITOR nvim
 
-set -Ux EDITOR nvim
+set -gx DOTFILES "$HOME/dotfiles"
 
 alias cls='clear && fastfetch'
 alias ls='eza --color=auto --git -lh'
