@@ -22,7 +22,6 @@
         "network",
         "wireplumber",
         "backlight",
-        //"custom/weather",
         "custom/weather",
         "battery",
         "custom/power"
@@ -30,23 +29,6 @@
     // -------------------------------------------------------------------------
     // Modules
     // -------------------------------------------------------------------------
-    "temperature": {
-        // "thermal-zone": 1,
-        "interval": 4,
-        //"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": " {temperatureC}°C",
-        "format-critical": "  {temperatureC}°C",
-        "format": "{icon}  {temperatureC}°C",
-        "format-icons": [
-            "",
-            "",
-            ""
-        ],
-        "max-length": 7,
-        "min-length": 7,
-        "on-click": "xsensors"
-    },
     "battery": {
         "interval": 2,
         "states": {
@@ -97,19 +79,7 @@
         "format-alt-click": "click-right",
         "interval": 3600,
         "exec": "curl -s 'https://wttr.in/?format=1' | tr -s ' '",
-        //"return-type": "json",
-        //"exec": "~/.config/waybar/modules/weather.sh",
         "exec-if": "ping wttr.in -c1"
-    },
-    "custom/pacman": {
-        "format": "<big>􏆲</big>  {}",
-        "interval": 3600, // every hour
-        "exec": "checkupdates | wc -l", // # of updates
-        "exec-if": "exit 0", // always run; consider advanced run conditions
-        "on-click": "alacritty -e 'paru'; pkill -SIGRTMIN+8 waybar", // update system
-        "signal": 8,
-        "max-length": 5,
-        "min-length": 3
     },
     "custom/power": {
         "format": " 󰐥 ",
@@ -128,18 +98,6 @@
     "hyprland/workspaces": {
         "all-outputs": true,
         "format": "{name}",
-        "format-icons": {
-            "1": "一",
-            "2": "二",
-            "3": "三",
-            "4": "四",
-            "5": "五",
-            "6": "六",
-            "7": "七",
-            "8": "八",
-            "9": "九",
-            "10": "十"
-        },
         "persistent-workspaces": {
             "1": [],
             "2": [],
@@ -154,13 +112,11 @@
         "icon": false,
         "icon-size": 16,
         "rewrite": {
-            /*"(.*) - fish": "> [ $1 ]",*/
             "": "nihil"
         }
     },
     "wireplumber": {
         "on-click": "pavucontrol",
-        //"on-click-right": "amixer sset Master toggle 1>/dev/null",
         "format": "{icon} {volume}%",
         "format-muted": " ",
         "format-source": "",
