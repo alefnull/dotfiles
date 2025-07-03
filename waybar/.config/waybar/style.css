@@ -1,9 +1,9 @@
 @import url("colors.css");
 
 * {
-    font-family: "JetBrainsMono Nerd Font", "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "CaskaydiaMono Nerd Font", "JetBrainsMono Nerd Font", "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     border: none;
     border-radius: 0px;
     min-height: 0;

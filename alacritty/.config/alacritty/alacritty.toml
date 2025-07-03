@@ -1,0 +1,17 @@
+[general]
+import = ["colors.toml",]
+live_config_reload = true
+
+[window]
+padding = { x = 10, y = 10 }
+decorations = "None"
+blur = true
+opacity = 0.97
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+size = 14
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_timeout = 10

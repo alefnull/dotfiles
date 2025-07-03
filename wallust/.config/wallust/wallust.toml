@@ -4,7 +4,7 @@ palette = "ansidark16"
 check_contrast = true
 
 [templates]
-kitty = { src = "kitty.conf", dst = "~/.config/kitty/colors.conf" }
+alacritty = { src = "alacritty-colors.toml", dst = "~/.config/alacritty/colors.toml" }
 waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }
 hyprland = { src = "hyprland.conf", dst = "~/.config/hypr/config/wallust-colors.conf" }
 wofi = { src = "waybar-colors.css", dst = "~/.config/wofi/colors.css" }

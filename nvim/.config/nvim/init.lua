@@ -16,10 +16,12 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.incsearch = true
-vim.opt.hlsearch = true
+
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
+vim.o.incsearch = true
+vim.o.hlsearch = true
+vim.o.undofile = true
 
 require("lazy").setup({
   spec = {

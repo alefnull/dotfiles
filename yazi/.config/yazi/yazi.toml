@@ -1,6 +1,6 @@
 [mgr]
 show_hidden = true
-ratio = [2, 4, 3]
+ratio = [1, 3, 5]
 linemode = "permissions"
 scrolloff = 5
 
