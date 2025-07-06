@@ -38,7 +38,7 @@ with daemon.DaemonContext(
     # inotify iterator runs out immediately
     while True:
         for event in inotify.read():
-            os.system('qutebrowser :config-source &')
+            os.system('qutebrowser :config-source')
 
     # kill after qutebrowser exits
     # not reached on SIGKILL

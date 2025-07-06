@@ -1,5 +1,5 @@
-import json
 import os
+import qute_colors
 
 qutewal_dynamic_loading = True
 
@@ -8,7 +8,6 @@ daemon_relative = '.config/qutebrowser/qutewald.py'
 colors_relative = '.config/qutebrowser/qute_colors.py'
 daemon_absolute = os.path.join(home, daemon_relative)
 colors_absolute = os.path.join(home, colors_relative)
-import qute_colors
 
 background = qute_colors.background
 foreground = qute_colors.foreground
