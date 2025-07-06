@@ -17,3 +17,8 @@ alias lf='y'
 alias zj='zellij --layout compact'
 
 zellij_update_tabname
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/alef/.lmstudio/bin
+# End of LM Studio CLI section
+
