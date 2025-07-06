@@ -56,12 +56,6 @@ require('mini.statusline').setup()
 require('mini.notify').setup()
 require('mini.indentscope').setup()
 require('mini.cursorword').setup()
-require('mini.hipatterns').setup({
-  fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
-  hack  = { pattern = '%f[%w]()HACK()%f[%W]',  group = 'MiniHipatternsHack'  },
-  todo  = { pattern = '%f[%w]()TODO()%f[%W]',  group = 'MiniHipatternsTodo'  },
-  note  = { pattern = '%f[%w]()NOTE()%f[%W]',  group = 'MiniHipatternsNote'  },
-})
 require('mini.completion').setup()
 require('mini.comment').setup()
 require('mini.pairs').setup()
