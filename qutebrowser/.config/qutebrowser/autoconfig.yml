@@ -6,5 +6,58 @@
 
 config_version: 2
 settings:
+  bindings.commands:
+    global:
+      normal:
+        <Ctrl+s>: config-cycle statusbar.show always never
+        <Ctrl+t>: config-cycle tabs.show always never
   colors.tabs.bar.bg:
     global: '#161616'
+  content.javascript.clipboard:
+    https://aur.archlinux.org: access-paste
+  content.pdfjs:
+    global: true
+  downloads.position:
+    global: bottom
+  fonts.default_size:
+    global: 14pt
+  hints.leave_on_load:
+    global: true
+  hints.radius:
+    global: 0
+  hints.uppercase:
+    global: false
+  keyhint.radius:
+    global: 0
+  prompt.radius:
+    global: 0
+  qt.force_platform:
+    global: null
+  qt.workarounds.disable_hangouts_extension:
+    global: false
+  scrolling.smooth:
+    global: false
+  statusbar.padding:
+    global:
+      bottom: 5
+      left: 0
+      right: 0
+      top: 5
+  statusbar.show:
+    global: always
+  tabs.mousewheel_switching:
+    global: false
+  tabs.new_position.unrelated:
+    global: next
+  tabs.padding:
+    global:
+      bottom: 2
+      left: 10
+      right: 10
+      top: 2
+  tabs.show:
+    global: never
+  tabs.title.alignment:
+    global: left
+  window.transparent:
+    global: true

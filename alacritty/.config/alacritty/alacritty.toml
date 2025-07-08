@@ -2,6 +2,10 @@
 import = ["colors.toml",]
 live_config_reload = true
 
+[terminal]
+shell = "/bin/fish"
+osc52 = "CopyPaste"
+
 [window]
 padding = { x = 10, y = 10 }
 decorations = "None"

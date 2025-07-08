@@ -51,9 +51,10 @@ require("lazy").setup({
 -- ------------------------
 -- | plugin setup here |
 -- ------------------------
+vim.cmd.colorscheme("neopywal")
+
 require('mini.icons').setup()
 require('mini.statusline').setup()
-require('mini.notify').setup()
 require('mini.indentscope').setup()
 require('mini.cursorword').setup()
 require('mini.completion').setup()
@@ -64,6 +65,4 @@ require('mini.git').setup()
 require('mini.trailspace').setup()
 require('mini.keymap').setup()
 require('mini.surround').setup()
-
-vim.cmd.colorscheme("neopywal")
 
