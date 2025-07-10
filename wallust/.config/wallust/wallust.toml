@@ -12,7 +12,7 @@ vscode = { src = 'vscode.json', dst = '~/.cache/wallust/colors.json' }
 vscode2 = { src = 'vscode', dst = '~/.cache/wallust/colors' }
 neopywal = { src = 'colors_neopywal.vim', dst = '~/.cache/wallust/colors_neopywal.vim' }
 wlogout = { src = 'waybar-colors.css', dst = '~/.config/wlogout/colors.css' }
-vencord = { src = 'colors-discord.css', dst = '~/.config/Vencord/themes/wallust.theme.css' }
+vencord = { src = 'discord-colors.css', dst = '~/.cache/wallust/discord-colors.css' }
 spicetify = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/text/color.ini' }
 spicetify2 = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/nightlight/color.ini' }
 qutebrowser = { src = 'qute_colors.py', dst = '~/.config/qutebrowser/qute_colors.py' }

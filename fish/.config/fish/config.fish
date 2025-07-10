@@ -8,6 +8,7 @@ set -gx GIT_EDITOR nvim
 
 set -gx DOTFILES "$HOME/dotfiles"
 
+alias clr='clear'
 alias cls='clear && fastfetch'
 alias ls='eza --color=auto --git -lh'
 alias ll='eza --color=auto --git -lah'

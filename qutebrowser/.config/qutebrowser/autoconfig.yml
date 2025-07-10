@@ -15,6 +15,12 @@ settings:
     global: '#161616'
   content.javascript.clipboard:
     https://aur.archlinux.org: access-paste
+    https://cmp.saghen.dev: access-paste
+    https://github.com: access-paste
+    https://martinlwx.github.io: access-paste
+    https://vencord.dev: access-paste
+  content.notifications.enabled:
+    https://community.vcvrack.com: true
   content.pdfjs:
     global: true
   downloads.position:
@@ -29,6 +35,8 @@ settings:
     global: false
   keyhint.radius:
     global: 0
+  new_instance_open_target:
+    global: tab-silent
   prompt.radius:
     global: 0
   qt.force_platform:
