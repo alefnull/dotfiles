@@ -1,2 +1,3 @@
 fish/.config/fish/fish_variables
 qutebrowser/.config/qutebrowser/__pycache__
+qutebrowser/.config/qutebrowser/qsettings/QtProject.conf
