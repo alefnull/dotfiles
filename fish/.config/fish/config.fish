@@ -15,6 +15,8 @@ alias ll='eza --color=auto --git -lah'
 alias cat='bat'
 alias lg='lazygit'
 alias lf='y'
+alias vi='nvim'
+alias vim='nvim'
 alias zj='zellij --layout compact'
 
 zellij_update_tabname

@@ -1,8 +1,8 @@
 allow_images=true
 hide_scroll=true
 no_actions=false
-term=kitty
+term=alacritty
 mode=drun
-lines=9
+lines=10
 prompt=
-width=500
+width=600

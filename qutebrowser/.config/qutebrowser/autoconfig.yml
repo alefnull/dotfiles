@@ -13,9 +13,12 @@ settings:
         <Ctrl+t>: config-cycle tabs.show always never
   colors.tabs.bar.bg:
     global: '#161616'
+  colors.tabs.indicator.system:
+    global: none
   content.javascript.clipboard:
     https://aur.archlinux.org: access-paste
     https://cmp.saghen.dev: access-paste
+    https://ghostty.org: access-paste
     https://github.com: access-paste
     https://martinlwx.github.io: access-paste
     https://vencord.dev: access-paste
@@ -39,6 +42,8 @@ settings:
     global: 0
   new_instance_open_target:
     global: tab-silent
+  new_instance_open_target_window:
+    global: first-opened
   prompt.radius:
     global: 0
   qt.force_platform:
@@ -55,6 +60,8 @@ settings:
       top: 5
   statusbar.show:
     global: always
+  tabs.indicator.width:
+    global: 0
   tabs.mousewheel_switching:
     global: false
   tabs.new_position.unrelated:

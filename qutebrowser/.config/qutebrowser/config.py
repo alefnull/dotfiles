@@ -650,7 +650,7 @@ c.tabs.title.alignment = 'left'
 # web page. * `{protocol}`: Protocol (http/https/...) of the current web
 # page. * `{audio}`: Indicator for audio/mute status.
 # Type: FormatString
-c.tabs.title.format = '{audio}{index}:{current_title}'
+c.tabs.title.format = '{audio}{current_title}'
 
 # Hide the window decoration.  This setting requires a restart on
 # Wayland.

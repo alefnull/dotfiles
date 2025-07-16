@@ -22,7 +22,7 @@
         "network",
         "wireplumber",
         "backlight",
-        "custom/weather",
+        // "custom/weather",
         "battery",
         "custom/power"
     ],
