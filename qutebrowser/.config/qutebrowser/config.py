@@ -318,7 +318,7 @@ c.colors.tabs.odd.fg = foreground
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = gray
+c.colors.tabs.selected.even.bg = red
 
 # Foreground color of selected even tabs.
 # Type: QtColor
@@ -326,7 +326,7 @@ c.colors.tabs.selected.even.fg = foreground
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = gray
+c.colors.tabs.selected.odd.bg = red
 
 # Foreground color of selected odd tabs.
 # Type: QtColor
@@ -555,7 +555,7 @@ c.completion.shrink = True
 # Prompt the user for the download location. If set to false,
 # `downloads.location.directory` will be used.
 # Type: Bool
-c.downloads.location.prompt = False
+c.downloads.location.prompt = True
 
 # What to display in the download filename input.
 # Type: String
@@ -572,7 +572,7 @@ c.downloads.location.suggestion = 'both'
 # `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 # Same as `{column}`, but starting from index 0.
 # Type: ShellCommand
-c.editor.command = ['alacritty', '-e', 'nvim', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = ['ghostty', '-e', 'nvim', '{file}', '-c', 'normal {line}G{column0}l']
 
 # Command (and arguments) to use for selecting a single file in forms.
 # The command should write the selected file path to the specified file

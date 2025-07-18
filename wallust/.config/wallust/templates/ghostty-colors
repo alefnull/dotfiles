@@ -19,5 +19,5 @@ foreground = {{foreground}}
 cursor-color = {{cursor}}
 cursor-text = {{color0}}
 selection-background = {{color1}}
-selection-foreground = {{color2}}
+selection-foreground = {{foreground}}
 
