@@ -3,6 +3,6 @@ hide_scroll=true
 no_actions=false
 term=alacritty
 mode=drun
-lines=10
 prompt=
 width=600
+height=300

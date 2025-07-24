@@ -73,8 +73,8 @@ settings:
       right: 10
       top: 2
   tabs.show:
-    global: always
+    global: multiple
   tabs.title.alignment:
     global: left
   window.transparent:
-    global: true
+    global: false

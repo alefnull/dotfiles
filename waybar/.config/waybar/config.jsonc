@@ -5,11 +5,12 @@
     "layer": "top",
     "position": "top",
     "height": 32,
-    "margin-top": 2,
-    "margin-left": 2,
+    "margin-top": 0,
+    "margin-left": 0,
     "margin-bottom": 0,
-    "margin-right": 2,
+    "margin-right": 0,
     "spacing": 5, // Gaps between modules
+    "on-click-right": "pkill -x wofi >/dev/null 2>&1 || wofi --show drun",
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"

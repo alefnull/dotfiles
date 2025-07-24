@@ -7,6 +7,7 @@ set -gx EDITOR nvim
 set -gx GIT_EDITOR nvim
 
 set -gx DOTFILES "$HOME/dotfiles"
+set -gx RACK_USER_DIR "$HOME/.local/share/Rack2"
 
 alias clr='clear'
 alias cls='clear && fastfetch'

@@ -16,10 +16,11 @@
 
 /* The whole bar */
 #waybar {
-    background-color: transparent;
+    background-color: @background;
     color: @foreground;
     transition-property: background-color;
     transition-duration: 0.5s;
+    border: 1px solid @color15;
     border-radius: 0px;
 }
 
@@ -43,7 +44,7 @@ window#waybar.hidden {
     color: @color0;
     background: @color15;
     margin: 0;
-    /*border: 2px solid @color8;*/
+    /*border: 1px solid @color8;*/
 }
 
 #workspaces button:hover {
@@ -60,7 +61,7 @@ window#waybar.hidden {
 #workspaces {
     background-color: transparent;
     border-radius: 0px;
-    padding: 2px;
+    padding: 0px;
     /* Adjusted padding to reduce height */
     margin: 0px;
 }
@@ -100,7 +101,7 @@ window#waybar.hidden {
     border-radius: 0px;
     padding: 0px 2px;
     /* Adjusted padding */
-    margin: 1px;
+    margin: 0px;
 }
 
 #clock {
@@ -108,7 +109,7 @@ window#waybar.hidden {
     color: @color15;
     padding: 0 4px;
     /* Adjusted padding */
-    margin: 1px;
+    margin: 0px;
 }
 
 #tray {
@@ -156,30 +157,35 @@ window#waybar.hidden {
 }
 
 .modules-left {
-    background-color: @background;
+    /* background-color: @background; */
     color: @color15;
     padding: 0;
     border-radius: 0px;
-    border: 2px solid @color15;
-    margin: 0px 16px 0px 16px;
+    border-top: 1px solid @color15;
+    border-bottom: 1px solid @color15;
+    border-left: 1px solid @color15;
+    /* margin: 0px 16px 0px 16px; */
 }
 
 .modules-center {
-    background-color: @background;
+    /* background-color: @background; */
     color: @color15;
-    padding: 1px;
+    padding: 0px;
     border-radius: 0px;
-    border: 2px solid @color15;
-    margin: 0px 16px 0px 16px;
+    border-top: 1px solid @color15;
+    border-bottom: 1px solid @color15;
+    /* margin: 0px 16px 0px 16px; */
 }
 
 .modules-right {
-    background-color: @background;
+    /* background-color: @background; */
     color: @color15;
-    padding: 1px;
+    padding: 0px;
     border-radius: 0px;
-    border: 2px solid @color15;
-    margin: 0px 16px 0px 16px;
+    border-top: 1px solid @color15;
+    border-bottom: 1px solid @color15;
+    border-right: 1px solid @color15;
+    /* margin: 0px 16px 0px 16px; */
 }
 
 /* If workspaces is the leftmost module, omit left margin */

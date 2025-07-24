@@ -626,7 +626,7 @@ c.statusbar.widgets = ['keypress', 'search_match', 'url', 'scroll', 'history', '
 #   - never: Always hide the tab bar.
 #   - multiple: Hide the tab bar if only one tab is open.
 #   - switching: Show the tab bar when switching tabs.
-c.tabs.show = 'always'
+c.tabs.show = 'multiple'
 
 # Alignment of the text inside of tabs.
 # Type: TextAlignment
