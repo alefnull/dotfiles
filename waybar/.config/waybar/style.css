@@ -104,6 +104,11 @@ window#waybar.hidden {
     margin: 0px;
 }
 
+#power-profiles-daemon {
+    padding: 0px 8px 0px 8px;
+    font-size: 12pt;
+}
+
 #clock {
     background-color: transparent;
     color: @color15;

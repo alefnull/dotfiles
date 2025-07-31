@@ -25,6 +25,7 @@
         "backlight",
         // "custom/weather",
         "battery",
+        "power-profiles-daemon",
         "custom/power"
     ],
     // -------------------------------------------------------------------------
@@ -135,6 +136,17 @@
                 " "
             ]
         }
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
     },
     "tray": {
         "icon-size": 24,

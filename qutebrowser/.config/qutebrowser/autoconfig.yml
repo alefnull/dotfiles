@@ -21,6 +21,7 @@ settings:
     https://ghostty.org: access-paste
     https://github.com: access-paste
     https://martinlwx.github.io: access-paste
+    https://studio.youtube.com: access-paste
     https://vencord.dev: access-paste
   content.notifications.enabled:
     https://community.vcvrack.com: true
@@ -62,6 +63,8 @@ settings:
     global: always
   tabs.indicator.width:
     global: 0
+  tabs.last_close:
+    global: close
   tabs.mousewheel_switching:
     global: false
   tabs.new_position.unrelated:
