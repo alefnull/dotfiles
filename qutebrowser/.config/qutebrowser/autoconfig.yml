@@ -21,6 +21,7 @@ settings:
     https://ghostty.org: access-paste
     https://github.com: access-paste
     https://martinlwx.github.io: access-paste
+    https://pi.ai: access-paste
     https://studio.youtube.com: access-paste
     https://vencord.dev: access-paste
   content.notifications.enabled:
