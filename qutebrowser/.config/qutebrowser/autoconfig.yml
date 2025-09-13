@@ -24,6 +24,8 @@ settings:
     https://pi.ai: access-paste
     https://studio.youtube.com: access-paste
     https://vencord.dev: access-paste
+    https://widgets.streamelements.com: access-paste
+    https://windsurf.com: access-paste
   content.notifications.enabled:
     https://community.vcvrack.com: true
   content.pdfjs:
@@ -77,7 +79,7 @@ settings:
       right: 10
       top: 2
   tabs.show:
-    global: multiple
+    global: always
   tabs.title.alignment:
     global: left
   window.transparent:

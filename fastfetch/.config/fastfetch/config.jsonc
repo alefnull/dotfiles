@@ -10,7 +10,10 @@
       },
       "bar": {
           "width": 10,       // Width of percentage bars
-          "charElapsed": "■", // Character for elapsed portion
+          // "charElapsed": "■", // Character for elapsed portion
+          "char": {
+              "elapsed": "■"
+          },
           "charTotal": "-"   // Character for total portion
       }
   },
@@ -18,8 +21,8 @@
   "logo": {
       "type": "auto",        // Logo type: auto, builtin, small, file, etc.
       "source": "arch2",      // Built-in logo name or file path
-      "width": 65,           // Width in characters (for image logos)
-      "height": 35,          // Height in characters (for image logos)
+      // "width": 65,           // Width in characters (for image logos)
+      // "height": 35,          // Height in characters (for image logos)
       "padding": {
           "top": 0,          // Top padding
           "left": 0,         // Left padding
