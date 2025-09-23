@@ -18,10 +18,12 @@ settings:
   content.javascript.clipboard:
     https://aur.archlinux.org: access-paste
     https://cmp.saghen.dev: access-paste
+    https://docs.fabricmc.net: access-paste
     https://ghostty.org: access-paste
     https://github.com: access-paste
     https://martinlwx.github.io: access-paste
     https://pi.ai: access-paste
+    https://steambrew.app: access-paste
     https://studio.youtube.com: access-paste
     https://vencord.dev: access-paste
     https://widgets.streamelements.com: access-paste
