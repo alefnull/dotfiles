@@ -6,83 +6,10 @@
 
 config_version: 2
 settings:
-  bindings.commands:
-    global:
-      normal:
-        <Ctrl+s>: config-cycle statusbar.show always never
-        <Ctrl+t>: config-cycle tabs.show always never
-  colors.tabs.bar.bg:
-    global: '#161616'
-  colors.tabs.indicator.system:
-    global: none
   content.javascript.clipboard:
-    https://aur.archlinux.org: access-paste
-    https://cmp.saghen.dev: access-paste
-    https://docs.fabricmc.net: access-paste
-    https://ghostty.org: access-paste
+    https://ghostty.zerebos.com: access-paste
     https://github.com: access-paste
-    https://martinlwx.github.io: access-paste
-    https://pi.ai: access-paste
-    https://steambrew.app: access-paste
-    https://studio.youtube.com: access-paste
+    https://rustup.rs: access-paste
     https://vencord.dev: access-paste
-    https://widgets.streamelements.com: access-paste
-    https://windsurf.com: access-paste
   content.notifications.enabled:
-    https://community.vcvrack.com: true
-  content.pdfjs:
-    global: true
-  content.register_protocol_handler:
-    https://mail.google.com?extsrc=mailto&url=%25s: true
-  downloads.position:
-    global: bottom
-  fonts.default_size:
-    global: 14pt
-  hints.leave_on_load:
-    global: true
-  hints.radius:
-    global: 0
-  hints.uppercase:
-    global: false
-  keyhint.radius:
-    global: 0
-  new_instance_open_target:
-    global: tab-silent
-  new_instance_open_target_window:
-    global: first-opened
-  prompt.radius:
-    global: 0
-  qt.force_platform:
-    global: null
-  qt.workarounds.disable_hangouts_extension:
-    global: false
-  scrolling.smooth:
-    global: false
-  statusbar.padding:
-    global:
-      bottom: 5
-      left: 0
-      right: 0
-      top: 5
-  statusbar.show:
-    global: always
-  tabs.indicator.width:
-    global: 0
-  tabs.last_close:
-    global: close
-  tabs.mousewheel_switching:
-    global: false
-  tabs.new_position.unrelated:
-    global: next
-  tabs.padding:
-    global:
-      bottom: 2
-      left: 10
-      right: 10
-      top: 2
-  tabs.show:
-    global: always
-  tabs.title.alignment:
-    global: left
-  window.transparent:
-    global: false
+    https://www.youtube.com: true

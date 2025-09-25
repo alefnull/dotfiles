@@ -118,7 +118,7 @@
         }
     },
     "wireplumber": {
-        "on-click": "pavucontrol",
+        "on-click": "qpwgraph",
         "format": "{icon} {volume}%",
         "format-muted": " ",
         "format-source": "",
