@@ -1,0 +1,509 @@
+17:07:48.328: Platform: Wayland
+17:07:48.328: CPU Name: Intel(R) Core(TM) i9-14900HX
+17:07:48.328: CPU Speed: 1389.926MHz
+17:07:48.328: Physical Cores: 24, Logical Cores: 32
+17:07:48.328: Physical Memory: 64015MB Total, 5664MB Free
+17:07:48.328: Kernel Version: Linux 6.17.3-arch2-1
+17:07:48.329: Distribution: "Arch Linux" Unknown
+17:07:48.329: Desktop Environment: Hyprland (Hyprland)
+17:07:48.329: Session Type: wayland
+17:07:48.332: Current Date/Time: 2025-11-01, 05:07:48 PM
+17:07:48.332: Browser Hardware Acceleration: true
+17:07:48.332: Qt Version: 6.10.0 (runtime), 6.10.0 (compiled)
+17:07:48.332: Portable mode: false
+17:07:48.365: OBS 32.0.1 (linux)
+17:07:48.365: ---------------------------------
+17:07:48.368: ---------------------------------
+17:07:48.368: audio settings reset:
+17:07:48.368: 	samples per sec: 48000
+17:07:48.368: 	speakers:        2
+17:07:48.368: 	max buffering:   960 milliseconds
+17:07:48.368: 	buffering type:  dynamically increasing
+17:07:48.372: ---------------------------------
+17:07:48.372: Initializing OpenGL...
+17:07:48.372: Using EGL/Wayland
+17:07:48.404: Initialized EGL 1.5
+17:07:48.413: Loading up OpenGL on adapter Intel Mesa Intel(R) Graphics (RPL-S)
+17:07:48.413: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.2.5-arch1.2, shading language 4.60
+17:07:48.512: ---------------------------------
+17:07:48.512: video settings reset:
+17:07:48.512: 	base resolution:   2560x1601
+17:07:48.512: 	output resolution: 1724x1080
+17:07:48.512: 	downscale filter:  Bicubic
+17:07:48.512: 	fps:               60/1
+17:07:48.512: 	format:            NV12
+17:07:48.512: 	YUV mode:          Rec. 709/Partial
+17:07:48.512: NV12 texture support enabled
+17:07:48.512: P010 texture support not available
+17:07:48.520: Audio monitoring device:
+17:07:48.520: 	name: Default
+17:07:48.520: 	id: default
+17:07:48.523: ---------------------------------
+17:07:48.526: Failed to load 'en-US' text for module: 'decklink-captions.so'
+17:07:48.529: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+17:07:48.532: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+17:07:48.532: Failed to initialize module 'decklink.so'
+17:07:48.775: [pipewire] Available capture sources:
+17:07:48.775: [pipewire]     - Monitor source
+17:07:48.775: [pipewire]     - Window source
+17:07:48.785: v4l2loopback not installed, virtual camera not registered
+17:07:48.791: [obs-browser]: Version 2.26.2
+17:07:48.791: [obs-browser]: CEF Version 127.0.6533.120 (runtime), 127.0.0-6533-fix-stutter-and-osr-extra-info.3042+g176b09c+chromium-127.0.6533.120 (compiled)
+17:07:48.815: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+17:07:49.063: VAAPI: API version 1.22
+17:07:49.114: FFmpeg VAAPI H264 encoding supported
+17:07:49.114: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+17:07:49.321: FFmpeg VAAPI AV1 encoding not supported
+17:07:49.321: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+17:07:49.520: FFmpeg VAAPI HEVC encoding supported
+17:07:49.956: [obs-nvenc] NVENC version: 13.0 (compiled) / 13.0 (driver), CUDA driver version: 13.0, AV1 supported: true
+17:07:50.375: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+17:07:50.375: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.0 | Qt version (run-time): 6.10.0
+17:07:50.375: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+17:07:50.382: [obs-websocket] [obs_module_load] Module loaded.
+17:07:50.396: [vlc-video]: VLC 3.0.21 Vetinari found, VLC video source enabled
+17:07:50.396: ---------------------------------
+17:07:50.396:   Loaded Modules:
+17:07:50.396:     vlc-video.so
+17:07:50.396:     text-freetype2.so
+17:07:50.396:     rtmp-services.so
+17:07:50.396:     obs-x264.so
+17:07:50.396:     obs-websocket.so
+17:07:50.396:     obs-webrtc.so
+17:07:50.396:     obs-vst.so
+17:07:50.396:     obs-transitions.so
+17:07:50.396:     obs-qsv11.so
+17:07:50.396:     obs-outputs.so
+17:07:50.396:     obs-nvenc.so
+17:07:50.396:     obs-libfdk.so
+17:07:50.396:     obs-filters.so
+17:07:50.396:     obs-ffmpeg.so
+17:07:50.396:     obs-browser.so
+17:07:50.396:     linux-v4l2.so
+17:07:50.396:     linux-pulseaudio.so
+17:07:50.396:     linux-pipewire.so
+17:07:50.396:     linux-jack.so
+17:07:50.396:     linux-capture.so
+17:07:50.396:     linux-alsa.so
+17:07:50.396:     image-source.so
+17:07:50.397:     frontend-tools.so
+17:07:50.397:     decklink-output-ui.so
+17:07:50.397:     decklink-captions.so
+17:07:50.397: ---------------------------------
+17:07:50.397: ---------------------------------
+17:07:50.397: Available Encoders:
+17:07:50.397:   Video Encoders:
+17:07:50.397: 	- ffmpeg_svt_av1 (SVT-AV1)
+17:07:50.397: 	- ffmpeg_aom_av1 (AOM AV1)
+17:07:50.397: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+17:07:50.397: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+17:07:50.397: 	- obs_nvenc_h264_tex (NVIDIA NVENC H.264)
+17:07:50.397: 	- obs_nvenc_hevc_tex (NVIDIA NVENC HEVC)
+17:07:50.397: 	- obs_nvenc_av1_tex (NVIDIA NVENC AV1)
+17:07:50.397: 	- obs_x264 (x264)
+17:07:50.397:   Audio Encoders:
+17:07:50.397: 	- ffmpeg_aac (FFmpeg AAC)
+17:07:50.397: 	- ffmpeg_opus (FFmpeg Opus)
+17:07:50.397: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+17:07:50.397: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+17:07:50.397: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+17:07:50.397: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+17:07:50.397: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+17:07:50.397: 	- libfdk_aac (libfdk AAC)
+17:07:50.397: ==== Startup complete ===============================================
+17:07:50.482: All scene data cleared
+17:07:50.482: ------------------------------------------------
+17:07:50.492: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+17:07:50.492: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+17:07:50.492: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor' (default)
+17:07:50.492: [Loaded global audio device]: 'Desktop Audio'
+17:07:50.492: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+17:07:50.493: pulse-input: An error occurred while getting the source info!
+17:07:50.493: [Loaded global audio device]: 'Mic/Aux'
+17:07:50.494: PipeWire initialized
+17:07:50.501: Device for 'Audio Output Capture' source is also used for audio monitoring:
+17:07:50.501: Deduplication logic is being applied to all monitored sources.
+17:07:50.501: 
+17:07:50.506: pulse-am: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+17:07:50.506: pulse-am: Audio format: s32le, 48000 Hz, 2 channels
+17:07:50.507: pulse-am: Started Monitoring in 'alsa_output.pci-0000_00_1f.3.analog-stereo'
+17:07:50.508: PipeWire initialized
+17:07:50.510: Switched to scene 'Scene'
+17:07:50.510: ------------------------------------------------
+17:07:50.510: Loaded scenes:
+17:07:50.510: - scene 'Scene':
+17:07:50.510:     - source: 'App/Game Capture' (pipewire-screen-capture-source)
+17:07:50.510:     - source: 'Full Screen Share (Laptop)' (pipewire-screen-capture-source)
+17:07:50.510:     - source: 'Alerts' (browser_source)
+17:07:50.510:         - monitoring: monitor and output
+17:07:50.510:     - source: 'Chat' (browser_source)
+17:07:50.510: ------------------------------------------------
+17:07:50.590: [pipewire] Screencast session created
+17:07:50.590: [pipewire] Screencast session created
+17:07:50.616: [rtmp-services plugin] Successfully updated file 'services.json' (version 278)
+17:07:50.616: [rtmp-services plugin] Successfully updated package (version 278)
+17:07:51.078: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+17:07:51.078: 
+17:07:51.181: [obs-browser: 'Chat'] Error: [Report Only] Refused to load the script 'https://streamelements.com/z/i.js' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+17:07:51.181:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:0)
+17:07:51.232: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-fO0h6nSVSg6QGOtEkqzxNcpe9iJLgXxfCBJTJ4butWU='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.232:  (https://streamelements.com/z/i.js:1)
+17:07:51.236: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-QEZGIGmI8Hcgw4BBt1SBPveczF4jqoHP9gYlisrIFr0='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.236:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:4)
+17:07:51.277: [obs-browser: 'Chat'] Error: zaraz is loaded twice (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:4)
+17:07:51.277: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-fO0h6nSVSg6QGOtEkqzxNcpe9iJLgXxfCBJTJ4butWU='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.277:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:4)
+17:07:51.278: [obs-browser: 'Chat'] Error: [Report Only] Refused to load the script 'https://streamelements.com/overlay/scripts/vendor.js' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+17:07:51.278:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:0)
+17:07:51.333: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.333:  (https://streamelements.com/overlay/scripts/vendor.js:47919)
+17:07:51.343: [obs-browser: 'Chat'] Error: [Report Only] Refused to load the script 'https://streamelements.com/overlay/scripts/app.js' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+17:07:51.343:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:0)
+17:07:51.391: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.391:  (https://streamelements.com/overlay/scripts/app.js:27)
+17:07:51.395: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.395:  (https://streamelements.com/overlay/scripts/app.js:27)
+17:07:51.395: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.395:  (https://streamelements.com/overlay/scripts/app.js:27)
+17:07:51.658: [obs-browser: 'Chat'] Error: [Report Only] Refused to load the script 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+17:07:51.658:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:0)
+17:07:51.659: [obs-browser: 'Chat'] Error: [Report Only] Refused to load the script 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/2.7.0/twemoji.min.js' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+17:07:51.659:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:0)
+17:07:51.659: [obs-browser: 'Chat'] Error: [Report Only] Refused to load the script 'https://use.typekit.net/xbm0wzk.js' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+17:07:51.659:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:0)
+17:07:51.662: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-rl2JQuZcAXane4gfMTxER5/wEZZpePHhGFqdrJ3ig8k='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.662:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:4)
+17:07:51.662: [obs-browser: 'Chat'] Error: [Report Only] Refused to load the script 'https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+17:07:51.662:  (https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV:0)
+17:07:51.664: [obs-browser: 'Chat'] Error: [Report Only] Refused to load the script 'https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+17:07:51.664:  (https://streamelements.com/z/i.js:1)
+17:07:51.709: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.709:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.710: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.710:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.715: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.715:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.715: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.715:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.716: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.716:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.717: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.717:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.717: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.717:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.718: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.718:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.723: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.723:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.723: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.723:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.749: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-O8TI4maxcx3zdeHuQO8wrJ7REEoXU+S7DTOyIQ0wWqU='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.749:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:51.751: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-fO0h6nSVSg6QGOtEkqzxNcpe9iJLgXxfCBJTJ4butWU='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.751:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:51.807: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-//ahNXGDqPfIjZZAXtlTOM+X9LYSacwKT/l2LEtI1q4='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.807:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:51.807: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-mLmPpkertAwRJcEuqTaq16ZnQYnEdvpR2hcsClbq+9w='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.807:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:51.812: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-//ahNXGDqPfIjZZAXtlTOM+X9LYSacwKT/l2LEtI1q4='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.812:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:51.812: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-mLmPpkertAwRJcEuqTaq16ZnQYnEdvpR2hcsClbq+9w='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.812:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:51.816: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-R/RMEG6rNo4cpJwj3rxBsxWPzV5Fr0s+hKly5CRcSaY='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.816:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:51.816: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-mLmPpkertAwRJcEuqTaq16ZnQYnEdvpR2hcsClbq+9w='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:51.816:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:51.986: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.986:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.989: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.989:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.990: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.990:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.990: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.990:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.991: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.991:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.992: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.992:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.992: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.992:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.992: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.992:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.992: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.992:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.992: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.992:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.992: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.992:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.993: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.993:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:51.999: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:51.999:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.000: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.000:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.001: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.001:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.001: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.001:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.001: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.001:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.003: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.003:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.004: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.004:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.004: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.004:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.005: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.005:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.005: [obs-browser: 'Chat'] Error: [Report Only] Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'none'".
+17:07:52.005:  (https://streamelements.com/overlay/scripts/vendor.js:62184)
+17:07:52.037: Last log entry repeated for 1 more lines
+17:07:52.037: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-93tXw8M3WVNMU/biKcH4NE8oS6sU1clbZbRxTbNrRjE='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:52.037:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:52.037: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-mLmPpkertAwRJcEuqTaq16ZnQYnEdvpR2hcsClbq+9w='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:52.037:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:52.038: [obs-browser: 'Alerts'] Error: [GraphQL] One or more GraphQL errors were detected on request 01K90KZ0053PZ81G7PMAWT9WSA. AlertsFeatureLaunchFlags: unauthenticated, ActivityListContextV2Query: unauthenticated [object Object],[object Object] (https://assets.twitch.tv/assets/9457-47b476c6281c04521f61.js:1)
+17:07:52.055: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-93tXw8M3WVNMU/biKcH4NE8oS6sU1clbZbRxTbNrRjE='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:52.055:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:52.055: [obs-browser: 'Chat'] Error: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'none'". Either the 'unsafe-inline' keyword, a hash ('sha256-mLmPpkertAwRJcEuqTaq16ZnQYnEdvpR2hcsClbq+9w='), or a nonce ('nonce-...') is required to enable inline execution.
+17:07:52.055:  (https://streamelements.com/z/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU3RyZWFtRWxlbWVudHMlMjIlMkMlMjJ4JTIyJTNBMC42MzYxNzkyMDAxMjEyMDIxJTJDJTIydyUyMiUzQTk2MCUyQyUyMmglMjIlM0E1NDAlMkMlMjJqJTIyJTNBNTQwJTJDJTIyZSUyMiUzQTk2MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnN0cmVhbWVsZW1lbnRzLmNvbSUyRm92ZXJsYXklMkY2MjVjZjQ4ZDk2YzhjYzRlYTVjODBiOTAlMkZpVkJrS0JCRGZXZFJnVnhNOHQzTEJvM18xZmNoc05zMnJ6V3VvTWozSFFDNjZxWFYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBMjQwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA==:1)
+17:07:52.961: [pipewire] Asking for monitor and window
+17:07:54.407: [pipewire] Asking for monitor and window
+17:07:54.408: [pipewire] source selected, setting up screencast
+17:07:54.408: [pipewire] source selected, setting up screencast
+17:07:54.414: [pipewire] Server version: 1.4.9
+17:07:54.414: [pipewire] Library version: 1.4.9
+17:07:54.414: [pipewire] Header version: 1.4.9
+17:07:54.414: [pipewire] Created stream 0x55998004bfe0
+17:07:54.414: [pipewire] Stream 0x55998004bfe0 state: "connecting" (error: none)
+17:07:54.415: [pipewire] Playing stream 0x55998004bfe0
+17:07:54.415: [pipewire] Stream 0x55998004bfe0 state: "paused" (error: none)
+17:07:54.415: [pipewire] Server version: 1.4.9
+17:07:54.415: [pipewire] Library version: 1.4.9
+17:07:54.415: [pipewire] Header version: 1.4.9
+17:07:54.416: [pipewire] Created stream 0x55997b9ee300
+17:07:54.416: [pipewire] Stream 0x55997b9ee300 state: "connecting" (error: none)
+17:07:54.416: [pipewire] Playing stream 0x55997b9ee300
+17:07:54.416: [pipewire] Stream 0x55997b9ee300 state: "paused" (error: none)
+17:07:54.422: [pipewire] Negotiated format:
+17:07:54.422: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.422: [pipewire]     Modifier: 0x0
+17:07:54.422: [pipewire]     Size: 2560x1600
+17:07:54.422: [pipewire]     Framerate: 0/1
+17:07:54.424: [pipewire] Negotiated format:
+17:07:54.424: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.424: [pipewire]     Modifier: 0x100000000000008
+17:07:54.424: [pipewire]     Size: 2560x1600
+17:07:54.424: [pipewire]     Framerate: 0/1
+17:07:54.424: [pipewire] Negotiated format:
+17:07:54.424: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.424: [pipewire]     Modifier: 0x0
+17:07:54.424: [pipewire]     Size: 2560x1600
+17:07:54.424: [pipewire]     Framerate: 0/1
+17:07:54.425: [pipewire] Negotiated format:
+17:07:54.425: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.425: [pipewire]     Modifier: 0x100000000000008
+17:07:54.425: [pipewire]     Size: 2560x1600
+17:07:54.425: [pipewire]     Framerate: 0/1
+17:07:54.433: [pipewire] Stream 0x55998004bfe0 state: "streaming" (error: none)
+17:07:54.440: [pipewire] Stream 0x55997b9ee300 state: "streaming" (error: none)
+17:07:54.449: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+17:07:54.449: [pipewire] Renegotiating stream
+17:07:54.449: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+17:07:54.449: [pipewire] Renegotiating stream
+17:07:54.450: [pipewire] Stream 0x55998004bfe0 state: "paused" (error: none)
+17:07:54.450: [pipewire] Stream 0x55997b9ee300 state: "paused" (error: none)
+17:07:54.450: [pipewire] Negotiated format:
+17:07:54.450: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.450: [pipewire]     Modifier: 0x100000000000008
+17:07:54.450: [pipewire]     Size: 2560x1600
+17:07:54.450: [pipewire]     Framerate: 0/1
+17:07:54.451: [pipewire] Negotiated format:
+17:07:54.451: [pipewire] Negotiated format:
+17:07:54.451: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.451: [pipewire]     Modifier: 0x100000000000006
+17:07:54.451: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.451: [pipewire]     Size: 2560x1600
+17:07:54.451: [pipewire]     Modifier: 0x100000000000008
+17:07:54.451: [pipewire]     Framerate: 0/1
+17:07:54.451: [pipewire]     Size: 2560x1600
+17:07:54.451: [pipewire]     Framerate: 0/1
+17:07:54.454: [pipewire] Negotiated format:
+17:07:54.454: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.454: [pipewire]     Modifier: 0x100000000000006
+17:07:54.454: [pipewire]     Size: 2560x1600
+17:07:54.454: [pipewire]     Framerate: 0/1
+17:07:54.461: [pipewire] Stream 0x55998004bfe0 state: "streaming" (error: none)
+17:07:54.468: [pipewire] Stream 0x55997b9ee300 state: "streaming" (error: none)
+17:07:54.474: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+17:07:54.474: [pipewire] Renegotiating stream
+17:07:54.474: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+17:07:54.474: [pipewire] Renegotiating stream
+17:07:54.474: [pipewire] Stream 0x55998004bfe0 state: "paused" (error: none)
+17:07:54.474: [pipewire] Stream 0x55997b9ee300 state: "paused" (error: none)
+17:07:54.474: [pipewire] Negotiated format:
+17:07:54.474: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.474: [pipewire]     Modifier: 0x100000000000006
+17:07:54.474: [pipewire]     Size: 2560x1600
+17:07:54.474: [pipewire]     Framerate: 0/1
+17:07:54.476: [pipewire] Negotiated format:
+17:07:54.476: [pipewire] Negotiated format:
+17:07:54.476: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.476: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.476: [pipewire]     Modifier: 0x100000000000002
+17:07:54.476: [pipewire]     Modifier: 0x100000000000006
+17:07:54.476: [pipewire]     Size: 2560x1600
+17:07:54.476: [pipewire]     Size: 2560x1600
+17:07:54.476: [pipewire]     Framerate: 0/1
+17:07:54.476: [pipewire]     Framerate: 0/1
+17:07:54.478: [pipewire] Negotiated format:
+17:07:54.478: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:07:54.478: [pipewire]     Modifier: 0x100000000000002
+17:07:54.478: [pipewire]     Size: 2560x1600
+17:07:54.478: [pipewire]     Framerate: 0/1
+17:07:54.486: [pipewire] Stream 0x55998004bfe0 state: "streaming" (error: none)
+17:07:54.496: [pipewire] Stream 0x55997b9ee300 state: "streaming" (error: none)
+17:07:58.857: [obs-nvenc: 'simple_video_recording'] Not running on NVIDIA GPU, falling back to non-texture encoder
+17:07:58.947: [obs-nvenc: 'simple_video_recording'] settings:
+17:07:58.947: 	codec:        H264
+17:07:58.947: 	rate_control: CQP
+17:07:58.947: 	cqp:          23
+17:07:58.947: 	keyint:       250
+17:07:58.947: 	preset:       p5
+17:07:58.947: 	tuning:       hq
+17:07:58.947: 	multipass:    qres
+17:07:58.947: 	profile:      high
+17:07:58.947: 	width:        1724
+17:07:58.947: 	height:       1080
+17:07:58.947: 	b-frames:     2
+17:07:58.947: 	b-ref-mode:   0
+17:07:58.947: 	lookahead:    true (8 frames)
+17:07:58.947: 	aq:           true
+17:07:58.947: 
+17:07:58.990: libfdk_aac encoder created
+17:07:58.990: libfdk_aac bitrate: 192, channels: 2
+17:07:58.998: ==== Recording Start ===============================================
+17:07:58.998: [mp4 output: 'simple_file_output'] Writing Hybrid MP4/MOV file '/home/alef/2025-11-01 17-07-58.mp4'...
+17:08:36.518: [mp4 muxer: 'simple_file_output'] Flushing final fragment...
+17:08:36.519: [mp4 muxer: 'simple_file_output'] Number of fragments: 9
+17:08:36.519: [mp4 muxer: 'simple_file_output'] Full moov size: 30 KiB
+17:08:36.519: [mp4 muxer: 'simple_file_output'] Final mdat size: 71140 KiB
+17:08:36.519: Output 'simple_file_output': stopping
+17:08:36.519: Output 'simple_file_output': Total frames output: 2236
+17:08:36.519: Output 'simple_file_output': Total drawn frames: 2251
+17:08:36.520: [mp4 output: 'simple_file_output'] Waiting for file writer to finish...
+17:08:36.520: [mp4 output: 'simple_file_output'] File output complete. Finalization took 2 ms.
+17:08:36.521: ==== Recording Stop ================================================
+17:08:36.634: libfdk_aac encoder destroyed
+17:09:06.091: ==== Shutting down ==================================================
+17:09:06.093: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+17:09:06.093: pulse-input: Got 3024 packets with 3628800 frames
+17:09:06.094: [pipewire] Stream 0x55998004bfe0 state: "paused" (error: none)
+17:09:06.094: [pipewire] Stream 0x55998004bfe0 state: "unconnected" (error: none)
+17:09:06.097: [pipewire] Stream 0x55997b9ee300 state: "paused" (error: none)
+17:09:06.097: [pipewire] Stream 0x55997b9ee300 state: "unconnected" (error: none)
+17:09:06.098: pulse-am: Stopped Monitoring in 'alsa_output.pci-0000_00_1f.3.analog-stereo'
+17:09:06.098: pulse-am: Got 0 packets with 0 frames
+17:09:06.109: All scene data cleared
+17:09:06.109: ------------------------------------------------
+17:09:06.152: [obs-websocket] [obs_module_unload] Shutting down...
+17:09:06.152: Tried to call obs_frontend_remove_event_callback with no callbacks!
+17:09:06.152: [obs-websocket] [obs_module_unload] Finished shutting down.
+17:09:06.201: [Scripting] Total detached callbacks: 0
+17:09:06.201: Freeing OBS context data
+17:09:06.214: == Profiler Results =============================
+17:09:06.214: run_program_init: 2303.23 ms
+17:09:06.214:  ┣OBSApp::AppInit: 23.708 ms
+17:09:06.214:  ┃ ┗OBSApp::InitLocale: 4.709 ms
+17:09:06.214:  ┗OBSApp::OBSInit: 2257.74 ms
+17:09:06.214:    ┣obs_startup: 3.6 ms
+17:09:06.214:    ┗OBSBasic::OBSInit: 2219.91 ms
+17:09:06.214:      ┣OBSBasic::InitBasicConfig: 2.106 ms
+17:09:06.214:      ┣OBSBasic::ResetAudio: 0.277 ms
+17:09:06.214:      ┣OBSBasic::ResetVideo: 151.645 ms
+17:09:06.214:      ┃ ┗obs_init_graphics: 144.337 ms
+17:09:06.214:      ┃   ┗shader compilation: 99.466 ms
+17:09:06.214:      ┣OBSBasic::InitOBSCallbacks: 0.004 ms
+17:09:06.214:      ┣OBSBasic::InitHotkeys: 0.027 ms
+17:09:06.214:      ┣obs_load_all_modules2: 1873.01 ms
+17:09:06.214:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+17:09:06.214:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+17:09:06.214:      ┃ ┣obs_init_module(decklink.so): 0.074 ms
+17:09:06.214:      ┃ ┣obs_init_module(frontend-tools.so): 52.658 ms
+17:09:06.214:      ┃ ┣obs_init_module(image-source.so): 0.004 ms
+17:09:06.214:      ┃ ┣obs_init_module(linux-alsa.so): 0.002 ms
+17:09:06.214:      ┃ ┣obs_init_module(linux-capture.so): 0.001 ms
+17:09:06.214:      ┃ ┣obs_init_module(linux-jack.so): 0.003 ms
+17:09:06.214:      ┃ ┣obs_init_module(linux-pipewire.so): 11.503 ms
+17:09:06.214:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.001 ms
+17:09:06.214:      ┃ ┣obs_init_module(linux-v4l2.so): 3.679 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-browser.so): 0.12 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-ffmpeg.so): 705.367 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-filters.so): 0.012 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-nvenc.so): 426.184 ms
+17:09:06.214:      ┃ ┃ ┗nvenc_check: 426.175 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-outputs.so): 0.003 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-qsv11.so): 386.402 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-transitions.so): 0.004 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-vst.so): 0.001 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-webrtc.so): 0.419 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-websocket.so): 6.404 ms
+17:09:06.214:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+17:09:06.214:      ┃ ┣obs_init_module(rtmp-services.so): 1.504 ms
+17:09:06.214:      ┃ ┣obs_init_module(text-freetype2.so): 0.009 ms
+17:09:06.214:      ┃ ┗obs_init_module(vlc-video.so): 3.731 ms
+17:09:06.214:      ┣OBSBasic::InitService: 3.144 ms
+17:09:06.214:      ┣OBSBasic::ResetOutputs: 0.919 ms
+17:09:06.214:      ┣OBSBasic::CreateHotkeys: 0.018 ms
+17:09:06.214:      ┣OBSBasic::InitPrimitives: 0.096 ms
+17:09:06.214:      ┗OBSBasic::Load: 113.214 ms
+17:09:06.214: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.026 ms, 99th percentile=0.001 ms, 100% below 25 ms
+17:09:06.214: audio_thread(Audio): min=0.006 ms, median=0.142 ms, max=7.489 ms, 99th percentile=1.288 ms
+17:09:06.214:  ┗receive_audio: min=0.002 ms, median=0.305 ms, max=4.835 ms, 99th percentile=0.979 ms, 0.484092 calls per parent call
+17:09:06.214:    ┣buffer_audio: min=0 ms, median=0.001 ms, max=0.009 ms, 99th percentile=0.003 ms
+17:09:06.214:    ┗do_encode: min=0.042 ms, median=0.301 ms, max=4.832 ms, 99th percentile=0.976 ms
+17:09:06.214:      ┣encode(simple_aac_recording0): min=0.04 ms, median=0.27 ms, max=1.125 ms, 99th percentile=0.876 ms
+17:09:06.214:      ┗send_packet: min=0.001 ms, median=0.019 ms, max=4.55 ms, 99th percentile=0.163 ms
+17:09:06.214: obs_graphics_thread(16.6667 ms): min=0.012 ms, median=0.662 ms, max=378.552 ms, 99th percentile=4.182 ms, 99.9569% below 16.667 ms
+17:09:06.214:  ┣tick_sources: min=0 ms, median=0.012 ms, max=4.562 ms, 99th percentile=0.023 ms
+17:09:06.214:  ┣output_frame: min=0.01 ms, median=0.465 ms, max=15.976 ms, 99th percentile=1.928 ms
+17:09:06.214:  ┃ ┣gs_context(video->graphics): min=0.009 ms, median=0.3 ms, max=15.975 ms, 99th percentile=1.092 ms
+17:09:06.214:  ┃ ┃ ┣render_video: min=0.001 ms, median=0.128 ms, max=15.772 ms, 99th percentile=0.325 ms
+17:09:06.214:  ┃ ┃ ┃ ┣render_main_texture: min=0.001 ms, median=0.095 ms, max=5.275 ms, 99th percentile=0.198 ms
+17:09:06.214:  ┃ ┃ ┃ ┣render_output_texture: min=0.006 ms, median=0.017 ms, max=9.674 ms, 99th percentile=0.044 ms, 0.485653 calls per parent call
+17:09:06.214:  ┃ ┃ ┃ ┣render_convert_texture: min=0.011 ms, median=0.029 ms, max=5.078 ms, 99th percentile=0.07 ms, 0.485653 calls per parent call
+17:09:06.214:  ┃ ┃ ┃ ┗stage_output_texture: min=0.009 ms, median=0.022 ms, max=0.951 ms, 99th percentile=0.043 ms, 0.485653 calls per parent call
+17:09:06.214:  ┃ ┃ ┣gs_flush: min=0.007 ms, median=0.089 ms, max=1.34 ms, 99th percentile=0.336 ms
+17:09:06.214:  ┃ ┃ ┗download_frame: min=0 ms, median=0.104 ms, max=7.527 ms, 99th percentile=3.258 ms, 0.485653 calls per parent call
+17:09:06.214:  ┃ ┗output_video_data: min=0.196 ms, median=0.409 ms, max=2.543 ms, 99th percentile=0.948 ms, 0.485437 calls per parent call
+17:09:06.214:  ┗render_displays: min=0.001 ms, median=0.124 ms, max=11.414 ms, 99th percentile=1.595 ms
+17:09:06.214: video_thread(video): min=0.537 ms, median=1.092 ms, max=7.03 ms, 99th percentile=2.149 ms
+17:09:06.214:  ┗receive_video: min=0.535 ms, median=1.09 ms, max=7.029 ms, 99th percentile=2.146 ms
+17:09:06.214:    ┗do_encode: min=0.535 ms, median=1.089 ms, max=7.028 ms, 99th percentile=2.145 ms
+17:09:06.214:      ┣encode(simple_video_recording): min=0.532 ms, median=1.068 ms, max=3.214 ms, 99th percentile=2.057 ms
+17:09:06.214:      ┗send_packet: min=0.001 ms, median=0.008 ms, max=6.258 ms, 99th percentile=0.111 ms
+17:09:06.214: =================================================
+17:09:06.214: == Profiler Time Between Calls ==================
+17:09:06.214: obs_hotkey_thread(25 ms): min=25.009 ms, median=25.073 ms, max=25.404 ms, 100% within ±2% of 25 ms (0% lower, 0% higher)
+17:09:06.214: obs_graphics_thread(16.6667 ms): min=4.781 ms, median=16.666 ms, max=378.555 ms, 99.7626% within ±2% of 16.667 ms (0.107898% lower, 0.129478% higher)
+17:09:06.214: =================================================
+17:09:06.222: Number of memory leaks: 0

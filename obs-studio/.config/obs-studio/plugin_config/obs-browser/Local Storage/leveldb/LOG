@@ -1,0 +1,6 @@
+2025/11/08-14:26:19.700 62902 Reusing MANIFEST /home/alef/dotfiles/obs-studio/.config/obs-studio/plugin_config/obs-browser/Local Storage/leveldb/MANIFEST-000001
+2025/11/08-14:26:19.703 62902 Recovering log #3
+2025/11/08-14:26:19.704 62902 Reusing old log /home/alef/dotfiles/obs-studio/.config/obs-studio/plugin_config/obs-browser/Local Storage/leveldb/000003.log 
+2025/11/08-14:26:48.248 62903 Level-0 table #5: started
+2025/11/08-14:26:48.251 62903 Level-0 table #5: 37812 bytes OK
+2025/11/08-14:26:48.256 62903 Delete type=0 #3

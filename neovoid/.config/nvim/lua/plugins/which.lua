@@ -15,6 +15,7 @@ return {
           { "<leader>p", group = "+pick" },
           { "<leader>f", group = "+file" },
           { "<leader>q", group = "+quit" },
+          { "<leader>g", group = "+git" },
           {
             "<leader>b",
             group = "buffer",

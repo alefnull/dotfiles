@@ -14,6 +14,8 @@
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
+        // "niri/workspaces",
+        // "niri/window"
     ],
     "modules-center": [
         "clock#date",
@@ -72,8 +74,8 @@
             "",
             ""
         ],
-        "on-scroll-down": "brightnessctl s 5%-",
-        "on-scroll-up": "brightnessctl s +5%"
+        "on-scroll-down": "brightnessctl -d intel_backlight s 5%-",
+        "on-scroll-up": "brightnessctl -d intel_backlight s +5%"
     },
     "custom/weather": {
         "format": "{}",
@@ -102,8 +104,6 @@
         "format": "{name}",
         "persistent-workspaces": {
             "1": [],
-            "2": [],
-            "3": []
         },
         "sort-by-number": true,
         "active-only": false
@@ -111,7 +111,7 @@
     "hyprland/window": {
         "max-length": 80,
         "separate-outputs": true,
-        "icon": false,
+        "icon": true,
         "icon-size": 16,
         "rewrite": {
             "": "nihil"

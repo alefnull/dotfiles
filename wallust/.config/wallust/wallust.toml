@@ -16,3 +16,4 @@ spicetify = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/te
 spicetify2 = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/nightlight/color.ini' }
 qutebrowser = { src = 'qute_colors.py', dst = '~/.config/qutebrowser/qute_colors.py' }
 ghostty = { src = 'ghostty-colors', dst = '~/.config/ghostty/themes/wallust' }
+themecord = { src = 'colors-discord.css', dst = '~/.cache/wallust/colors-discord.css' }

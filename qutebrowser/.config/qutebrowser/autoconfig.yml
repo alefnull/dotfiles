@@ -8,10 +8,12 @@ config_version: 2
 settings:
   content.javascript.clipboard:
     https://docs.fabricmc.net: access-paste
+    https://docs.wispforest.io: access-paste
     https://ghostty.zerebos.com: access-paste
     https://github.com: access-paste
     https://rustup.rs: access-paste
     https://vencord.dev: access-paste
+    https://www.baeldung.com: access-paste
   content.notifications.enabled:
     https://www.youtube.com: true
   content.register_protocol_handler:

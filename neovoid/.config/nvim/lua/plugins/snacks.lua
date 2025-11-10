@@ -4,9 +4,10 @@ return {
     priority = 1000,
     lazy = false,
     keys = {
-      { '<leader>lg', '<cmd>lua Snacks.lazygit()<enter>', { desc = 'open lazygit' } },
-      { '<leader>pf', '<cmd>lua Snacks.picker.files()<enter>', { desc = 'pick files' } },
-      { '<leader>pb', '<cmd>lua Snacks.picker.buffers()<enter>', { desc = 'pick buffers' } },
+      { '<leader>gg', '<cmd>lua Snacks.lazygit()<enter>', { desc = 'open lazygit' } },
+      { '<leader>pf', '<cmd>lua Snacks.picker.files()<enter>', { desc = 'pick from files' } },
+      { '<leader>pb', '<cmd>lua Snacks.picker.grep_buffers()<enter>', { desc = 'grep from buffers' } },
+      { '<leader>pg', '<cmd>lua Snacks.picker.grep()<enter>', { desc = 'grep from files' } },
     },
     opts = {
       bigfile = { enbaled = true },

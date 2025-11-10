@@ -5,7 +5,7 @@
     font-size: 16px;
     font-weight: 500;
     border: none;
-    border-radius: 0px;
+    border-radius: 8px;
     min-height: 0;
     margin: 0;
     box-shadow: 0 0 0 0;
@@ -21,7 +21,7 @@
     transition-property: background-color;
     transition-duration: 0.5s;
     border: 1px solid @color15;
-    border-radius: 0px;
+    border-radius: 8px;
 }
 
 window#waybar.hidden {
@@ -38,6 +38,12 @@ window#waybar.hidden {
     background-color: transparent;
     transition: all 0.3s ease-in-out;
     /* Slightly smaller font size */
+}
+#workspaces button:first-child {
+  border-radius: 8px 0px 0px 8px;
+}
+#workspaces button:last-child {
+  border-radius: 0px 8px 8px 0px;
 }
 
 #workspaces button.active {
@@ -60,7 +66,7 @@ window#waybar.hidden {
 
 #workspaces {
     background-color: transparent;
-    border-radius: 0px;
+    border-radius: 8px;
     padding: 0px;
     /* Adjusted padding to reduce height */
     margin: 0px;
@@ -71,7 +77,7 @@ window#waybar.hidden {
     /* Slightly smaller font size */
     font-weight: 600;
     color: @color15;
-    border-radius: 0px;
+    border-radius: 8px;
     padding: 0px 8px;
     /* Reduced padding */
     margin: 0px;
@@ -98,7 +104,7 @@ window#waybar.hidden {
 #custom-weather.default {
     background-color: transparent;
     color: @color15;
-    border-radius: 0px;
+    border-radius: 8px;
     padding: 0px 2px;
     /* Adjusted padding */
     margin: 0px;
@@ -119,14 +125,14 @@ window#waybar.hidden {
 
 #tray {
     background-color: transparent;
-    border-radius: 0px;
+    border-radius: 8px;
     padding: 0px 8px;
     /* Adjusted padding */
 }
 
 #custom-power {
     background-color: transparent;
-    border-radius: 0px;
+    border-radius: 8px;
     padding: 0 2px;
 }
 
@@ -165,7 +171,7 @@ window#waybar.hidden {
     /* background-color: @background; */
     color: @color15;
     padding: 0;
-    border-radius: 0px;
+    border-radius: 8px 0px 0px 8px;
     border-top: 1px solid @color15;
     border-bottom: 1px solid @color15;
     border-left: 1px solid @color15;
@@ -186,7 +192,7 @@ window#waybar.hidden {
     /* background-color: @background; */
     color: @color15;
     padding: 0px;
-    border-radius: 0px;
+    border-radius: 0px 8px 8px 0px;
     border-top: 1px solid @color15;
     border-bottom: 1px solid @color15;
     border-right: 1px solid @color15;
