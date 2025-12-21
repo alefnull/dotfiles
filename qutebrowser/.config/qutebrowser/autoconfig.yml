@@ -14,6 +14,8 @@ settings:
     https://rustup.rs: access-paste
     https://vencord.dev: access-paste
     https://www.baeldung.com: access-paste
+  content.media.audio_video_capture:
+    https://doxy.me: true
   content.notifications.enabled:
     https://www.youtube.com: true
   content.register_protocol_handler:

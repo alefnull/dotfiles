@@ -1,62 +1,68 @@
 {
   "general": {
-    "injectJavascript": true,
-    "injectCSS": true,
+    "accentColor": "DEFAULT_ACCENT_COLOR",
     "checkForMillenniumUpdates": true,
     "checkForPluginAndThemeUpdates": true,
+    "injectCSS": true,
+    "injectJavascript": true,
+    "millenniumUpdateChannel": "stable",
     "onMillenniumUpdate": 1,
-    "shouldShowThemePluginUpdateNotifications": true,
-    "accentColor": "DEFAULT_ACCENT_COLOR"
+    "shouldShowThemePluginUpdateNotifications": true
   },
   "misc": {
     "hasShownWelcomeModal": true
   },
+  "notifications": {
+    "showNotifications": true,
+    "showPluginNotifications": true,
+    "showUpdateNotifications": true
+  },
+  "plugins": {
+    "enabledPlugins": [
+      "steam-db"
+    ]
+  },
   "themes": {
     "activeTheme": "simply-dark",
-    "allowedStyles": true,
     "allowedScripts": true,
+    "allowedStyles": true,
     "conditions": {
       "simply-dark": {
-        "Compacted Header": "Normal",
-        "Wallet Visibility": "Show",
-        "URL Visibility": "Show",
-        "What's New Visibility": "Show",
         "Add Shelf Visibility": "Show",
+        "Compacted Header": "Normal",
         "Friends Status Outline": "Hide",
-        "Steam News Visibility": "Show"
+        "Steam News Visibility": "Show",
+        "URL Visibility": "Show",
+        "Wallet Visibility": "Show",
+        "What's New Visibility": "Show"
       }
     },
     "themeColors": {
       "simply-dark": {
-        "--color-light": "rgb(48, 48, 48)",
+        "--begrey": "#262627",
+        "--black": "#000000",
+        "--blacker": "#1c1c1c",
+        "--blacker-ish": "#1b1b1b",
         "--color-dark": "#212121",
         "--color-darker": "#191919",
         "--color-darkest": "#141414",
-        "--scrollbar": "#303030",
-        "--black": "#000000",
-        "--blacker-ish": "#1b1b1b",
-        "--blacker": "#1c1c1c",
-        "--grey": "#2e2e2f",
-        "--lightgrey": "#3e3e3f",
-        "--lightergrey": "#353535",
-        "--grey-ish": "#454545",
+        "--color-light": "rgb(48, 48, 48)",
         "--darkergrey": "#151515",
-        "--thegrey": "#181818",
-        "--begrey": "#262627",
-        "--littlegrey": "#282828",
-        "--darkgrey": "#1e1e1f",
         "--darkerwhite": "#b8b6b4",
+        "--darkgrey": "#1e1e1f",
         "--darkwhite": "#d9dadd",
-        "--white": "#ffffff",
+        "--grey": "#2e2e2f",
+        "--grey-ish": "#454545",
         "--ingame": "#90ba3c",
+        "--lightergrey": "#353535",
+        "--lightgrey": "#3e3e3f",
+        "--littlegrey": "#282828",
+        "--offline": "#898989",
         "--online": "#57cbde",
-        "--offline": "#898989"
+        "--scrollbar": "#303030",
+        "--thegrey": "#181818",
+        "--white": "#ffffff"
       }
     }
-  },
-  "notifications": {
-    "showNotifications": true,
-    "showUpdateNotifications": true,
-    "showPluginNotifications": true
   }
 }
