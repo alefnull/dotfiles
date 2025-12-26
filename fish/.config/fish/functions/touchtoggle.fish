@@ -1,9 +1,11 @@
 function touchenable
-    hyprctl keyword device[gxtp5100:00-27c6:01e0-touchpad]:enabled true
+  # hyprctl keyword device[gxtp5100:00-27c6:01e0-touchpad]:enabled true
+    hyprctl keyword device[ven_06cb:00-06cb:ce26-touchpad]:enabled true
 end
 
 function touchdisable
-    hyprctl keyword device[gxtp5100:00-27c6:01e0-touchpad]:enabled false
+  # hyprctl keyword device[gxtp5100:00-27c6:01e0-touchpad]:enabled false
+    hyprctl keyword device[ven_06cb:00-06cb:ce26-touchpad]:enabled false
 end
 
 function touchtoggle

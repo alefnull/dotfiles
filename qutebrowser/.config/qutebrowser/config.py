@@ -23,6 +23,8 @@ blue = qute_colors.color4
 magenta = qute_colors.color5
 cyan = qute_colors.color6
 
+config.load_autoconfig(False)
+
 # Background color of the completion widget category headers.
 # Type: QssColor
 c.colors.completion.category.bg = background

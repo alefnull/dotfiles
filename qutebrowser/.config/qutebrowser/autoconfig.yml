@@ -6,6 +6,8 @@
 
 config_version: 2
 settings:
+  content.javascript.can_open_tabs_automatically:
+    global: true
   content.javascript.clipboard:
     https://docs.fabricmc.net: access-paste
     https://docs.wispforest.io: access-paste
@@ -14,6 +16,8 @@ settings:
     https://rustup.rs: access-paste
     https://vencord.dev: access-paste
     https://www.baeldung.com: access-paste
+  content.javascript.modal_dialog:
+    global: true
   content.media.audio_video_capture:
     https://doxy.me: true
   content.notifications.enabled:
