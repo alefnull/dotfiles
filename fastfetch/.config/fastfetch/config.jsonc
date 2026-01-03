@@ -2,19 +2,18 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
 
   "display": {
-      "separator": " : ",     // Separator between keys and values
+      "separator": ".........",     // Separator between keys and values
       "brightColor": true,
       "key": {
-          //"width": 22,       // Aligns keys to this width
-          //"type": "both"   	 // string, icon, both, or none
+          "width": 12,       // Aligns keys to this width
+          "type": "both"   	 // string, icon, both, or none
       },
       "bar": {
           "width": 10,       // Width of percentage bars
-          // "charElapsed": "■", // Character for elapsed portion
           "char": {
-              "elapsed": "■"
-          },
-          "charTotal": "-"   // Character for total portion
+              "elapsed": "■",
+              "total": "-"
+          }
       }
   },
 
@@ -33,43 +32,60 @@
   "modules": [
     "title",
     "separator",
+    {
+      "type": "host",
+      "key": " HOST"
+    },
 		{
 			"type": "os",
-			"key": " "
+			"key": " OSYS"
 		},
 		{
+			"type": "kernel",
+			"key": " KRNL"
+		},
+    {
+      "type": "bootmgr",
+      "key": " BOOT"
+    },
+		{
 			"type": "shell",
-			"key": " "
+			"key": " SHLL"
 		},
 		{
 			"type": "display",
-      "key": " "
+      "key": " DISP"
 		},
 		{
 			"type": "wm",
-			"key": " "
+			"key": " WMGR"
 		},
 		{
 			"type": "terminal",
-      "key": " "
+      "key": " TERM"
 		},
 		{
 			"type": "cpu",
 			"format": "{1}",
-			"key": " "
+			"key": " CPU"
+		},
+		{
+			"type": "memory",
+			"key": " MEM"
 		},
 		{
 			"type": "gpu",
 			"format": "{2} ({6})",
-			"key": " "
+			"key": " GPU{index}"
 		},
-		{
-			"type": "memory",
-			"key": "󰍛 "
-		},
+    {
+      "type": "battery",
+      "key": " BTRY"
+    },
+    "separator",
 		{
 			"type": "disk",
-			"key": " "
+			"key": " {mountpoint}"
 		},
     "break",
     "colors"
