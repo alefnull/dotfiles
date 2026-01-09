@@ -1,0 +1,35 @@
+host: xenu
+description: XenuLaptop
+import: []
+enabled_modules: []
+packages: []
+exclude: []
+additional_packages: []
+flatpak_scope: user
+auto_prune: false
+config_backups:
+  enabled: true
+  max_backups: 10
+system_backups:
+  enabled: false
+  backup_on_sync: true
+  backup_on_update: true
+  tool: timeshift
+  snapper_config: root
+services:
+  enabled:
+  - bluetooth
+  - getty@
+  - iwd
+  - keyd
+  - libvirtd
+  - nvidia-hibernate
+  - nvidia-resume
+  - nvidia-suspend
+  - nvidia-suspend-then-hibernate
+  - power-profiles-daemon
+  - systemd-network-generator
+  - systemd-networkd-wait-online
+  disabled: []
+editor: null
+aur_helper: yay

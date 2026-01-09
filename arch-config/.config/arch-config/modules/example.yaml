@@ -1,0 +1,17 @@
+# Example module template
+# Copy this to create new modules, or delete it
+
+description: Example module - customize or delete this
+
+# List of packages in this module
+packages: []
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run before installing packages (optional)
+# Useful for system preparation like enabling multilib
+pre_install_hook: ""
+
+# Script to run after installing packages (optional)
+post_install_hook: ""

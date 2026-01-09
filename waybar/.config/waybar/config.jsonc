@@ -18,14 +18,14 @@
         // "niri/window"
     ],
     "modules-center": [
-        "clock#date",
+        "clock#date"
     ],
     "modules-right": [
         "tray",
         "network",
         "wireplumber",
         "backlight",
-        // "custom/weather",
+        "custom/weather",
         "battery",
         "power-profiles-daemon",
         "custom/power"
@@ -118,7 +118,8 @@
         }
     },
     "wireplumber": {
-        "on-click": "qpwgraph",
+        // "on-click": "qpwgraph",
+        "on-click": "pavucontrol",
         "format": "{icon} {volume}%",
         "format-muted": " ",
         "format-source": "",
