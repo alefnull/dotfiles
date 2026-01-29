@@ -1,5 +1,7 @@
 [sie][Limiter#0]
-attack=1
+attack=2
 dithering=6
+gainBoost=false
+lookahead=2
 mode=1
-threshold=-1
+threshold=-1.5

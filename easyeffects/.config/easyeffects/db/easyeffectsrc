@@ -1,16 +1,21 @@
+[Presets]
+lastLoadedInputCommunityPackage=jtrv-Presets
+
 [StreamInputs]
-inputDevice=alsa_input.pci-0000_00_1f.3.analog-stereo
+inputDevice=alsa_input.pci-0000_80_1f.3.analog-stereo
 mostUsedPresets=NPR_Voice
-plugins=rnnoise#0,gate#0,deesser#0,compressor#0,equalizer#0,speex#0,limiter#0
+plugins=rnnoise#0,deepfilternet#0,gate#0,equalizer#0,compressor#0,deesser#0,limiter#0
 usedPresets=NPR_Voice:2
-visiblePlugin=rnnoise#0
+visiblePage=pluginsPage
+visiblePlugin=deesser#0
 
 [StreamOutputs]
-outputDevice=alsa_output.pci-0000_00_1f.3.analog-stereo
+outputDevice=alsa_output.pci-0000_80_1f.3.analog-stereo
 visiblePage=pluginsPage
 
 [Window]
-height=1424
+height=1364
 lastLoadedInputPreset=NPR_Voice
 visiblePage=inputPage
-width=1162
+visiblePresetSheetPage=communityPage
+width=1118

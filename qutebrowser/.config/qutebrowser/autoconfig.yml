@@ -10,6 +10,7 @@ settings:
     global: true
   content.javascript.clipboard:
     https://docs.fabricmc.net: access-paste
+    https://docs.privategpt.dev: access-paste
     https://docs.wispforest.io: access-paste
     https://ghostty.zerebos.com: access-paste
     https://github.com: access-paste
@@ -25,3 +26,7 @@ settings:
     https://www.youtube.com: true
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  downloads.position:
+    global: top
+  downloads.remove_finished:
+    global: 1000
