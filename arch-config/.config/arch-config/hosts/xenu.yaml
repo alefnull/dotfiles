@@ -1,0 +1,57 @@
+host: xenu
+description: Main Laptop
+import: []
+enabled_modules:
+- system-packages-xenu
+packages: []
+exclude: []
+additional_packages: []
+flatpak_scope: user
+auto_prune: false
+module_processing: parallel
+strict_package_order: false
+config_backups:
+  enabled: true
+  max_backups: 5
+system_backups:
+  enabled: false
+  backup_on_sync: true
+  backup_on_update: true
+  tool: timeshift
+  snapper_config: root
+  max_backups: 5
+services:
+  enabled:
+  - bluetooth
+  - getty@
+  - iwd
+  - keyd
+  - libvirtd
+  - lm_sensors
+  - nvidia-hibernate
+  - nvidia-resume
+  - nvidia-suspend
+  - nvidia-suspend-then-hibernate
+  - power-profiles-daemon
+  - systemd-network-generator
+  - systemd-networkd-wait-online
+  disabled: []
+enabled_service_profiles: []
+update_hooks:
+  pre_update: null
+  post_update: null
+  behavior: ask
+  devel: false
+default_apps:
+  scope: system
+  browser: null
+  text_editor: null
+  file_manager: null
+  terminal: null
+  video_player: null
+  audio_player: null
+  image_viewer: null
+  pdf_viewer: null
+  mime_types: {}
+editor: null
+aur_helper: yay

@@ -1,0 +1,29 @@
+# Base packages installed on all systems
+# These packages are included regardless of host or modules
+
+description: Base system packages
+
+packages:
+  # Essential base system
+  - base
+  - base-devel
+
+  # Kernel (uncomment the one you use)
+  # - linux              # Standard kernel
+  # - linux-zen          # Zen kernel (optimized for desktop)
+  # - linux-lts          # Long-term support kernel
+  # - linux-hardened     # Security-focused kernel
+
+  # Firmware (usually needed)
+  # - linux-firmware
+
+  # Basic tools (uncomment as needed)
+  # - git
+  # - vim
+  # - neovim
+  # - htop
+
+  # dcli dependencies
+  - paru         # AUR helper (required for AUR package management)
+  - fzf          # Fuzzy finder (required for dcli search/module/backup TUI)
+  - timeshift    # System backup tool (required for dcli backup commands)

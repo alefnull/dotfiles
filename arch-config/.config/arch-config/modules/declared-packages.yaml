@@ -1,0 +1,16 @@
+description: Packages installed via dcli install or dcli search commands
+packages:
+- krita-git
+- godot-git
+- ollama
+- docker
+- docker-compose
+- pyenv
+- pandora-launcher
+exclude: []
+conflicts: []
+pre_install_hook: null
+post_install_hook: null
+hook_behavior: ask
+pre_hook_behavior: null
+post_hook_behavior: null
