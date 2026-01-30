@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-29T22:43:39.723503786+00:00",
+  "timestamp_display": "2026-01-29 22:43",
+  "hostname": "xenu",
+  "active_host_file": "xenu.yaml",
+  "enabled_modules": [
+    "system-packages-xenu/packages"
+  ],
+  "backup_type": "auto-sync",
+  "dcli_version": "0.2.0",
+  "package_count": 0,
+  "validation_passed": true
+}

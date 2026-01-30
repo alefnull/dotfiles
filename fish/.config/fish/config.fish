@@ -22,6 +22,6 @@ alias vi='nvim'
 alias vim='nvim'
 
 # Added by LM Studio CLI (lms)
-set -gx PATH $PATH /home/alef/.lmstudio/bin
+set -gx PATH $PATH $HOME/.lmstudio/bin
 # End of LM Studio CLI section
-set -gx PATH $PATH /home/alef/.local/bin
+set -gx PATH $PATH $HOME/.local/bin

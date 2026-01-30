@@ -1,7 +1,8 @@
-backend = "wal"
-color_space = "lch" # idc about this one..
-palette = "dark"
+backend = "resized"
+color_space = "lchmixed" # idc about this one..
+palette = "dark16"
 check_contrast = true
+threshold = 11
 
 [templates]
 waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }

@@ -23,7 +23,7 @@
     ]
   },
   "themes": {
-    "activeTheme": "simply-dark",
+    "activeTheme": "default",
     "allowedScripts": true,
     "allowedStyles": true,
     "conditions": {

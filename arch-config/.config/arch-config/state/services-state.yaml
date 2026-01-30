@@ -1,0 +1,16 @@
+last_updated: 2026-01-30T03:56:35.549771646Z
+enabled_services:
+- bluetooth
+- getty@
+- iwd
+- keyd
+- libvirtd
+- lm_sensors
+- nvidia-hibernate
+- nvidia-resume
+- nvidia-suspend
+- nvidia-suspend-then-hibernate
+- power-profiles-daemon
+- systemd-network-generator
+- systemd-networkd-wait-online
+disabled_services: []

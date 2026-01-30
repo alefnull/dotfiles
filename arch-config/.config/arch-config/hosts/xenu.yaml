@@ -2,7 +2,7 @@ host: xenu
 description: Main Laptop
 import: []
 enabled_modules:
-- system-packages-xenu
+- system-packages-xenu/packages
 packages: []
 exclude: []
 additional_packages: []
