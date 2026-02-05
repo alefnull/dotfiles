@@ -1,673 +1,730 @@
 # Auto-generated state file - tracks dcli-managed packages
-# Generated: 2026-01-30T03:56:35.550001170+00:00
+# Generated: 2026-02-05T08:52:54.109706058+00:00
 
 packages:
-  - name: opencode-bin
-    version: "1.1.42-1"
-    type: pacman
-  - name: adwaita-qt5
-    version: "1.4.2-1"
-    type: pacman
-  - name: ttf-bigblueterminal-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-firacode-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: python-pip
-    version: "25.3-3"
-    type: pacman
-  - name: spotify
-    version: "1:1.2.79.427-1"
-    type: pacman
-  - name: ttf-monofur-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: openssh
-    version: "10.2p1-2"
-    type: pacman
-  - name: docker-compose
-    version: "5.0.2-1"
-    type: pacman
-  - name: heroic-games-launcher-bin
-    version: "2.19.1-1"
-    type: pacman
-  - name: swww
-    version: "0.11.2-1"
-    type: pacman
-  - name: pureref
-    version: "2.0.3-3"
-    type: pacman
-  - name: linux-firmware
-    version: "20260110-1"
-    type: pacman
-  - name: qutebrowser
-    version: "3.6.3-2"
-    type: pacman
-  - name: nvidia-open-dkms
-    version: "590.48.01-2"
-    type: pacman
-  - name: networkmanager
-    version: "1.54.3-1"
-    type: pacman
-  - name: git
-    version: "2.52.0-2"
-    type: pacman
-  - name: ffmpegthumbnailer
-    version: "2.3.0-1"
-    type: pacman
-  - name: qpwgraph
-    version: "0.9.8-1"
-    type: pacman
-  - name: satisfactory-mod-manager
-    version: "3.0.5-1"
-    type: pacman
-  - name: ttf-gohu-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: breeze-gtk
-    version: "6.5.5-1"
-    type: pacman
-  - name: quickshell
-    version: "0.2.1-4"
-    type: pacman
-  - name: ttf-iosevkatermslab-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-nerd-fonts-symbols-mono
-    version: "3.4.0-1"
-    type: pacman
-  - name: ttf-tinos-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: keepassxc
-    version: "2.7.11-1"
-    type: pacman
-  - name: ttf-space-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: slurp
-    version: "1.5.0-1"
-    type: pacman
-  - name: ttf-victor-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-iawriter-nerd
+  - name: ttf-iosevka-nerd
     version: "3.4.0-2"
     type: pacman
   - name: virt-manager
     version: "5.1.0-3"
     type: pacman
-  - name: waybar
-    version: "0.14.0-6"
+  - name: tldr
+    version: "3.4.3-3"
     type: pacman
-  - name: nvidia-prime
-    version: "1.0-5"
-    type: pacman
-  - name: otf-codenewroman-nerd
+  - name: ttf-ubuntu-mono-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: pipewire
-    version: "1:1.4.10-1"
+  - name: sudo
+    version: "1.9.17.p2-2"
     type: pacman
-  - name: wlogout
-    version: "1.2.2-0"
+  - name: linux-firmware
+    version: "20260110-1"
     type: pacman
-  - name: wlr-randr
-    version: "0.5.0-1"
+  - name: grim
+    version: "1.5.0-2"
     type: pacman
-  - name: yay
-    version: "12.5.7-1"
+  - name: libpulse
+    version: "17.0+r98+gb096704c0-1"
     type: pacman
-  - name: fastfetch
-    version: "2.58.0-1"
+  - name: npm
+    version: "11.8.0-1"
     type: pacman
-  - name: godot-git
-    version: "4.7.r284.g80a4af1-1"
+  - name: satisfactory-mod-manager
+    version: "3.0.5-1"
     type: pacman
-  - name: otf-comicshanns-nerd
-    version: "3.4.0-2"
+  - name: network-manager-applet
+    version: "1.36.0-1"
     type: pacman
-  - name: awesome-terminal-fonts
-    version: "1.1.0-5"
+  - name: sddm
+    version: "0.21.0-6"
     type: pacman
-  - name: pandora-launcher
-    version: "2.5.0-3"
+  - name: qt6-wayland
+    version: "6.10.2-1"
     type: pacman
-  - name: xdg-utils
-    version: "1.2.1-2"
+  - name: sof-firmware
+    version: "2025.12.2-1"
     type: pacman
-  - name: paru
-    version: "2.1.0-2"
+  - name: wget
+    version: "1.25.0-3"
     type: pacman
-  - name: pavucontrol
-    version: "1:6.2-1"
+  - name: htop
+    version: "3.4.1-1"
     type: pacman
-  - name: ttf-roboto-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ollama
-    version: "0.15.2-1"
-    type: pacman
-  - name: chafa
-    version: "1.16.2-1"
-    type: pacman
-  - name: steam
-    version: "1.0.0.85-1"
-    type: pacman
-  - name: pyenv
-    version: "1:2.6.20-1"
-    type: pacman
-  - name: xdg-desktop-portal-hyprland
-    version: "1.3.11-3"
-    type: pacman
-  - name: vim
-    version: "9.1.2077-1"
-    type: pacman
-  - name: otf-aurulent-nerd
+  - name: ttf-meslo-nerd
     version: "3.4.0-2"
     type: pacman
   - name: ttf-mononoki-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: uzdoom-git
-    version: "4.14pre+1119+gc34025d-1"
+  - name: nemo-fileroller
+    version: "6.6.0-4"
     type: pacman
-  - name: ttf-bitstream-vera-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: eza
-    version: "0.23.4-1"
-    type: pacman
-  - name: hwinfo
-    version: "25.0-2"
-    type: pacman
-  - name: ly
-    version: "1.3.1-1"
-    type: pacman
-  - name: sddm
-    version: "0.21.0-6"
-    type: pacman
-  - name: smartmontools
-    version: "7.5-1"
-    type: pacman
-  - name: python-prctl
-    version: "1.8.1-8"
-    type: pacman
-  - name: wlr-protocols
-    version: "r112.a741f0a-1"
-    type: pacman
-  - name: ttf-agave-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-terminus-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: timeshift
-    version: "25.12.4-1"
-    type: pacman
-  - name: wireplumber
-    version: "0.5.13-1"
-    type: pacman
-  - name: bluez
-    version: "5.85-1"
-    type: pacman
-  - name: brightnessctl
-    version: "0.5.1-3"
-    type: pacman
-  - name: libva-nvidia-driver
-    version: "0.0.15-1"
-    type: pacman
-  - name: ttf-jetbrains-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-cascadia-code-nerd
-    version: "3.4.0-2"
+  - name: wofi
+    version: "1.5.3-1"
     type: pacman
   - name: ttf-noto-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-proggyclean-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-heavydata-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-profont-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: base-devel
-    version: "1-2"
-    type: pacman
-  - name: ttf-sourcecodepro-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ultimate-doom-builder-git
-    version: "3.0.0.4282.aa22cd7-1"
-    type: pacman
-  - name: dolphin
-    version: "25.12.1-1"
-    type: pacman
-  - name: ttf-cascadia-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-cousine-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: pipewire-pulse
-    version: "1:1.4.10-1"
-    type: pacman
-  - name: ghostty
-    version: "1.2.3-2"
-    type: pacman
-  - name: sof-firmware
-    version: "2025.12.2-1"
-    type: pacman
-  - name: github-cli
-    version: "2.86.0-1"
-    type: pacman
-  - name: otf-droid-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: fzf
-    version: "0.67.0-2"
-    type: pacman
-  - name: swappy
-    version: "1.8.0-1"
-    type: pacman
-  - name: calf
-    version: "0.90.8-6"
-    type: pacman
-  - name: winetricks
-    version: "20250102-1"
-    type: pacman
-  - name: noto-fonts
-    version: "1:2026.01.01-1"
-    type: pacman
-  - name: ttf-lilex-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: iwd
-    version: "3.10-1"
-    type: pacman
-  - name: miro-pdf
-    version: "0.7.3-1"
-    type: pacman
-  - name: adw-gtk-theme
-    version: "6.4-1"
-    type: pacman
-  - name: otf-atkinsonhyperlegiblemono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: linux-zen
-    version: "6.18.7.zen1-1"
-    type: pacman
-  - name: ttf-adwaitamono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-iosevka-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-inconsolata-go-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: antigravity
-    version: "1.15.8-1"
-    type: pacman
-  - name: nano
-    version: "8.7-1"
-    type: pacman
-  - name: wpa_supplicant
-    version: "2:2.11-5"
-    type: pacman
-  - name: cava
-    version: "0.10.6-1"
-    type: pacman
-  - name: ttf-zed-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: unzip
-    version: "6.0-23"
-    type: pacman
-  - name: noto-fonts-emoji
-    version: "1:2.051-1"
-    type: pacman
-  - name: python-daemon
-    version: "3.1.2-6"
-    type: pacman
-  - name: tldr
-    version: "3.4.3-3"
-    type: pacman
-  - name: bluez-utils
-    version: "5.85-1"
-    type: pacman
-  - name: imagemagick
-    version: "7.1.2.13-1"
-    type: pacman
-  - name: ttf-meslo-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-nerd-fonts-symbols
-    version: "3.4.0-1"
-    type: pacman
-  - name: ttf-ubuntu-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-daddytime-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: obs-studio-browser
-    version: "32.0.4-3"
-    type: pacman
-  - name: nemo
-    version: "6.6.3-1"
-    type: pacman
-  - name: linux-zen-headers
-    version: "6.18.7.zen1-1"
-    type: pacman
-  - name: millennium
-    version: "2.34.0-5"
-    type: pacman
-  - name: proton-ge-custom-bin
-    version: "1:GE_Proton10_29-2"
-    type: pacman
-  - name: ttf-ibmplex-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: goverlay
-    version: "1.7.1-1"
-    type: pacman
-  - name: ttf-fantasque-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-recursive-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-inconsolata-lgc-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: wget
-    version: "1.25.0-3"
-    type: pacman
-  - name: bat
-    version: "0.26.1-1"
-    type: pacman
-  - name: ttf-lekton-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: xorg-xinit
-    version: "1.4.4-1"
-    type: pacman
-  - name: easyeffects-jtrv-presets-git
-    version: "r11.e4a1ff4-1"
-    type: pacman
-  - name: htop
-    version: "3.4.1-1"
-    type: pacman
-  - name: noto-fonts-extra
-    version: "1:2026.01.01-1"
-    type: pacman
-  - name: gamemode
-    version: "1.8.2-1"
-    type: pacman
-  - name: ttf-go-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: krita-git
-    version: "6.0.0.prealpha.r65534.fb2951613f-1"
-    type: pacman
-  - name: ttf-mplus-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: hyprland
-    version: "0.53.3-1"
-    type: pacman
-  - name: base
-    version: "3-2"
-    type: pacman
-  - name: fish
-    version: "4.3.3-1"
-    type: pacman
-  - name: gst-plugin-pipewire
-    version: "1:1.4.10-1"
-    type: pacman
-  - name: stow
-    version: "2.4.1-1"
-    type: pacman
-  - name: imv
-    version: "5.0.1-1"
-    type: pacman
-  - name: ttf-anonymouspro-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: qzdl
-    version: "3.3.0.0-1"
-    type: pacman
-  - name: ttf-arimo-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-inconsolata-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-ubuntu-mono-nerd
     version: "3.4.0-2"
     type: pacman
   - name: dunst
     version: "1.13.0-1"
     type: pacman
-  - name: sunsetr
-    version: "0.11.1-1"
-    type: pacman
-  - name: uwsm
-    version: "0.26.0-1"
-    type: pacman
-  - name: vcvrack-bin
-    version: "2.6.6-1"
-    type: pacman
-  - name: qt5-wayland
-    version: "5.15.18+kde+r55-1"
-    type: pacman
-  - name: adwaita-qt6
-    version: "1.4.2-1"
-    type: pacman
-  - name: wofi
-    version: "1.5.3-1"
-    type: pacman
-  - name: ttf-sharetech-mono-nerd
+  - name: ttf-agave-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: xorg-server
-    version: "21.1.21-1"
+  - name: nano
+    version: "8.7-1"
     type: pacman
-  - name: docker
-    version: "1:29.2.0-1"
+  - name: nwg-look
+    version: "1.0.6-1"
     type: pacman
-  - name: libpulse
-    version: "17.0+r98+gb096704c0-1"
+  - name: blockbench
+    version: "5.0.5-1"
     type: pacman
-  - name: yay-debug
-    version: "12.5.7-1"
+  - name: antigravity
+    version: "1.15.8-1"
+    type: pacman
+  - name: ttf-intone-nerd
+    version: "3.4.0-2"
     type: pacman
   - name: lib32-gamemode
     version: "1.8.2-1"
     type: pacman
-  - name: qt5ct
-    version: "1.9-1"
-    type: pacman
   - name: dcli-arch-git
-    version: "0.2.0.r154.4f269696-1"
+    version: "0.2.0.r155.386b875b-1"
     type: pacman
-  - name: otf-hasklig-nerd
-    version: "3.4.0-2"
+  - name: sdl2_image
+    version: "2.8.8-1"
     type: pacman
-  - name: ttf-iosevkaterm-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-liberation-mono-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: ttf-d2coding-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: wireless_tools
-    version: "30.pre9-5"
-    type: pacman
-  - name: otf-overpass-nerd
-    version: "3.4.0-2"
-    type: pacman
-  - name: power-profiles-daemon
-    version: "0.30-1"
-    type: pacman
-  - name: ttf-dejavu-nerd
-    version: "3.4.0-2"
+  - name: docker-compose
+    version: "5.0.2-1"
     type: pacman
   - name: zram-generator
     version: "1.2.1-1"
     type: pacman
-  - name: wallust
-    version: "3.4.0-1"
-    type: pacman
-  - name: otf-firamono-nerd
+  - name: otf-commit-mono-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: pipewire-alsa
-    version: "1:1.4.10-1"
+  - name: dolphin
+    version: "25.12.1-1"
     type: pacman
-  - name: pipewire-jack
-    version: "1:1.4.10-1"
+  - name: imv
+    version: "5.0.1-1"
     type: pacman
-  - name: hytale-launcher-bin
-    version: "2026.01.27.b4eb731-2"
-    type: pacman
-  - name: discord
-    version: "1:0.0.122-1"
-    type: pacman
-  - name: aseprite
-    version: "1.3.16.1-1"
-    type: pacman
-  - name: keyd
-    version: "2.6.0-2"
-    type: pacman
-  - name: breeze
-    version: "6.5.5-1"
-    type: pacman
-  - name: grim
-    version: "1.5.0-2"
-    type: pacman
-  - name: intel-ucode
-    version: "20251111-1"
-    type: pacman
-  - name: efibootmgr
-    version: "18-3"
-    type: pacman
-  - name: otf-opendyslexic-nerd
+  - name: ttf-fantasque-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: lshw
-    version: "B.02.20-2"
+  - name: ultimate-doom-builder-git
+    version: "3.0.0.4282.aa22cd7-1"
     type: pacman
-  - name: mako
-    version: "1.10.0-1"
+  - name: quickshell
+    version: "0.2.1-4"
     type: pacman
-  - name: mpv
-    version: "1:0.41.0-2"
+  - name: sdl2
+    version: "2.32.62-1"
     type: pacman
-  - name: blender-launcher-v2-bin
-    version: "2.5.3-1"
+  - name: material-maker-bin
+    version: "1.4-1"
     type: pacman
-  - name: breeze-grub
-    version: "6.5.5-1"
+  - name: ttf-mplus-nerd
+    version: "3.4.0-2"
     type: pacman
-  - name: catppuccin-cursors-mocha
-    version: "2.0.0-1"
+  - name: fzf
+    version: "0.67.0-2"
+    type: pacman
+  - name: ttf-profont-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: wlr-randr
+    version: "0.5.0-1"
+    type: pacman
+  - name: ttf-bigblueterminal-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-sourcecodepro-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: pureref
+    version: "2.1.0-1"
+    type: pacman
+  - name: ttf-ubuntu-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: sdl2_mixer
+    version: "2.8.1-2"
+    type: pacman
+  - name: ttf-iawriter-nerd
+    version: "3.4.0-2"
     type: pacman
   - name: dkms
     version: "3.3.0-1"
     type: pacman
-  - name: jdk-openjdk
-    version: "25.0.2.u10-1"
+  - name: ttf-proggyclean-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: hytale-launcher-bin
+    version: "2026.02.02-1"
+    type: pacman
+  - name: libva-nvidia-driver
+    version: "0.0.15-1"
+    type: pacman
+  - name: ttf-envycoder-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: vim
+    version: "9.1.2077-1"
+    type: pacman
+  - name: pyenv
+    version: "1:2.6.20-1"
+    type: pacman
+  - name: gamemode
+    version: "1.8.2-1"
+    type: pacman
+  - name: winetricks
+    version: "20260125-1"
+    type: pacman
+  - name: opencode-bin
+    version: "1.1.49-1"
+    type: pacman
+  - name: git
+    version: "2.53.0-1"
+    type: pacman
+  - name: noto-fonts-emoji
+    version: "1:2.051-1"
+    type: pacman
+  - name: noto-fonts-extra
+    version: "1:2026.02.01-1"
     type: pacman
   - name: neovim
-    version: "0.11.5-1"
+    version: "0.11.6-1"
     type: pacman
-  - name: npm
-    version: "11.7.0-1"
+  - name: eza
+    version: "0.23.4-1"
     type: pacman
-  - name: otf-geist-mono-nerd
+  - name: spotify
+    version: "1:1.2.79.427-2"
+    type: pacman
+  - name: bluez-utils
+    version: "5.85-1"
+    type: pacman
+  - name: ttf-martian-mono-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: easyeffects
-    version: "8.1.0-1"
+  - name: xdg-desktop-portal-hyprland
+    version: "1.3.11-3"
     type: pacman
-  - name: otf-hermit-nerd
+  - name: bluetui
+    version: "0.8.1-1"
+    type: pacman
+  - name: breeze-gtk
+    version: "6.5.5-1"
+    type: pacman
+  - name: otf-overpass-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: otf-monaspace-nerd
+  - name: discord
+    version: "1:0.0.123-2"
+    type: pacman
+  - name: chafa
+    version: "1.18.0-1"
+    type: pacman
+  - name: smartmontools
+    version: "7.5-1"
+    type: pacman
+  - name: ttf-anonymouspro-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: gst-plugin-pipewire
+    version: "1:1.4.10-2"
+    type: pacman
+  - name: ttf-adwaitamono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: base
+    version: "3-2"
+    type: pacman
+  - name: nvtop
+    version: "3.3.1-1"
+    type: pacman
+  - name: github-cli
+    version: "2.86.0-1"
+    type: pacman
+  - name: blender-launcher-v2-bin
+    version: "2.5.3-1"
+    type: pacman
+  - name: linux-zen-headers
+    version: "6.18.7.zen1-1"
+    type: pacman
+  - name: steam
+    version: "1.0.0.85-1"
+    type: pacman
+  - name: swww
+    version: "0.11.2-1"
+    type: pacman
+  - name: fish
+    version: "4.4.0-1"
+    type: pacman
+  - name: otf-droid-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-cascadia-mono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-inconsolata-lgc-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: otf-aurulent-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: efibootmgr
+    version: "18-3"
+    type: pacman
+  - name: update-grub
+    version: "0.0.1-8"
+    type: pacman
+  - name: pipewire-pulse
+    version: "1:1.4.10-2"
+    type: pacman
+  - name: wpa_supplicant
+    version: "2:2.11-5"
+    type: pacman
+  - name: prismlauncher
+    version: "10.0.2-1"
+    type: pacman
+  - name: ollama
+    version: "0.15.4-2"
+    type: pacman
+  - name: otf-atkinsonhyperlegiblemono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-sharetech-mono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: breeze-grub
+    version: "6.5.5-1"
+    type: pacman
+  - name: otf-hasklig-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: qt5-wayland
+    version: "5.15.18+kde+r55-1"
+    type: pacman
+  - name: otf-opendyslexic-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-monofur-nerd
     version: "3.4.0-2"
     type: pacman
   - name: polkit-kde-agent
     version: "6.5.5-1"
     type: pacman
-  - name: lazygit
-    version: "0.58.1-1"
+  - name: base-devel
+    version: "1-2"
     type: pacman
-  - name: nvtop
-    version: "3.2.0-1"
+  - name: easyeffects
+    version: "8.1.2-1"
     type: pacman
-  - name: waypaper
-    version: "2.7-1"
+  - name: cava
+    version: "0.10.7-1"
     type: pacman
-  - name: otf-commit-mono-nerd
+  - name: qzdl
+    version: "3.3.0.0-1"
+    type: pacman
+  - name: fastfetch
+    version: "2.58.0-1"
+    type: pacman
+  - name: ttf-bitstream-vera-mono-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: kitty
-    version: "0.45.0-4"
+  - name: iwd
+    version: "3.10-1"
     type: pacman
-  - name: bluetui
-    version: "0.8.1-1"
+  - name: grub
+    version: "2:2.14-1"
     type: pacman
-  - name: nwg-look
-    version: "1.0.6-1"
+  - name: imagemagick
+    version: "7.1.2.13-1"
     type: pacman
-  - name: archlinux-xdg-menu
-    version: "0.7.7-1"
+  - name: ttf-firacode-nerd
+    version: "3.4.0-2"
     type: pacman
-  - name: nemo-fileroller
-    version: "6.6.0-4"
+  - name: ttf-lekton-nerd
+    version: "3.4.0-2"
     type: pacman
-  - name: prismlauncher
-    version: "10.0.2-1"
+  - name: linux-headers
+    version: "6.18.7.arch1-1"
     type: pacman
-  - name: qt6-wayland
-    version: "6.10.1-1"
+  - name: yay-debug
+    version: "12.5.7-1"
     type: pacman
-  - name: qt6ct
-    version: "0.11-3"
+  - name: lazygit
+    version: "0.58.1-1"
     type: pacman
   - name: ttf-0xproto-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: ttf-3270-nerd
+  - name: qpwgraph
+    version: "0.9.8-1"
+    type: pacman
+  - name: pipewire
+    version: "1:1.4.10-2"
+    type: pacman
+  - name: otf-geist-mono-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: ttf-envycoder-nerd
+  - name: wlogout
+    version: "1.2.2-0"
+    type: pacman
+  - name: ttf-heavydata-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: timeshift
+    version: "25.12.4-1"
+    type: pacman
+  - name: calf
+    version: "0.90.8-6"
+    type: pacman
+  - name: godot-git
+    version: "4.7.r284.g80a4af1-1"
+    type: pacman
+  - name: linux-zen
+    version: "6.18.7.zen1-1"
+    type: pacman
+  - name: unzip
+    version: "6.0-23"
+    type: pacman
+  - name: wlr-protocols
+    version: "r112.a741f0a-1"
+    type: pacman
+  - name: otf-codenewroman-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: breeze
+    version: "6.5.5-1"
+    type: pacman
+  - name: flatpak
+    version: "1:1.16.3-1"
+    type: pacman
+  - name: noto-fonts
+    version: "1:2026.02.01-1"
+    type: pacman
+  - name: power-profiles-daemon
+    version: "0.30-1"
+    type: pacman
+  - name: ttf-lilex-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-roboto-mono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: brightnessctl
+    version: "0.5.1-3"
+    type: pacman
+  - name: wev
+    version: "1.1.0-1"
+    type: pacman
+  - name: ghostty
+    version: "1.2.3-2"
+    type: pacman
+  - name: ttf-cousine-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: plocate
+    version: "1.1.24-1"
+    type: pacman
+  - name: bluez
+    version: "5.85-1"
+    type: pacman
+  - name: ttf-tinos-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: xorg-server
+    version: "21.1.21-1"
+    type: pacman
+  - name: ttf-recursive-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: otf-comicshanns-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-d2coding-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-nerd-fonts-symbols
+    version: "3.4.0-1"
+    type: pacman
+  - name: vcvrack-bin
+    version: "2.6.6-1"
+    type: pacman
+  - name: pipewire-jack
+    version: "1:1.4.10-2"
+    type: pacman
+  - name: ttf-space-mono-nerd
     version: "3.4.0-2"
     type: pacman
   - name: ttf-hack-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: ttf-intone-nerd
+  - name: slurp
+    version: "1.5.0-1"
+    type: pacman
+  - name: goverlay
+    version: "1.7.3-1"
+    type: pacman
+  - name: kdenlive
+    version: "25.12.1-1"
+    type: pacman
+  - name: awesome-terminal-fonts
+    version: "1.1.0-5"
+    type: pacman
+  - name: adw-gtk-theme
+    version: "6.4-1"
+    type: pacman
+  - name: ttf-daddytime-mono-nerd
     version: "3.4.0-2"
     type: pacman
-  - name: ttf-martian-mono-nerd
+  - name: python-prctl
+    version: "1.8.1-8"
+    type: pacman
+  - name: libadwaita
+    version: "1:1.8.4-1"
+    type: pacman
+  - name: easyeffects-jtrv-presets-git
+    version: "r11.e4a1ff4-1"
+    type: pacman
+  - name: nvidia-open-dkms
+    version: "590.48.01-2"
+    type: pacman
+  - name: python-pip
+    version: "25.3-3"
+    type: pacman
+  - name: wireless_tools
+    version: "30.pre9-5"
+    type: pacman
+  - name: lshw
+    version: "B.02.20-2"
+    type: pacman
+  - name: ttf-zed-mono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ffmpegthumbnailer
+    version: "2.3.0-1"
+    type: pacman
+  - name: kitty
+    version: "0.45.0-4"
+    type: pacman
+  - name: uwsm
+    version: "0.26.0-1"
+    type: pacman
+  - name: krita-git
+    version: "6.0.0.prealpha.r65535.b48796bcc1-1"
+    type: pacman
+  - name: ttf-inconsolata-go-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: rust-src
+    version: "1:1.93.0-1"
+    type: pacman
+  - name: catppuccin-cursors-mocha
+    version: "2.0.0-1"
+    type: pacman
+  - name: ttf-liberation-mono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: otf-hermit-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-cascadia-code-nerd
     version: "3.4.0-2"
     type: pacman
   - name: ttf-monoid-nerd
     version: "3.4.0-2"
     type: pacman
+  - name: otf-monaspace-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: pandora-launcher
+    version: "2.7.3-1"
+    type: pacman
+  - name: millennium
+    version: "2.34.0-5"
+    type: pacman
+  - name: python-daemon
+    version: "3.1.2-6"
+    type: pacman
+  - name: mpv
+    version: "1:0.41.0-2"
+    type: pacman
+  - name: hwinfo
+    version: "25.0-2"
+    type: pacman
+  - name: ttf-iosevkatermslab-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: adwaita-qt5
+    version: "1.4.2-1"
+    type: pacman
+  - name: ttf-3270-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: visual-studio-code-bin
+    version: "1.108.2-1"
+    type: pacman
+  - name: ly
+    version: "1.3.1-1"
+    type: pacman
+  - name: xdg-utils
+    version: "1.2.1-2"
+    type: pacman
+  - name: ttf-go-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: bat
+    version: "0.26.1-1"
+    type: pacman
+  - name: docker
+    version: "1:29.2.0-1"
+    type: pacman
+  - name: qutebrowser
+    version: "3.6.3-2"
+    type: pacman
+  - name: swappy
+    version: "1.8.0-1"
+    type: pacman
+  - name: qt6ct
+    version: "0.11-4"
+    type: pacman
+  - name: ttf-iosevkaterm-nerd
+    version: "3.4.0-2"
+    type: pacman
   - name: wl-clipboard
     version: "1:2.2.1-3"
     type: pacman
-  - name: kdenlive
-    version: "25.12.1-1"
+  - name: pavucontrol
+    version: "1:6.2-1"
+    type: pacman
+  - name: sdl2_ttf
+    version: "2.24.0-2"
+    type: pacman
+  - name: keyd
+    version: "2.6.0-2"
+    type: pacman
+  - name: ttf-ibmplex-mono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: xorg-xinit
+    version: "1.4.4-1"
+    type: pacman
+  - name: waypaper
+    version: "2.7-1"
+    type: pacman
+  - name: ttf-gohu-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: waybar
+    version: "0.14.0-6"
+    type: pacman
+  - name: archlinux-xdg-menu
+    version: "0.7.7-1"
+    type: pacman
+  - name: ttf-terminus-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: otf-firamono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: aseprite
+    version: "1.3.16.1-1"
+    type: pacman
+  - name: ttf-victor-mono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: networkmanager
+    version: "1.54.3-1"
+    type: pacman
+  - name: proton-ge-custom-bin
+    version: "1:GE_Proton10_29-2"
+    type: pacman
+  - name: rofi
+    version: "2.0.0-1"
+    type: pacman
+  - name: jdk-openjdk
+    version: "25.0.2.u10-1"
+    type: pacman
+  - name: hyprland
+    version: "0.53.3-1"
+    type: pacman
+  - name: nemo
+    version: "6.6.3-1"
+    type: pacman
+  - name: stow
+    version: "2.4.1-1"
+    type: pacman
+  - name: ttf-inconsolata-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: sunsetr
+    version: "0.11.1-1"
+    type: pacman
+  - name: yay
+    version: "12.5.7-1"
+    type: pacman
+  - name: keepassxc
+    version: "2.7.11-1"
+    type: pacman
+  - name: linux
+    version: "6.18.7.arch1-1"
+    type: pacman
+  - name: ttf-dejavu-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-jetbrains-mono-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: ttf-arimo-nerd
+    version: "3.4.0-2"
+    type: pacman
+  - name: adwaita-qt6
+    version: "1.4.2-1"
+    type: pacman
+  - name: mako
+    version: "1.10.0-1"
+    type: pacman
+  - name: nvidia-prime
+    version: "1.0-5"
+    type: pacman
+  - name: obs-studio-browser
+    version: "32.0.4-3"
+    type: pacman
+  - name: pipewire-alsa
+    version: "1:1.4.10-2"
+    type: pacman
+  - name: paru
+    version: "2.1.0-2"
+    type: pacman
+  - name: qt5ct
+    version: "1.9-1"
+    type: pacman
+  - name: miro-pdf
+    version: "0.7.3-1"
+    type: pacman
+  - name: openssh
+    version: "10.2p1-2"
+    type: pacman
+  - name: ttf-nerd-fonts-symbols-mono
+    version: "3.4.0-1"
+    type: pacman
+  - name: wireplumber
+    version: "0.5.13-1"
+    type: pacman
+  - name: uzdoom-git
+    version: "4.14pre+1119+gc34025d-1"
+    type: pacman
+  - name: heroic-games-launcher-bin
+    version: "2.19.1-1"
+    type: pacman
+  - name: intel-ucode
+    version: "20251111-1"
+    type: pacman
+  - name: wallust
+    version: "3.4.0-1"
     type: pacman

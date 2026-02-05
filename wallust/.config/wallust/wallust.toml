@@ -1,4 +1,4 @@
-backend = "resized"
+backend = "fastresize"
 color_space = "lchmixed" # idc about this one..
 palette = "dark16"
 check_contrast = true

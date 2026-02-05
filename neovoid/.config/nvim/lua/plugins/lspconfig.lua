@@ -134,6 +134,9 @@ return {
                   'trailing-space',
                   'redefined-local',
                   'redefined-label'
+                },
+                globals = {
+                  "vim"
                 }
               },
               completion = {

@@ -36,6 +36,7 @@ packages:
 - github-cli
 - goverlay
 - grim
+- grub
 - gst-plugin-pipewire
 - heroic-games-launcher-bin
 - htop
@@ -55,7 +56,9 @@ packages:
 - lib32-gamemode
 - libpulse
 - libva-nvidia-driver
+- linux
 - linux-firmware
+- linux-headers
 - linux-zen
 - linux-zen-headers
 - lshw
@@ -68,6 +71,7 @@ packages:
 - nemo
 - nemo-fileroller
 - neovim
+- network-manager-applet
 - networkmanager
 - noto-fonts
 - noto-fonts-emoji
@@ -114,6 +118,7 @@ packages:
 - quickshell
 - qutebrowser
 - qzdl
+- rofi
 - satisfactory-mod-manager
 - sddm
 - slurp
@@ -122,6 +127,7 @@ packages:
 - spotify
 - steam
 - stow
+- sudo
 - sunsetr
 - swappy
 - swww

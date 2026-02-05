@@ -3,6 +3,8 @@ set -gx XDG_DATA_HOME "$HOME/.local/share"
 set -gx XDG_STATE_HOME "$HOME/.local/state"
 set -gx XDG_CACHE_HOME "$HOME/.cache"
 
+set -gx QT_QPA_PLATFORM "wayland;xcb"
+
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx GIT_EDITOR nvim

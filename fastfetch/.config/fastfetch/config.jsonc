@@ -23,14 +23,15 @@
       // "width": 65,           // Width in characters (for image logos)
       // "height": 35,          // Height in characters (for image logos)
       "padding": {
-          "top": 0,          // Top padding
+          "top": 2,          // Top padding
           "left": 0,         // Left padding
-          "right": 1         // Right padding
+          "right": 2         // Right padding
       }
   },
 
   "modules": [
     "title",
+    "uptime",
     "separator",
     {
       "type": "host",
@@ -49,12 +50,12 @@
       "key": " BOOT"
     },
 		{
-			"type": "shell",
-			"key": " SHLL"
-		},
-		{
 			"type": "display",
       "key": " DISP"
+		},
+		{
+			"type": "de",
+			"key": " DESK"
 		},
 		{
 			"type": "wm",
@@ -63,6 +64,30 @@
 		{
 			"type": "terminal",
       "key": " TERM"
+		},
+		{
+			"type": "shell",
+			"key": " SHLL"
+		},
+		{
+			"type": "terminalfont",
+			"key": " FONT"
+		},
+		{
+			"type": "icons",
+			"key": " ICON"
+		},
+		{
+			"type": "editor",
+			"key": " EDIT"
+		},
+		{
+			"type": "packages",
+			"key": " PKGS"
+		},
+		{
+			"type": "wifi",
+			"key": " WIFI"
 		},
 		{
 			"type": "cpu",
