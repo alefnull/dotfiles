@@ -1,0 +1,77 @@
+# Blender Extension Manifest
+# https://docs.blender.org/manual/en/dev/advanced/extensions/getting_started.html#manifest
+
+# Required fields
+schema_version = "1.0.0"
+
+id = "sidebar_tab_search"
+version = "1.0.0"
+name = "Sidebar Tab Search"
+tagline = "Quick search and switch between Sidebar (N-Panel) tabs"
+maintainer = "McKaa (Powered by Antigravity)"
+
+# Supported types: "add-on", "theme"
+type = "add-on"
+
+# Minimum Blender version - use at least 4.2.0
+blender_version_min = "5.0.0"
+
+# License conforming to https://spdx.org/licenses/
+# https://docs.blender.org/manual/en/dev/advanced/extensions/licenses.html
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+# Optional: required by some licenses
+copyright = [
+  "2025 McKaa",
+]
+
+# Optional: link to documentation, support, source files, etc
+website = "https://github.com/McKaa/sidebar-tab-search-blender-addon"
+
+# Optional: tag list defined by Blender and server
+# https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html
+tags = ["3D View", "User Interface"]
+
+# Optional: list of supported platforms
+# If omitted, the extension will be available in all operating systems
+# Available options: ["windows-x64", "windows-arm64", "macos-x64", "macos-arm64", "linux-x64"]
+# platforms = ["windows-x64", "macos-arm64", "linux-x64"]
+
+# Optional: Blender version that the extension does not support
+# This can be omitted and defined later on the extensions platform if an issue is found
+# blender_version_max = "6.0.0"
+
+# Optional: bundle 3rd party Python modules
+# https://docs.blender.org/manual/en/dev/advanced/extensions/python_wheels.html
+# wheels = [
+#   "./wheels/example-1.0.0-py3-none-any.whl",
+# ]
+
+# Optional: add-ons can list which resources they will require
+# For each permission it is important to also specify the reason why it is required
+# Keep this a single short sentence without a period (.) at the end
+# [permissions]
+# network = "Need to sync data to server"
+# files = "Import/export files from/to disk"
+# clipboard = "Copy and paste data"
+# camera = "Capture photos and videos"
+# microphone = "Capture audio"
+
+# Optional: advanced build settings
+# https://docs.blender.org/manual/en/dev/advanced/extensions/command_line_arguments.html#command-line-args-extension-build
+[build]
+# These are the default build excluded patterns
+# You only need to edit them if you want different options
+paths_exclude_pattern = [
+  "__pycache__/",
+  "/.git/",
+  "/*.zip",
+  "AI_AGENT_GUIDE.md",
+  "CONTEXT_FILTERING_FIX.md",
+  ".gitignore",
+  "image.jpg",
+  "sidebar-tab-search_ico_256px.png",
+  "sidebar-tab-search_ico_512px.jpg",
+]

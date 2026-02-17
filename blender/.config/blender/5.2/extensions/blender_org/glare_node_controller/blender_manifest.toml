@@ -1,0 +1,29 @@
+# Manifest file for a Blender extension.
+# See https://docs.blender.org/manual/en/dev/advanced/extensions/getting_started.html for details.
+schema_version = "1.0.0"
+
+# A unique identifier for the extension.
+id = "glare_node_controller"
+
+# Version, name, and author information.
+version = "2.3.3"
+name = "Glare Node Controller"
+tagline = "panel to control Glare"
+maintainer = "darkstarrd"
+
+# The type of extension. For most addons, this is "add-on".
+type = "add-on"
+
+# Minimum Blender version required, based on your bl_info.
+blender_version_min = "4.2.0"
+
+# License identifier. GPL is standard for Blender addons.
+# See https://spdx.org/licenses/ for a list of valid identifiers.
+license = [ "SPDX:GPL-3.0-or-later" ]
+
+# Tags for categorization on the Blender Extensions platform.
+# See https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html for a list of valid tags.
+tags = ["Node", "Render"]
+
+# Optional: Link to your documentation.
+# doc_url = "https://your-documentation-url.com"

@@ -1,0 +1,299 @@
+{
+  "layout": {
+    "left": [
+      ["TEXTURE", "LAYOUT"],
+      ["CONVERTOR", "SCRIPT"]
+    ],
+    "right": [["INPUT"], ["SHADER"]],
+    "top": [["VECTOR"]],
+    "bottom": [["COLOR"]]
+  },
+  "poll_types": {
+    "is_world": [
+      {
+        "context_path": "space_data.shader_type",
+        "operand": "equals",
+        "value": "WORLD"
+      }
+    ],
+    "is_not_world": [
+      {
+        "context_path": "space_data.shader_type",
+        "operand": "not_equals",
+        "value": "WORLD"
+      }
+    ]
+  },
+  "categories": {
+    "INPUT": {
+      "label": "Input",
+      "color": "input",
+      "nodes": [
+        { "identifier": "ShaderNodeAmbientOcclusion" },
+        { "identifier": "ShaderNodeAttribute" },
+        { "identifier": "ShaderNodeBackground", "poll_type": "is_world" },
+        { "identifier": "ShaderNodeCameraData" },
+        { "identifier": "ShaderNodeVertexColor" },
+        { "identifier": "ShaderNodeHairInfo" },
+        { "identifier": "ShaderNodeFresnel" },
+        { "identifier": "ShaderNodeNewGeometry" },
+        { "identifier": "ShaderNodeLayerWeight" },
+        { "identifier": "ShaderNodeLightPath" },
+        { "identifier": "ShaderNodeObjectInfo" },
+        { "identifier": "ShaderNodePointInfo" },
+        { "identifier": "ShaderNodeRGB" },
+        { "identifier": "ShaderNodeTangent" },
+        { "identifier": "ShaderNodeTexCoord" },
+        {
+          "identifier": "ShaderNodeUVAlongStroke",
+          "poll_conditions": [
+            {
+              "context_path": "space_data.shader_type",
+              "operand": "equals",
+              "value": "LINESTYLE"
+            }
+          ]
+        },
+        { "identifier": "ShaderNodeUVMap" },
+        { "identifier": "ShaderNodeValue" },
+        { "identifier": "ShaderNodeVolumeInfo" },
+        { "identifier": "ShaderNodeWireframe" },
+        { "separator": true, "label": "Cycles" },
+        { "identifier": "ShaderNodeBevel" },
+        { "identifier": "ShaderNodeParticleInfo" }
+      ]
+    },
+    "OUTPUT": {
+      "label": "Output",
+      "color": "output",
+      "nodes": [
+        { "identifier": "ShaderNodeOutputAOV" },
+        { "identifier": "ShaderNodeOutputLight" },
+        { "identifier": "ShaderNodeOutputMaterial" }
+      ]
+    },
+    "SHADER": {
+      "label": "Shader",
+      "color": "shader",
+      "nodes": [
+        // A lot of shader nodes are not available in the world context
+        { "identifier": "ShaderNodeAddShader" },
+        { "identifier": "ShaderNodeBsdfDiffuse", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeEmission" },
+        { "identifier": "ShaderNodeBsdfGlass", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeBsdfGlossy", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeHoldout", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeMixShader" },
+        { "identifier": "ShaderNodeBsdfPrincipled", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeVolumePrincipled" },
+        { "identifier": "ShaderNodeBsdfRefraction", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeSubsurfaceScattering", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeBsdfTranslucent", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeBsdfTransparent", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeVolumeAbsorption" },
+        { "identifier": "ShaderNodeVolumeScatter" },
+        {
+          "separator": true,
+          "label": "Cycles",
+          "poll_type": "is_not_world"
+        },
+        { "identifier": "ShaderNodeBsdfAnisotropic", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeBsdfToon", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeBsdfHair", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeBsdfHairPrincipled", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeBsdfVelvet", "poll_type": "is_not_world" },
+        { "separator": true, "label": "Eevee", "poll_type": "is_not_world" },
+        { "identifier": "ShaderNodeEeveeSpecular", "poll_type": "is_not_world" }
+      ]
+    },
+    "TEXTURE": {
+      "label": "Texture",
+      "color": "texture",
+      "nodes": [
+        { "identifier": "ShaderNodeTexBrick" },
+        { "identifier": "ShaderNodeTexChecker" },
+        { "identifier": "ShaderNodeTexEnvironment" },
+        { "identifier": "ShaderNodeTexGradient" },
+        { "identifier": "ShaderNodeTexImage" },
+        { "identifier": "ShaderNodeTexMagic" },
+        { "identifier": "ShaderNodeTexMusgrave" },
+        { "identifier": "ShaderNodeTexNoise" },
+        { "identifier": "ShaderNodeTexSky" },
+        { "identifier": "ShaderNodeTexVoronoi" },
+        { "identifier": "ShaderNodeTexWave" },
+        { "identifier": "ShaderNodeTexWhiteNoise" },
+        { "separator": true, "label": "Cycles" },
+        { "identifier": "ShaderNodeTexIES" },
+        { "identifier": "ShaderNodeTexPointDensity" }
+      ]
+    },
+    "COLOR": {
+      "label": "Color",
+      "color": "color",
+      "nodes": [
+        { "identifier": "ShaderNodeBrightContrast" },
+        { "identifier": "ShaderNodeGamma" },
+        { "identifier": "ShaderNodeHueSaturation" },
+        { "identifier": "ShaderNodeInvert" },
+        {
+          "identifier": "ShaderNodeMix",
+          "settings": { "data_type": "RGBA" },
+          "color": "color",
+          "variants": {
+            "Add": { "blend_type": "ADD" },
+            "Subtract": { "blend_type": "SUBTRACT" },
+            "Multiply": { "blend_type": "MULTIPLY" },
+            "Divide": { "blend_type": "DIVIDE" },
+            "Overlay": { "blend_type": "OVERLAY" },
+            "Linear Light": { "blend_type": "LINEAR_LIGHT" }
+          }
+        },
+        { "identifier": "ShaderNodeRGBCurve" },
+        { "separator": true, "label": "Cycles" },
+        { "identifier": "ShaderNodeLightFalloff" }
+      ]
+    },
+    "VECTOR": {
+      "label": "Vector",
+      "color": "vector",
+      "nodes": [
+        { "identifier": "ShaderNodeBump" },
+        { "identifier": "ShaderNodeDisplacement" },
+        { "identifier": "ShaderNodeMapping" },
+        {
+          "identifier": "ShaderNodeMix",
+          "settings": { "data_type": "VECTOR" }
+        },
+        { "identifier": "ShaderNodeNormal" },
+        { "identifier": "ShaderNodeNormalMap" },
+        { "identifier": "ShaderNodeVectorCurve" },
+        { "identifier": "ShaderNodeVectorDisplacement" },
+        { "identifier": "ShaderNodeVectorRotate" },
+        { "identifier": "ShaderNodeVectorTransform" },
+        {
+          "identifier": "ShaderNodeVectorMath",
+          "variants": {
+            "Negate": {
+              "operation": "SCALE",
+              "show_options": false,
+              "label": "Negate",
+              "inputs[3].hide": true,
+              "inputs[3].default_value": -1
+            },
+            "One Minus": {
+              "operation": "SUBTRACT",
+              "show_options": false,
+              "label": "One Minus",
+              "inputs[0].hide": true,
+              "inputs[0].default_value": [1, 1, 1]
+            },
+            "One Over": {
+              "operation": "DIVIDE",
+              "show_options": false,
+              "label": "One Over",
+              "inputs[0].hide": true,
+              "inputs[0].default_value": [1, 1, 1]
+            },
+            "separator": true,
+            "Multiply": { "operation": "MULTIPLY" },
+            "Divide": { "operation": "DIVIDE" },
+            "Subtract": { "operation": "SUBTRACT" },
+            "Scale": { "operation": "SCALE" },
+            "Dot Product": { "operation": "DOT_PRODUCT" },
+            "Cross Product": { "operation": "CROSS_PRODUCT" },
+            "Normalize": { "operation": "NORMALIZE" },
+            "Absolute": { "operation": "ABSOLUTE" },
+            "Distance": { "operation": "DISTANCE" },
+            "Length": { "operation": "LENGTH" }
+          }
+        }
+      ]
+    },
+    "CONVERTOR": {
+      "label": "Converter",
+      "color": "converter",
+      "nodes": [
+        { "identifier": "ShaderNodeBlackbody" },
+        { "identifier": "ShaderNodeClamp" },
+        { "identifier": "ShaderNodeValToRGB", "color": "converter" },
+        { "identifier": "ShaderNodeCombineColor" },
+        { "identifier": "ShaderNodeSeparateColor" },
+        { "identifier": "ShaderNodeCombineXYZ", "color": "converter" },
+        {
+          "identifier": "ShaderNodeSeparateXYZ",
+          "color": "converter",
+          "variants": {
+            "X": {
+              "outputs[1].hide": true,
+              "outputs[2].hide": true,
+              "label": "Get X"
+            },
+            "Y": {
+              "outputs[0].hide": true,
+              "outputs[2].hide": true,
+              "label": "Get Y"
+            },
+            "Z": {
+              "outputs[0].hide": true,
+              "outputs[1].hide": true,
+              "label": "Get Z"
+            }
+          }
+        },
+        { "identifier": "ShaderNodeFloatCurve" },
+        { "identifier": "ShaderNodeMapRange" },
+        {
+          "identifier": "ShaderNodeMath",
+          "variants": {
+            "Negate": {
+              "operation": "MULTIPLY",
+              "show_options": false,
+              "label": "Negate",
+              "inputs[1].hide": true,
+              "inputs[1].default_value": -1
+            },
+            "One Minus": {
+              "operation": "SUBTRACT",
+              "show_options": false,
+              "label": "One Minus",
+              "inputs[0].hide": true,
+              "inputs[0].default_value": 1
+            },
+            "One Over": {
+              "operation": "DIVIDE",
+              "show_options": false,
+              "label": "One Over",
+              "inputs[0].hide": true,
+              "inputs[0].default_value": 1
+            },
+            "separator": true,
+            "Multiply": { "operation": "MULTIPLY" },
+            "Divide": { "operation": "DIVIDE" },
+            "Subtract": { "operation": "SUBTRACT" },
+            "Modulo": { "operation": "MODULO" },
+            "Absolute": { "operation": "ABSOLUTE" },
+            "Power": { "operation": "POWER" },
+            "Sine": { "operation": "SINE" },
+            "Cosine": { "operation": "COSINE" }
+          }
+        },
+        { "identifier": "ShaderNodeMix" },
+        { "identifier": "ShaderNodeRGBToBW" },
+
+        { "identifier": "ShaderNodeWavelength" },
+        { "separator": true, "label": "Eevee" },
+        { "identifier": "ShaderNodeShaderToRGB" }
+      ]
+    },
+    "SCRIPT": {
+      "label": "Script",
+      "color": "script",
+      "nodes": [{ "identifier": "ShaderNodeScript" }]
+    },
+    "LAYOUT": {
+      "label": "Layout",
+      "color": "layout",
+      "nodes": [{ "identifier": "NodeFrame" }, { "identifier": "NodeReroute" }]
+    }
+  }
+}

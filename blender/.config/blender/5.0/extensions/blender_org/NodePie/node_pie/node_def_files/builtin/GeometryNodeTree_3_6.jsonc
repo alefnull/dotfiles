@@ -1,0 +1,31 @@
+// This is a versioning file that only specifies the new nodes in 3.6, compared to the base file.
+{
+  "blender_version": [3, 6, 0],
+  "additions": {
+    "layout": {
+      "right": [[], [], ["SIMULATION"]]
+    },
+    "categories": {
+      "GEOMETRY": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodeIndexOfNearest",
+            "after_node": "GeometryNodeSampleIndex"
+          }
+        ]
+      },
+      "SIMULATION": {
+        "label": "Simulation",
+        "color": "layout",
+        "icon": "PHYSICS",
+        "nodes": [
+          {
+            "label": "Simulation Zone",
+            "operator": "node.add_simulation_zone",
+            "settings": { "use_transform": true }
+          }
+        ]
+      }
+    }
+  }
+}

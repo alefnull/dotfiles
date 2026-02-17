@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+
+id = "Non_Destructive_Primitives"
+version = "0.2.46"
+name = "ND Primitives"
+tagline = "Non-Destructive Parametric Primitives in Blender"
+maintainer = "Dan-Gry"
+type = "add-on"
+
+website = "https://blenderartists.org/t/non-destructive-primitives-add-on/1563192"
+
+tags = ["Modeling", "Add Mesh"]
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+[permissions]
+files = "Import Geometry Nodes Objects from Add-on Folder"

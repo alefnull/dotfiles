@@ -38,10 +38,12 @@ packages:
 - grim
 - grub
 - gst-plugin-pipewire
+- gufw
 - heroic-games-launcher-bin
 - htop
 - hwinfo
 - hyprland
+- hyprpolkitagent
 - hytale-launcher-bin
 - imagemagick
 - imv
@@ -64,6 +66,7 @@ packages:
 - lshw
 - ly
 - mako
+- markdown-reader
 - millennium
 - miro-pdf
 - mpv
@@ -118,6 +121,7 @@ packages:
 - quickshell
 - qutebrowser
 - qzdl
+- raylib
 - rofi
 - satisfactory-mod-manager
 - sddm
@@ -210,6 +214,7 @@ packages:
 - xdg-desktop-portal-hyprland
 - xdg-utils
 - xorg-server
+- xorg-xhost
 - xorg-xinit
 - yay
 - yay-debug

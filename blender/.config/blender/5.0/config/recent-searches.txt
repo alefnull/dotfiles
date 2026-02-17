@@ -1,0 +1,43 @@
+Mesh ▸ Primitives ▸ Grid
+Instances ▸ Instance on Points
+Geometry ▸ Operations ▸ Merge by Distance
+Geometry ▸ Read ▸ ID
+Geometry ▸ Operations ▸ Delete Geometry
+Mesh ▸ Operations ▸ Mesh to Curve
+Curve ▸ Operations ▸ Curve to Mesh
+Curve ▸ Primitives ▸ Curve Circle
+Instances ▸ Realize Instances
+Geometry ▸ Material ▸ Set Material
+ 0 Material
+   Material
+Filter ▸ Glare
+Input ▸ Scene ▸ Scene Time
+Math ▸ Divide
+Color ▸ Mix Color
+Utilities ▸ Random Value
+
+Color ▸ Mix Color ▸ Mix
+Input ▸ Constant ▸ Integer
+Math ▸ Subtract
+Math ▸ Add
+Math ▸ Multiply
+Geometry ▸ Operations ▸ Transform Geometry
+Texture ▸ Noise Texture
+Geometry ▸ Write ▸ Set Position
+Color ▸ Color Ramp
+Utilities ▸ Math ▸ Compare
+Utilities ▸ Vector ▸ Combine XYZ
+Utilities ▸ Vector ▸ Vector Math ▸ Scale
+Displacement ▸ Bump
+Add ▸ Camera
+view3d.camera_to_view ▸ Align Camera to View
+Utilities ▸ Math ▸ Mix
+Utilities ▸ Math ▸ Math ▸ Multiply
+Color ▸ Mix Color ▸ Multiply
+Attribute ▸ Store Named Attribute
+o
+Input ▸ Attribute
+Mesh ▸ Write ▸ Set Shade Smooth
+Bump ▸ Height
+Color Ramp ▸ Factor
+Mesh ▸ Operations ▸ Subdivision Surface

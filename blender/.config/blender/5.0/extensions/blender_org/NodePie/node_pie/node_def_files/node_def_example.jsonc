@@ -1,0 +1,102 @@
+// This example shows how to structure a node pie definition file (This one is for the Serpens addon)
+// For the best experience it is recommended to edit this using a code editor
+// with syntax highlighting such as vscode or notepad++.
+
+// The definition file will be reloaded automatically each time the pie men is called,
+// just make sure to save the file after making a change for it to be shown.
+{
+  // This defines how each category is placed in the pie menu
+  // The menu is divided into four sections (left, right, etc.)
+  // Each section then contains a list of columns (the first set of brackets)
+  // Then each column contains a list of rows (the second set of brackets)
+  // Each row is just defined by the category identifier (defined below)
+  // The layout below will create a pie menu with one column, containing two rows, on the left hand side
+  "layout": {
+    "left": [["DEBUG", "DEBUG"]],
+    "right": [],
+    "top": [],
+    "bottom": []
+  },
+  // These are preset poll conditions that get prepended to the conditions of any items that they are applied to
+  "poll_types": {
+    "poll_type_name": [
+      {
+        // condition 1 etc.
+      }
+    ]
+  },
+  // Categories are the different visual groups of nodes in the node tree.
+  // It doesn't matter what order they are defined in here, since they are laid out above
+  "categories": {
+    // The identifier of the category doesn't matter, just as long as it is unique
+    "DEBUG": {
+      "label": "Debug", // The name that is displayed at the top of the category
+      // The color to draw at the side of the node.
+      // This is defined by the name of that node category color in the Blender theme preferences.
+      // The possible values, and their default colors are:
+      // "converter": light blue
+      // "color": yellow
+      // "group": dark green
+      // "layout": grey
+      // "matte": rust
+      // "distor": grey-blue   This should be distort, but there is a typo in the blender code
+      // "input": red
+      // "output": dark red
+      // "filter": deep purple
+      // "vector": light purple
+      // "texture": orange
+      // "shader": green
+      // "script": dark greeny blue
+      // "geometry": light green
+      // "attribute": dark blue
+      "color": "converter",
+      // A list of the nodes in this category
+      "nodes": [
+        // IMPORTANT: You can auto generate this from the selected nodes with the 'Copy nodes as json' operator
+        {
+          // The internal blender name of the node
+          "identifier": "SN_TriggerNode",
+          // The display name of the node. This is optional, only needs to be used if the auto generated one is wrong
+          "label": "Trigger",
+          // Optional, only needed if the color is different from the category color
+          "color": "input",
+          // Variants show up as a sub menu at the right of the node button, and allow for
+          // having multple preset configurations for a node.
+          // Each variant then has a list of setting names the corresponding values that they should be set to.
+          // For a good reference on what's possible, have a look at the geometry nodes math nodes variants in the built in definition files.
+          "variants": {
+            // This defines a variant called "My variant", that has the setting "node_setting" set to the string "node_value"
+            // This is equivalent to writing node.node_setting = "node_value" in python.
+            "My variant": { "node_setting": "node_value" },
+            // This sets the value of the first node input to 5
+            "My other variant": { "inputs[0].default_value": 5 }
+          },
+          // Apply preset poll conditions
+          "poll_type": "poll_type_name",
+          // Poll conditions allow node items to only be displayed conditionally, depending on the context.
+          // They also work on entire categories.
+          "poll_conditions": [
+            {
+              // This is the python data path starting from "bpy.context."
+              "context_path": "object.name",
+              // The logical operator to apply to the value. One of:
+              // "equals": check whether the returned value equals the provided value
+              // "in": Check whether the returned value is in the provided value
+              // "bool": cast the returned value to a boolean.
+              "operand": "equals",
+              // The value to check the returned value from the context_path against
+              "value": "Cube"
+            }
+          ]
+        },
+        // Define a separator like this, the label is optional, is only show if subcategory labels are enabled in the preferences
+        { "separator": true, "label": "My separator" },
+        { "identifier": "SN_TimestampNode" }
+      ]
+    }
+  },
+  // This will add the imported files on top of the config specified in this file
+  // There can be multiple given in the list to be added one on top of each other.
+  // The name should just be the name of the definition file without the file extension.
+  "imports": ["other_def_file"]
+}

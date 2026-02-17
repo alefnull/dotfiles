@@ -1,0 +1,86 @@
+// This is a versioning file that only specifies the new nodes in 4.4, compared to the previous version.
+// Tons of new nodes, including new import and grease pencil categories.
+{
+  "blender_version": [4, 5, 0],
+  "removals": {
+    // "layout": { "left": [["LAYOUT"], ["GIZMO"]] },
+    "categories": {
+      "CURVE": { "nodes": [{ "identifier": "GeometryNodeGreasePencilToCurves" }] }
+    }
+  },
+  "reset_layout": true,
+  "additions": {
+    // Re-create layout from scratch to allow for 4 columns per side instead of 3
+    "layout": {
+      "top": [["ATTRIBUTE"]],
+      "left": [
+        ["INSTANCE", "MATERIAL", "POINT", "GREASE_PENCIL", "VOLUME"],
+        ["CURVE"],
+        ["MESH"],
+        ["UV", "UTILITIES", "MATRIX"]
+      ],
+      "right": [
+        ["INPUT", "COLOR"],
+        ["GEOMETRY", "TEXTURE"],
+        ["PRIMITIVES_MESH", "TEXT", "ROTATION"],
+        ["PRIMITIVES_CURVE", "IMPORT", "ZONE", "GIZMO", "LAYOUT"]
+      ],
+      "bottom": [["VECTOR"]]
+    },
+    "categories": {
+      "IMPORT": {
+        "label": "Import",
+        "color": "input",
+        "icon": "IMPORT",
+        "nodes": [
+          { "identifier": "GeometryNodeImportCSV" },
+          { "identifier": "GeometryNodeImportOBJ" },
+          { "identifier": "GeometryNodeImportPLY" },
+          { "identifier": "GeometryNodeImportSTL" },
+          { "identifier": "GeometryNodeImportText" },
+          { "identifier": "GeometryNodeImportVDB" }
+        ]
+      },
+      "GREASE_PENCIL": {
+        "label": "Grease Pencil",
+        "color": "geometry",
+        "icon": "OUTLINER_OB_GREASEPENCIL",
+        "nodes": [
+          { "identifier": "GeometryNodeGreasePencilToCurves" },
+          { "identifier": "GeometryNodeSetGreasePencilColor" },
+          { "identifier": "GeometryNodeSetGreasePencilDepth" },
+          { "identifier": "GeometryNodeSetGreasePencilSoftness" }
+        ]
+      },
+      "UTILITIES": {
+        "nodes": [
+          { "identifier": "FunctionNodeBitMath", "before_node": "FunctionNodeBooleanMath" },
+          { "identifier": "GeometryNodeFieldVariance", "after_node": "GeometryNodeFieldOnDomain" },
+          { "identifier": "GeometryNodeFieldMinAndMax", "after_node": "GeometryNodeFieldOnDomain" },
+          { "identifier": "GeometryNodeFieldAverage", "after_node": "GeometryNodeFieldOnDomain" }
+        ]
+      },
+      "INPUT": {
+        "nodes": [{ "identifier": "GeometryNodeCameraInfo", "before_node": "GeometryNodeCollectionInfo" }]
+      },
+      "TEXT": {
+        "nodes": [
+          { "identifier": "FunctionNodeMatchString", "before_node": "FunctionNodeStringLength" },
+          { "identifier": "FunctionNodeFormatString", "after_node": "FunctionNodeFindInString" }
+        ]
+      },
+      "INSTANCE": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodeInputInstanceBounds",
+            "before_node": "GeometryNodeInputInstanceRotation",
+            "color": "input"
+          }
+        ]
+      },
+      "MESH": {
+        "nodes": [{ "identifier": "GeometryNodeSetMeshNormal", "before_node": "GeometryNodeSetShadeSmooth" }]
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+// This is a versioning file that only specifies the new nodes in 4.0, compared to the base file.
+// Adds the new nodes, and also replaces the simulation category with one for all zones.
+// New tool specific nodes are also added, with poll conditions so that they only show up in the correct context.
+{
+  "blender_version": [5, 0, 0],
+  "removals": {
+    "layout": {
+      "left": [["INSTANCE", "MATERIAL", "POINT", "GREASE_PENCIL", "VOLUME"], [], []]
+    },
+    "categories": {
+      "ZONE": {}
+    }
+  },
+  "additions": {
+    "layout": {
+      "left": [["VOLUME", "INSTANCE"], ["GREASE_PENCIL"], []],
+      "right": [[], ["BUNDLE"], ["MATERIAL"], ["POINT"]]
+      // "right": [["ROTATION"], [], ["VOLUME", "ZONE"]]
+    },
+    "poll_types": {
+      "is_tool": [
+        {
+          "context_path": "space_data.node_tree_sub_type",
+          "operand": "equals",
+          "value": "TOOL"
+        }
+      ]
+    },
+    "categories": {
+      "BUNDLE": {
+        "label": "Bundle",
+        "color": "converter",
+        "icon": "LIGHTPROBE_SPHERE",
+        "nodes": [
+          { "identifier": "NodeCombineBundle" },
+          { "identifier": "NodeJoinBundle" },
+          { "identifier": "NodeSeparateBundle" }
+        ]
+      },
+      "COLOR": {
+        "nodes": [{ "identifier": "ShaderNodeGamma", "before_node": "ShaderNodeMix", "color": "color" }]
+      },
+      "LAYOUT": {
+        "nodes": [{ "identifier": "NodeEnableOutput", "before_node": "NodeFrame" }]
+      },
+      "MESH": {
+        "nodes": [
+          { "identifier": "GeometryNodeUVTangent", "before_node": "GeometryNodeVertexOfCorner", "color": "input" }
+        ]
+      },
+      "TEXT": {
+        "nodes": [{ "identifier": "FunctionNodeStringToValue", "after_node": "FunctionNodeStringLength" }]
+      },
+      "UTILITIES": {
+        "nodes": [{ "identifier": "NodeEvaluateClosure", "after_node": "GeometryNodeFieldAtIndex" }]
+      },
+      "VECTOR": {
+        "nodes": [{ "identifier": "ShaderNodeRadialTiling", "before_node": "ShaderNodeVectorCurve" }]
+      },
+      "VOLUME": {
+        "nodes": [
+          { "identifier": "GeometryNodeGridAdvect" },
+          { "identifier": "GeometryNodeDistributePointsInGrid" },
+          { "identifier": "GeometryNodeFieldToGrid" },
+          { "identifier": "GeometryNodeGetNamedGrid" },
+          { "identifier": "GeometryNodeGridCurl" },
+          { "identifier": "GeometryNodeGridDivergence" },
+          { "identifier": "GeometryNodeGridGradient" },
+          { "identifier": "GeometryNodeGridLaplacian" },
+          { "identifier": "GeometryNodeGridPrune" },
+          { "identifier": "GeometryNodeGridToMesh" },
+          { "identifier": "GeometryNodeMeshToDensityGrid" },
+          { "identifier": "GeometryNodeMeshToSDFGrid" },
+          { "identifier": "GeometryNodePointsToSDFGrid" },
+          { "identifier": "GeometryNodeSDFGridBoolean" },
+          { "identifier": "GeometryNodeSDFGridFillet" },
+          { "identifier": "GeometryNodeSDFGridLaplacian" },
+          { "identifier": "GeometryNodeSDFGridMean" },
+          { "identifier": "GeometryNodeSDFGridMeanCurvature" },
+          { "identifier": "GeometryNodeSDFGridMedian" },
+          { "identifier": "GeometryNodeSDFGridOffset" },
+          { "identifier": "GeometryNodeSampleGrid" },
+          { "identifier": "GeometryNodeSampleGridIndex" },
+          { "identifier": "GeometryNodeSetGridBackground" },
+          { "identifier": "GeometryNodeSetGridTransform" },
+          { "identifier": "GeometryNodeStoreNamedGrid" },
+          { "identifier": "GeometryNodeGridVoxelize" },
+          { "separator": true },
+          { "identifier": "GeometryNodeGridInfo", "color": "input" },
+          { "identifier": "GeometryNodeInputVoxelIndex", "color": "input" }
+        ]
+      },
+      "ZONE": {
+        "label": "Zones",
+        "color": "layout",
+        "icon": "PHYSICS",
+        "nodes": [
+          {
+            "label": "Closure",
+            "identifier": "ClosureZone",
+            "operator": "node.add_zone",
+            "settings": {
+              "use_transform": true,
+              "input_node_type": "NodeClosureInput",
+              "output_node_type": "NodeClosureOutput",
+              "add_default_geometry_link": false
+            }
+          },
+          {
+            "label": "For Each Element",
+            "identifier": "ForEachElementZone",
+            "operator": "node.add_zone",
+            "settings": {
+              "use_transform": true,
+              "input_node_type": "GeometryNodeForeachGeometryElementInput",
+              "output_node_type": "GeometryNodeForeachGeometryElementOutput",
+              "add_default_geometry_link": false
+            }
+          },
+          {
+            "label": "Repeat",
+            "identifier": "RepeatZone",
+            "operator": "node.add_zone",
+            "settings": {
+              "use_transform": true,
+              "input_node_type": "GeometryNodeRepeatInput",
+              "output_node_type": "GeometryNodeRepeatOutput",
+              "add_default_geometry_link": true
+            }
+          },
+          {
+            "label": "Simulation",
+            "identifier": "SimulationZone",
+            "operator": "node.add_zone",
+            "settings": {
+              "use_transform": true,
+              "input_node_type": "GeometryNodeSimulationInput",
+              "output_node_type": "GeometryNodeSimulationOutput",
+              "add_default_geometry_link": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}
