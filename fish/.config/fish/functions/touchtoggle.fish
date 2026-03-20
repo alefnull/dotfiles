@@ -14,10 +14,10 @@ function touchtoggle
     if test "$touch_enabled" = true
         touchdisable
         echo false >~/.touch
-        notify-send -t 2000 "touchpad disabled"
+        notify-send -t 2000 "Touchpad Disabled"
     else
         touchenable
         echo true >~/.touch
-        notify-send -t 2000 "touchpad enabled"
+        notify-send -t 2000 "Touchpad Enabled"
     end
 end

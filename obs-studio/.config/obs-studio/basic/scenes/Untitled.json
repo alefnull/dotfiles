@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 536870913,
+        "prev_ver": 536870916,
         "name": "Desktop Audio",
         "uuid": "86551b70-bcdc-43d6-af4d-0f8770734d98",
         "id": "pulse_output_capture",
@@ -31,7 +31,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536870913,
+        "prev_ver": 536870916,
         "name": "Mic/Aux",
         "uuid": "8c5fd369-e156-4703-85e4-d36f9be8a7bd",
         "id": "pulse_input_capture",
@@ -71,7 +71,7 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870916,
             "name": "Scene",
             "uuid": "eddab134-16ed-4f24-b6e9-e0f29fad7899",
             "id": "scene",
@@ -331,7 +331,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870916,
             "name": "App/Game Capture",
             "uuid": "72379189-6c7b-402d-b4d0-563d0393e54f",
             "id": "pipewire-screen-capture-source",
@@ -357,7 +357,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870916,
             "name": "Alerts",
             "uuid": "c42cf614-a65b-4aee-a5df-fdbee27af4ee",
             "id": "browser_source",
@@ -391,7 +391,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870916,
             "name": "Chat",
             "uuid": "8b26482a-e1e6-4c14-a783-a654d173d54e",
             "id": "browser_source",
@@ -426,7 +426,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870916,
             "name": "Full Screen Share (Laptop)",
             "uuid": "b0fb5cc7-e265-4d21-8fb9-d9dc0b385ccc",
             "id": "pipewire-screen-capture-source",

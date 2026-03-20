@@ -1,43 +1,132 @@
-Mesh ▸ Primitives ▸ Grid
-Instances ▸ Instance on Points
-Geometry ▸ Operations ▸ Merge by Distance
-Geometry ▸ Read ▸ ID
-Geometry ▸ Operations ▸ Delete Geometry
 Mesh ▸ Operations ▸ Mesh to Curve
-Curve ▸ Operations ▸ Curve to Mesh
-Curve ▸ Primitives ▸ Curve Circle
-Instances ▸ Realize Instances
-Geometry ▸ Material ▸ Set Material
- 0 Material
-   Material
-Filter ▸ Glare
-Input ▸ Scene ▸ Scene Time
-Math ▸ Divide
 Color ▸ Mix Color
-Utilities ▸ Random Value
 
-Color ▸ Mix Color ▸ Mix
 Input ▸ Constant ▸ Integer
 Math ▸ Subtract
-Math ▸ Add
 Math ▸ Multiply
-Geometry ▸ Operations ▸ Transform Geometry
-Texture ▸ Noise Texture
-Geometry ▸ Write ▸ Set Position
-Color ▸ Color Ramp
 Utilities ▸ Math ▸ Compare
-Utilities ▸ Vector ▸ Combine XYZ
 Utilities ▸ Vector ▸ Vector Math ▸ Scale
 Displacement ▸ Bump
-Add ▸ Camera
-view3d.camera_to_view ▸ Align Camera to View
 Utilities ▸ Math ▸ Mix
-Utilities ▸ Math ▸ Math ▸ Multiply
 Color ▸ Mix Color ▸ Multiply
-Attribute ▸ Store Named Attribute
 o
 Input ▸ Attribute
-Mesh ▸ Write ▸ Set Shade Smooth
 Bump ▸ Height
-Color Ramp ▸ Factor
 Mesh ▸ Operations ▸ Subdivision Surface
+Geometry ▸ Read ▸ Normal
+Mesh ▸ Operations ▸ Mesh to Points
+Utilities ▸ Rotation ▸ Rotate Vector
+Input ▸ Scene ▸ Scene Time
+ 0 Material.002
+Utilities ▸ Repeat
+Math ▸ Divide
+Separate XYZ ▸ Vector
+Color ▸ Mix Color ▸ Add
+Utilities ▸ Math ▸ Math ▸ Add
+Math ▸ Add
+Instances ▸ Instance on Elements
+Noise Nodes ▸ Dot Noise
+Color ▸ Mix Color ▸ Color
+Filter ▸ Glare
+Mesh ▸ Plane
+Mesh ▸ Operations ▸ Mesh to Volume
+Point ▸ Distribute Points in Volume
+Mesh ▸ Primitives ▸ UV Sphere
+Utilities ▸ Math ▸ Math ▸ Greater Than
+Utilities ▸ Math ▸ Math ▸ Compare
+Point ▸ Distribute Points on Faces
+Utilities ▸ Vector ▸ Vector Rotate
+Utilities ▸ Rotation ▸ Mix Rotation
+Transform ▸ Lens Distortion
+Utilities ▸ Vector ▸ Combine XYZ
+Input ▸ Constant ▸ Collection
+Geometry ▸ Read ▸ ID
+Input ▸ Constant ▸ Value
+r
+Utilities ▸ Rotation ▸ Rotation to Euler
+Utilities ▸ Rotation ▸ Euler to Rotation
+Geometry ▸ Operations ▸ Duplicate Elements
+Curve ▸ Operations ▸ Curve to Mesh
+Geometry ▸ Operations ▸ Merge by Distance
+Filter ▸ Blur ▸ Blur
+Mesh ▸ Primitives ▸ Cube
+Mesh to Volume ▸ Mesh
+Distribute Points in Volume ▸ Volume
+Instances ▸ Instance on Points
+Mesh ▸ Primitives ▸ Ico Sphere
+Mesh ▸ Write ▸ Set Shade Smooth
+Geometry ▸ Operations ▸ Separate Geometry
+Input ▸ Constant ▸ Boolean
+Set Material ▸ Geometry
+Shader ▸ Refraction BSDF
+Add Shader ▸ Shader
+Transparent BSDF ▸ BSDF
+Mix Shader ▸ Shader
+Shader ▸ Glass BSDF
+Shader ▸ Principled BSDF
+Shader ▸ Add Shader
+Glass BSDF ▸ BSDF
+Texture ▸ Noise Texture
+Utilities ▸ Math ▸ Boolean Math ▸ And
+Input ▸ Constant ▸ Vector
+Input ▸ Constant ▸ Rotation
+Geometry ▸ Geometry to Instance
+Curve ▸ Primitives ▸ Star
+Group ▸ Star
+Group ▸ Circle
+Generate ▸ Array
+Curve ▸ Primitives ▸ Curve Line
+Curve ▸ Primitives ▸ Curve Circle
+Geometry ▸ Operations ▸ Transform Geometry
+Resample Curve ▸ Curve
+Attribute ▸ Capture Attribute
+idx
+Geometry ▸ Read ▸ Position
+Geometry ▸ Read ▸ Index
+Geometry ▸ Write ▸ Set Position
+Input ▸ Geometry
+Texture ▸ Wave Texture
+Color ▸ Color Ramp
+Shader ▸ Emission
+Mesh ▸ Primitives ▸ Grid
+Mesh ▸ Operations ▸ Extrude Mesh
+Light ▸ Point
+Light ▸ Sun
+pin
+Rotate Vector ▸ Vector
+Utilities ▸ Random Rotation
+CGMatter ▸ Erode Selection [CGM]
+Boolean Math ▸ Or
+Instances ▸ Realize Instances
+Utilities ▸ Index Switch
+Switch ▸ Switch
+ 0 Material
+   Material.001
+   Material.002
+Join Geometry ▸ Geometry
+Utilities ▸ Switch
+Utilities ▸ Random Value
+Attribute ▸ Store Named Attribute
+b
+Instance ▸b|Boolean
+Boolean Math ▸ Not
+Geometry ▸ Join Geometry
+Utilities ▸ Math ▸ Boolean Math ▸ Not
+Geometry ▸ Read ▸ Named Attribute
+Point ▸b|Boolean
+view3d.camera_to_view ▸ Align Camera to View
+Add ▸ Camera
+Mesh ▸ Operations ▸ Subdivide Mesh
+Geometry ▸ Operations ▸ Delete Geometry
+Random Value ▸ Value
+Geometry ▸ Material ▸ Set Material
+   Material
+Input ▸ Object Info ▸ Random
+Input ▸ Point Info ▸ Random
+Input ▸ Geometry ▸ Random Per Island
+Input ▸ Object Info
+Texture ▸ Voronoi Texture
+Color Ramp ▸ Factor
+Filter ▸ Glare ▸ Fog Glow
+Utilities ▸ Math ▸ Math ▸ Multiply
+Color ▸ Mix Color ▸ Mix

@@ -4,18 +4,18 @@
     font-family: "JetBrainsMono Nerd Font", "Hack", monospace;
     font-size: 16px;
     border: none;
-    border-radius: 0px;
+    border-radius: 8px;
 }
 
 window {
-    border-radius: 0px;
-    border: 1px solid @foreground
+    border-radius: 8px;
+    border: 1px solid @color1
 }
 
 #input {
     margin: 5px;
-    border-radius: 0px;
-    border: 1px solid @foreground;
+    border-radius: 8px;
+    border: 1px solid @color1;
     background-color: @background;
     color: @foreground;
 }
@@ -44,7 +44,7 @@ window {
 }
 
 #entry:selected {
-    background-color: @foreground;
+    background-color: @color1;
 }
 
 #text:selected {

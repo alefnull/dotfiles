@@ -1,0 +1,14 @@
+{
+    "version": [
+        0,
+        0,
+        1
+    ],
+    "node_trees": {
+        "ShaderNodeTree": {
+            "ShaderNodeShaderToRGB": {
+                "count": 1
+            }
+        }
+    }
+}

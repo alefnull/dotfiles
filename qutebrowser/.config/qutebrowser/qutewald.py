@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 import os
+import subprocess
 import signal
 import sys
-from pathlib import Path
 
 import daemon
 import psutil
-from daemon.pidfile import PIDLockFile
+from daemon.pidfile import TimeoutPIDLockFile
 from inotify_simple import INotify, flags
 
 
@@ -28,7 +28,7 @@ if os.path.isfile(pidfile):
 
 with daemon.DaemonContext(
         detach_process=False,
-        pidfile=PIDLockFile(pidfile),
+        pidfile=TimeoutPIDLockFile(pidfile),
         signal_map={signal.SIGTERM: cleanup}):
     inotify = INotify()
     watch_flags = flags.CREATE | flags.MODIFY
@@ -38,7 +38,8 @@ with daemon.DaemonContext(
     # inotify iterator runs out immediately
     while True:
         for event in inotify.read():
-            os.system('qutebrowser :config-source')
+            # os.system('qutebrowser :config-source')
+            subprocess.Popen('qutebrowser :config-source')
 
     # kill after qutebrowser exits
     # not reached on SIGKILL

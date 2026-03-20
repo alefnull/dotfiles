@@ -45,18 +45,18 @@
 			"type": "kernel",
 			"key": " KRNL"
 		},
-    {
-      "type": "bootmgr",
-      "key": " BOOT"
-    },
+    // {
+    //   "type": "bootmgr",
+    //   "key": " BOOT"
+    // },
 		{
 			"type": "display",
       "key": " DISP"
 		},
-		{
-			"type": "de",
-			"key": " DESK"
-		},
+		// {
+		// 	"type": "de",
+		// 	"key": " DESK"
+		// },
 		{
 			"type": "wm",
 			"key": " WMGR"
@@ -69,26 +69,26 @@
 			"type": "shell",
 			"key": " SHLL"
 		},
-		{
-			"type": "terminalfont",
-			"key": " FONT"
-		},
-		{
-			"type": "icons",
-			"key": " ICON"
-		},
+		// {
+		// 	"type": "terminalfont",
+		// 	"key": " FONT"
+		// },
+		// {
+		// 	"type": "icons",
+		// 	"key": " ICON"
+		// },
 		{
 			"type": "editor",
 			"key": " EDIT"
 		},
-		{
-			"type": "packages",
-			"key": " PKGS"
-		},
-		{
-			"type": "wifi",
-			"key": " WIFI"
-		},
+		// {
+		// 	"type": "packages",
+		// 	"key": " PKGS"
+		// },
+		// {
+		// 	"type": "wifi",
+		// 	"key": " WIFI"
+		// },
 		{
 			"type": "cpu",
 			"format": "{1}",
@@ -103,10 +103,10 @@
 			"format": "{2} ({6})",
 			"key": " GPU{index}"
 		},
-    {
-      "type": "battery",
-      "key": " BTRY"
-    },
+    // {
+    //   "type": "battery",
+    //   "key": " BTRY"
+    // },
     "separator",
 		{
 			"type": "disk",

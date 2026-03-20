@@ -1,0 +1,12 @@
+/*
+* {{cursor}}
+* {{background}}
+* {{foreground}}
+* {{color0}}
+* {{color1}}
+* {{color2}}
+* ...
+* {{color15}}
+*/
+
+@define-color background {{background}};

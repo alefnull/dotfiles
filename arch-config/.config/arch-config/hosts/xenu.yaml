@@ -35,6 +35,7 @@ services:
   - power-profiles-daemon
   - systemd-network-generator
   - systemd-networkd-wait-online
+  - swaync
   disabled: []
 enabled_service_profiles: []
 update_hooks:

@@ -1,0 +1,7 @@
+[Bookmarks]
+[Recent]
+/home/alef/Pictures/walls/
+!Home
+/home/alef/
+/home/alef/Downloads/
+/home/alef/Documents/Blender/Assets/

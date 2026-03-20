@@ -1,10 +1,14 @@
+[EffectsPipelines]
+processAllInputs=false
+processAllOutputs=false
+
 [Presets]
 lastLoadedInputCommunityPackage=jtrv-Presets
 
 [StreamInputs]
 inputDevice=alsa_input.pci-0000_80_1f.3.analog-stereo
 mostUsedPresets=NPR_Voice
-plugins=rnnoise#0,deepfilternet#0,gate#0,equalizer#0,compressor#0,deesser#0,limiter#0
+plugins=rnnoise#0,deepfilternet#0,gate#0,equalizer#0,compressor#0,deesser#0,echo_canceller#0,limiter#0
 usedPresets=NPR_Voice:2
 visiblePage=pluginsPage
 visiblePlugin=deesser#0
@@ -14,8 +18,9 @@ outputDevice=alsa_output.pci-0000_80_1f.3.analog-stereo
 visiblePage=pluginsPage
 
 [Window]
-height=1364
+autostartOnLogin=true
+height=1405
 lastLoadedInputPreset=NPR_Voice
 visiblePage=inputPage
 visiblePresetSheetPage=communityPage
-width=1118
+width=1147

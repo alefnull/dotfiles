@@ -4,5 +4,5 @@ no_actions=false
 term=alacritty
 mode=drun
 prompt=
-width=600
-height=300
+width=500
+height=320

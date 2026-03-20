@@ -5,6 +5,7 @@ check_contrast = true
 threshold = 11
 
 [templates]
+mako = { src = "mako-colors", dst = "~/.cache/wallust/mako-colors" }
 waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }
 hyprland = { src = "hyprland.conf", dst = "~/.config/hypr/config/wallust-colors.conf" }
 wofi = { src = "waybar-colors.css", dst = "~/.config/wofi/colors.css" }
@@ -17,4 +18,5 @@ spicetify = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/te
 spicetify2 = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/nightlight/color.ini' }
 qutebrowser = { src = 'qute_colors.py', dst = '~/.config/qutebrowser/qute_colors.py' }
 ghostty = { src = 'ghostty-colors', dst = '~/.config/ghostty/themes/wallust' }
-themecord = { src = 'colors-discord.css', dst = '~/.cache/wallust/colors-discord.css' }
+swaync = { src = 'swaync', dst = '~/.config/swaync/colors.css' }
+# themecord = { src = 'colors-discord.css', dst = '~/.cache/wallust/colors-discord.css' }

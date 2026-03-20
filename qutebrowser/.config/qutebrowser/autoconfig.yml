@@ -12,15 +12,20 @@ settings:
     https://docs.fabricmc.net: access-paste
     https://docs.privategpt.dev: access-paste
     https://docs.wispforest.io: access-paste
+    https://forum.endeavouros.com: access-paste
     https://ghostty.zerebos.com: access-paste
     https://github.com: access-paste
     https://nerdfonts.ytyng.com: access-paste
+    https://quickshell.org: access-paste
     https://rustup.rs: access-paste
+    https://spicetify.app: access-paste
     https://steambrew.app: access-paste
     https://vencord.dev: access-paste
     https://www.baeldung.com: access-paste
   content.javascript.modal_dialog:
     global: true
+  content.media.audio_capture:
+    https://www.youtube.com: true
   content.media.audio_video_capture:
     https://doxy.me: true
   content.notifications.enabled:

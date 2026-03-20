@@ -1,0 +1,7 @@
+/home/alef/Documents/Blender/Assets/StarCircleNodes.blend
+/home/alef/tri-circle-neon.blend
+/home/alef/tri-circle-neon-v2.blend
+/home/alef/eden-particles.blend
+/home/alef/tank-turret-thing.blend
+/home/alef/circuitboard.blend
+/home/alef/stairway-to-nowhere.blend
