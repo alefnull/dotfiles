@@ -7,7 +7,7 @@ packages: []
 exclude: []
 additional_packages: []
 flatpak_scope: user
-auto_prune: false
+auto_prune: true
 module_processing: parallel
 strict_package_order: false
 config_backups:

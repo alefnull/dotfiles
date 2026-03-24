@@ -1,8 +1,21 @@
+# backend = "full"
+# backend = "resized"
 backend = "fastresize"
+# backend = "wal"
+# backend = "thumb"
+# backend = "kmeans"
+
+# color_space = "lab" # idc about this one..
+# color_space = "labmixed" # idc about this one..
+# color_space = "lch" # idc about this one..
 color_space = "lchmixed" # idc about this one..
+# color_space = "salience" # idc about this one..
+# color_space = "lchansi" # idc about this one..
+
 palette = "dark16"
 check_contrast = true
-threshold = 11
+# threshold = 11
+# saturation = 11
 
 [templates]
 mako = { src = "mako-colors", dst = "~/.cache/wallust/mako-colors" }

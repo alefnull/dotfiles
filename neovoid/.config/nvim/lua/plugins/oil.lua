@@ -88,6 +88,6 @@ return {
       },
     },
     dependencies = { { "echasnovski/mini.icons", opts = {} } },
-    lazy = false,
+    lazy = true,
   },
 }

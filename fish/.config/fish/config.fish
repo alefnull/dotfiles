@@ -25,6 +25,8 @@ alias lg='lazygit'
 alias lf='y'
 alias vi='nvim'
 alias vim='nvim'
+alias hx='helix'
+alias fx='felix'
 
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH $HOME/.lmstudio/bin

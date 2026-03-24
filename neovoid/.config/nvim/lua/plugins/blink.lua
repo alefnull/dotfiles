@@ -1,6 +1,7 @@
 return {
   { -- Autocompletion
     'saghen/blink.cmp',
+    lazy = true,
     event = 'VimEnter',
     version = '1.*',
     completion = {

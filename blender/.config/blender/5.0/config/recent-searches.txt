@@ -115,7 +115,6 @@ Utilities ▸ Math ▸ Boolean Math ▸ Not
 Geometry ▸ Read ▸ Named Attribute
 Point ▸b|Boolean
 view3d.camera_to_view ▸ Align Camera to View
-Add ▸ Camera
 Mesh ▸ Operations ▸ Subdivide Mesh
 Geometry ▸ Operations ▸ Delete Geometry
 Random Value ▸ Value
@@ -130,3 +129,5 @@ Color Ramp ▸ Factor
 Filter ▸ Glare ▸ Fog Glow
 Utilities ▸ Math ▸ Math ▸ Multiply
 Color ▸ Mix Color ▸ Mix
+Add ▸ Camera
+Utilities ▸ Vector ▸ Vector Math ▸ Add
