@@ -1,7 +1,7 @@
 include=~/.cache/wallust/mako-colors
 max-visible=10
 layer=top
-font=JetBrainsMono Nerd Font 16
+font=JetBrainsMono Nerd Font 24
 border-radius=8
 max-icon-size=32
 default-timeout=10000

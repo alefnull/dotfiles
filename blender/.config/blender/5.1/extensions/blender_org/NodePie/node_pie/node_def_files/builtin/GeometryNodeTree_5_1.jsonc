@@ -1,0 +1,30 @@
+{
+  "blender_version": [5, 1, 0],
+  "removals": {
+    "layout": { "left": [["INSTANCE"]], "right": [[], [], ["MATERIAL"], ["POINT"]] }
+  },
+  "additions": {
+    "layout": { "left": [["MATERIAL"]], "right": [[], [], ["POINT"], ["INSTANCE"]] },
+    "categories": {
+      "BUNDLE": {
+        "nodes": [{ "identifier": "NodeGetBundleItem" }, { "identifier": "NodeStoreBundleItem" }]
+      },
+      "INPUT": {
+        "nodes": [{ "identifier": "GeometryNodeBoneInfo", "after_node": "GeometryNodeSelfObject" }]
+      },
+      "MATRIX": {
+        "nodes": [{ "identifier": "FunctionNodeMatrixSVD", "after_node": "FunctionNodeMatrixDeterminant" }]
+      },
+      "VOLUME": {
+        "nodes": [
+          { "identifier": "GeometryNodeCubeGridTopology", "before_node": "GeometryNodeVolumeCube" },
+          { "identifier": "GeometryNodeGridToPoints", "after_node": "GeometryNodeGridToMesh" },
+          { "identifier": "GeometryNodeGridDilateAndErode", "after_node": "GeometryNodeGridLaplacian" },
+          { "identifier": "GeometryNodeGridMean", "after_node": "GeometryNodeGridGradient" },
+          { "identifier": "GeometryNodeGridMedian", "after_node": "GeometryNodeGridMean" },
+          { "identifier": "GeometryNodeGridClip", "after_node": "GeometryNodeGridMedian" }
+        ]
+      }
+    }
+  }
+}

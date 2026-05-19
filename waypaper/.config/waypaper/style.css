@@ -1,11 +1,15 @@
 window {
     background-color: rgba(16, 16, 16, 0.8);
-}
-
-button:hover {
     background-image: none;
     box-shadow: none;
-    border-color: transparent;
+}
+
+button {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    padding: 8px;
 }
 
 button:hover>image {
@@ -14,11 +18,10 @@ button:hover>image {
 }
 
 .highlighted-button {
-    background-image: none;
-    box-shadow: none;
-    background-color: rgba(32,32,32,0.25);
+    background-color: rgba(48, 48, 48, 0.8);
+    padding: 4px;
 }
 
 .highlighted-button>image, .highlighted-button:hover>image {
-    -gtk-icon-effect: highlight;
+    -gtk-icon-effect: none;
 }

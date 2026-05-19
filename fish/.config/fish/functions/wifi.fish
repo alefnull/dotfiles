@@ -1,3 +1,0 @@
-function wifi
-    impala
-end

@@ -1,0 +1,22 @@
+schema_version = "1.0.0"
+
+id = "select_similar_geometry"
+version = "1.3.0"
+name = "Select Similar Geometry"
+tagline = "Select objects by percentage of matching vertices"
+maintainer = "Juan Romero <onnevan@hotmail.com>"
+type = "add-on"
+
+# Etiquetas que se verán en el buscador de extensiones
+tags = ["Modeling", "Mesh"]
+
+# Versión mínima de Blender con sistema de extensiones
+blender_version_min = "5.0.0"
+
+# Licencia en formato SPDX (las oficiales de Blender usan GPL)
+license = ["SPDX:GPL-3.0-or-later"]
+
+# En cuanto tengas repo público, añade:
+# website = "https://github.com/usuario/select_similar_geometry"
+
+

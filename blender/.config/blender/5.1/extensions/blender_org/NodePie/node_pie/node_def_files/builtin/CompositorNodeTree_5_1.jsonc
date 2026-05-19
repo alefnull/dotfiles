@@ -1,0 +1,30 @@
+{
+  "blender_version": [5, 1, 0],
+  "additions": {
+    "categories": {
+      "INPUT": {
+        "nodes": [
+          { "identifier": "CompositorNodeSequencerStripInfo", "after_node": "CompositorNodeSceneTime" },
+          { "identifier": "FunctionNodeInputBool" },
+          { "identifier": "FunctionNodeInputInt" },
+          { "identifier": "FunctionNodeInputVector" }
+        ]
+      },
+      "FILTER": {
+        "nodes": [
+          { "identifier": "CompositorNodeMaskToSDF", "after_node": "CompositorNodeKuwahara" }
+        ]
+      },
+      "VECTOR": {
+        "nodes": [
+          { "identifier": "ShaderNodeRadialTiling", "after_node": "CompositorNodeNormalize" }
+        ]
+      },
+      "CONVERTOR": {
+        "nodes": [
+          { "identifier": "GeometryNodeIndexSwitch", "after_node": "CompositorNodeSwitch" }
+        ]
+      }
+    }
+  }
+}

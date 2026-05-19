@@ -1,0 +1,118 @@
+// This is a versioning file that only specifies the new nodes in 4.2, compared to the previous version.
+// This version added a lot of matrix nodes which requires the layout to be rearranged a lot
+// It also added some more tool nodes that need polls
+{
+  "blender_version": [4, 2, 0],
+  "removals": {
+    "layout": {
+      "left": [[], [], ["UTILITIES", "INSTANCE", "POINT"]],
+      "right": [["INPUT", "COLOR", "ROTATION"], ["UV"]],
+      "top": [["ATTRIBUTE"]]
+    },
+    "nodes": [
+      "FunctionNodeAlignEulerToVector",
+      "SepRotation",
+      "GeometryNodeIndexSwitch",
+      "GeometryNodeSwitch"
+    ]
+  },
+  "additions": {
+    "layout": {
+      "left": [[], [], ["MATRIX", "UTILITIES", "ROTATION"]],
+      "right": [["INSTANCE", "INPUT"], ["POINT"]],
+      "top": [["COLOR", "ATTRIBUTE"]],
+      "bottom": [["UV"]]
+    },
+    "categories": {
+      "COLOR": {
+        "nodes": [
+          {
+            "identifier": "ShaderNodeBlackbody",
+            "before_node": "FunctionNodeCompare"
+          }
+        ]
+      },
+      "GEOMETRY": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodeBake",
+            "before_node": "GeometryNodeBoundBox"
+          }
+        ]
+      },
+      "ROTATION": {
+        "nodes": [
+          {
+            "identifier": "FunctionNodeAlignRotationToVector",
+            "before_node": "FunctionNodeAxisAngleToRotation"
+          }
+        ]
+      },
+      "INPUT": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodeToolMousePosition",
+            "after_node": "GeometryNodeToolFaceSet",
+            "poll_type": "is_tool"
+          },
+          {
+            "identifier": "GeometryNodeViewportTransform",
+            "after_node": "bottom",
+            "poll_type": "is_tool"
+          },
+          {
+            "identifier": "FunctionNodeInputRotation",
+            "before_node": "FunctionNodeInputString"
+          }
+        ]
+      },
+      "MATRIX": {
+        "icon": "MESH_GRID",
+        "label": "Matrix",
+        "color": "converter",
+        "nodes": [
+          { "identifier": "FunctionNodeCombineMatrix" },
+          { "identifier": "FunctionNodeCombineTransform" },
+          { "identifier": "FunctionNodeInvertMatrix" },
+          { "identifier": "FunctionNodeMatrixMultiply" },
+          { "identifier": "FunctionNodeProjectPoint" },
+          { "identifier": "FunctionNodeSeparateMatrix" },
+          { "identifier": "FunctionNodeSeparateTransform" },
+          { "identifier": "FunctionNodeTransformDirection" },
+          { "identifier": "FunctionNodeTransformPoint" },
+          { "identifier": "FunctionNodeTransposeMatrix" }
+        ]
+      },
+      "POINT": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodePointsToCurves",
+            "before_node": "GeometryNodePointsToVertices"
+          }
+        ]
+      },
+      "UTILITIES": {
+        "nodes": [
+          // Create a new "Switch" section
+          { "separator": true, "label": "Switch", "after_node": "bottom" },
+          { "identifier": "GeometryNodeIndexSwitch" },
+          { "identifier": "GeometryNodeMenuSwitch" },
+          { "identifier": "GeometryNodeSwitch" }
+        ]
+      },
+      "INSTANCE": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodeSetInstanceTransform",
+            "after_node": "GeometryNodeScaleInstances"
+          },
+          {
+            "identifier": "GeometryNodeInstanceTransform",
+            "after_node": "GeometryNodeInputInstanceScale",
+            "color": "input"
+          }
+        ]
+      }
+    }
+  }
+}

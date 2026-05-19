@@ -27,6 +27,10 @@ alias vi='nvim'
 alias vim='nvim'
 alias hx='helix'
 alias fx='felix'
+alias swww='awww'
+alias wifi='impala'
+alias satan='dvd-term -c 2 -t "HAIL SATAN"'
+alias irc='tmux a -t irc'
 
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH $HOME/.lmstudio/bin
@@ -35,5 +39,7 @@ set -gx PATH $PATH $HOME/.local/bin
 
 set -gx PATH $PATH $HOME/.local/share/bob/nvim-bin
 set -gx SUDO_EDITOR '/home/alef/.local/share/bob/nvim-bin/nvim'
+
+pyenv init - fish | source
 
 cls

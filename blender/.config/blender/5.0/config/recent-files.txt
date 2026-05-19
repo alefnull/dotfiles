@@ -1,3 +1,7 @@
+/home/alef/Documents/Blender/Assets/mountain_generator.blend
+/home/alef/Documents/Blender/Assets/sci_fi_landscape.blend
+/home/alef/Documents/Blender/Assets/desert_zen.blend
+/home/alef/Documents/Blender/Assets/Male_Base.blend
 /home/alef/Documents/Blender/Assets/StarCircleNodes.blend
 /home/alef/tri-circle-neon.blend
 /home/alef/tri-circle-neon-v2.blend

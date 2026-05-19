@@ -1,6 +1,6 @@
 # backend = "full"
-# backend = "resized"
-backend = "fastresize"
+backend = "resized"
+# backend = "fastresize"
 # backend = "wal"
 # backend = "thumb"
 # backend = "kmeans"
@@ -9,13 +9,12 @@ backend = "fastresize"
 # color_space = "labmixed" # idc about this one..
 # color_space = "lch" # idc about this one..
 color_space = "lchmixed" # idc about this one..
-# color_space = "salience" # idc about this one..
 # color_space = "lchansi" # idc about this one..
 
-palette = "dark16"
+palette = "dark"
 check_contrast = true
 # threshold = 11
-# saturation = 11
+saturation = 11
 
 [templates]
 mako = { src = "mako-colors", dst = "~/.cache/wallust/mako-colors" }
@@ -33,3 +32,7 @@ qutebrowser = { src = 'qute_colors.py', dst = '~/.config/qutebrowser/qute_colors
 ghostty = { src = 'ghostty-colors', dst = '~/.config/ghostty/themes/wallust' }
 swaync = { src = 'swaync', dst = '~/.config/swaync/colors.css' }
 # themecord = { src = 'colors-discord.css', dst = '~/.cache/wallust/colors-discord.css' }
+wmenu = { src = 'wmenu-colors', dst = '~/.config/wmenu/colors' }
+pywalzen = { src = 'vscode.json', dst = '~/.cache/wal/colors.json' }
+kitty = { src = 'kitty-colors.conf', dst = '~/.config/kitty/colors.conf' }
+

@@ -1,0 +1,156 @@
+// This is a list of the socket types of all nodes
+// used for telling whether a node is valid during link drag.
+// It contains all of the new and updated nodes in this blender version.
+// It can be auto generated using the 'generate socket types file' operator
+{
+  "bl_version": [
+    5,
+    1
+  ],
+  "nodes": {
+    "CompositorNodeRLayers": {
+      "inputs": [],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketColor"
+      ]
+    },
+    "FunctionNodeInputVector": {
+      "inputs": [],
+      "outputs": [
+        "NodeSocketVector"
+      ]
+    },
+    "FunctionNodeInputInt": {
+      "inputs": [],
+      "outputs": [
+        "NodeSocketInt"
+      ]
+    },
+    "FunctionNodeInputBool": {
+      "inputs": [],
+      "outputs": [
+        "NodeSocketBool"
+      ]
+    },
+    "CompositorNodeSequencerStripInfo": {
+      "inputs": [],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketInt",
+        "NodeSocketVector2D"
+      ]
+    },
+    "ShaderNodeGamma": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketColor"
+      ],
+      "outputs": [
+        "NodeSocketColor"
+      ]
+    },
+    "CompositorNodeConvertToDisplay": {
+      "inputs": [
+        "NodeSocketColor",
+        "NodeSocketBool"
+      ],
+      "outputs": [
+        "NodeSocketColor"
+      ]
+    },
+    "GeometryNodeMenuSwitch": {
+      "inputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketColor",
+        "NodeSocketString",
+        "NodeSocketBool",
+        "NodeSocketVirtual",
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ],
+      "outputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketColor",
+        "NodeSocketString",
+        "NodeSocketBool",
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ]
+    },
+    "GeometryNodeIndexSwitch": {
+      "inputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketColor",
+        "NodeSocketString",
+        "NodeSocketBool",
+        "NodeSocketVirtual",
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ],
+      "outputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketColor",
+        "NodeSocketString",
+        "NodeSocketBool",
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ]
+    },
+    "CompositorNodeConvolve": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketColor",
+        "NodeSocketMenu",
+        "NodeSocketBool"
+      ],
+      "outputs": [
+        "NodeSocketColor"
+      ]
+    },
+    "CompositorNodeMaskToSDF": {
+      "inputs": [
+        "NodeSocketBool"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector2D"
+      ]
+    },
+    "ShaderNodeRadialTiling": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketFloatFactor",
+        "NodeSocketVector2D"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ]
+    },
+    "NodeEnableOutput": {
+      "inputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketColor",
+        "NodeSocketString",
+        "NodeSocketBool",
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ],
+      "outputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketColor",
+        "NodeSocketString",
+        "NodeSocketBool",
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ]
+    }
+  }
+}

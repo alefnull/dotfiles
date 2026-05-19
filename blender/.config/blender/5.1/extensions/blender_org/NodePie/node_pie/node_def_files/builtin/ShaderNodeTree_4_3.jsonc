@@ -1,0 +1,16 @@
+{
+  "blender_version": [4, 3, 0],
+  "additions": {
+    "categories": {
+      "TEXTURE": {
+        "nodes": [{ "identifier": "ShaderNodeTexGabor", "before_node": "ShaderNodeTexGradient" }]
+      },
+      "SHADER": {
+        "nodes": [
+          { "identifier": "ShaderNodeBsdfMetallic", "before_node": "ShaderNodeMixShader", "poll_type": "is_not_world"  },
+          { "identifier": "ShaderNodeBsdfRayPortal", "after_node": "ShaderNodeBsdfHairPrincipled", "poll_type": "is_not_world"  }
+        ]
+      }
+    }
+  }
+}

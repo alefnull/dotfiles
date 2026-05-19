@@ -1,0 +1,70 @@
+// This is a list of the socket types of all nodes
+// used for telling whether a node is valid during link drag.
+// It contains all of the new and updated nodes in this blender version.
+// It can be auto generated using the 'generate socket types file' operator
+{
+  "bl_version": [
+    5,
+    1
+  ],
+  "nodes": {
+    "ShaderNodeRaycast": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ]
+    },
+    "ShaderNodeRadialTiling": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketFloatFactor",
+        "NodeSocketVector2D"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ]
+    },
+    "NodeCombineBundle": {
+      "inputs": [
+        "NodeSocketVirtual"
+      ],
+      "outputs": [
+        "NodeSocketBundle"
+      ]
+    },
+    "NodeSeparateBundle": {
+      "inputs": [
+        "NodeSocketBundle"
+      ],
+      "outputs": [
+        "NodeSocketVirtual"
+      ]
+    },
+    "GeometryNodeMenuSwitch": {
+      "inputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketColor",
+        "NodeSocketBool",
+        "NodeSocketVirtual",
+        "NodeSocketFloat",
+        "NodeSocketShader",
+        "NodeSocketVector"
+      ],
+      "outputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketColor",
+        "NodeSocketBool",
+        "NodeSocketFloat",
+        "NodeSocketShader",
+        "NodeSocketVector"
+      ]
+    }
+  }
+}

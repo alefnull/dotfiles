@@ -1,6 +1,7 @@
 {
+    "name": "Untitled",
     "DesktopAudioDevice1": {
-        "prev_ver": 536870916,
+        "prev_ver": 536936449,
         "name": "Desktop Audio",
         "uuid": "86551b70-bcdc-43d6-af4d-0f8770734d98",
         "id": "pulse_output_capture",
@@ -31,7 +32,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536870916,
+        "prev_ver": 536936449,
         "name": "Mic/Aux",
         "uuid": "8c5fd369-e156-4703-85e4-d36f9be8a7bd",
         "id": "pulse_input_capture",
@@ -61,17 +62,130 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Scene",
-    "current_program_scene": "Scene",
-    "scene_order": [
-        {
-            "name": "Scene"
-        }
-    ],
-    "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 536870916,
+            "prev_ver": 536936449,
+            "name": "App/Game Capture",
+            "uuid": "72379189-6c7b-402d-b4d0-563d0393e54f",
+            "id": "pipewire-screen-capture-source",
+            "versioned_id": "pipewire-screen-capture-source",
+            "settings": {
+                "RestoreToken": ""
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536936449,
+            "name": "Alerts",
+            "uuid": "c42cf614-a65b-4aee-a5df-fdbee27af4ee",
+            "id": "browser_source",
+            "versioned_id": "browser_source",
+            "settings": {
+                "url": "https://dashboard.twitch.tv/widgets/alertbox#eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhbGVydF9zZXRfaWQiOiI5ZjAyZDE2Ni0yMjNkLTQzNDAtOWVjYy01YjZmYTNkMjg3ZWUiLCJ1c2VyX2lkIjoiMjA0MDIyNTUifQ.mR3UrYN3RlwnL0YeMpNUBYuKy38O9ohhfVMH8EM9foU",
+                "css": "",
+                "reroute_audio": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "ObsBrowser.Refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 2,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536936449,
+            "name": "Chat",
+            "uuid": "8b26482a-e1e6-4c14-a783-a654d173d54e",
+            "id": "browser_source",
+            "versioned_id": "browser_source",
+            "settings": {
+                "url": "https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV",
+                "width": 960,
+                "height": 540,
+                "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "ObsBrowser.Refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536936449,
+            "name": "Full Screen Share (Laptop)",
+            "uuid": "b0fb5cc7-e265-4d21-8fb9-d9dc0b385ccc",
+            "id": "pipewire-screen-capture-source",
+            "versioned_id": "pipewire-screen-capture-source",
+            "settings": {
+                "RestoreToken": ""
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536936449,
             "name": "Scene",
             "uuid": "eddab134-16ed-4f24-b6e9-e0f29fad7899",
             "id": "scene",
@@ -329,130 +443,20 @@
             "monitoring_type": 0,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "App/Game Capture",
-            "uuid": "72379189-6c7b-402d-b4d0-563d0393e54f",
-            "id": "pipewire-screen-capture-source",
-            "versioned_id": "pipewire-screen-capture-source",
-            "settings": {
-                "RestoreToken": ""
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "Alerts",
-            "uuid": "c42cf614-a65b-4aee-a5df-fdbee27af4ee",
-            "id": "browser_source",
-            "versioned_id": "browser_source",
-            "settings": {
-                "url": "https://dashboard.twitch.tv/widgets/alertbox#eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhbGVydF9zZXRfaWQiOiI5ZjAyZDE2Ni0yMjNkLTQzNDAtOWVjYy01YjZmYTNkMjg3ZWUiLCJ1c2VyX2lkIjoiMjA0MDIyNTUifQ.mR3UrYN3RlwnL0YeMpNUBYuKy38O9ohhfVMH8EM9foU",
-                "css": "",
-                "reroute_audio": true
-            },
-            "mixers": 255,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "ObsBrowser.Refresh": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 2,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "Chat",
-            "uuid": "8b26482a-e1e6-4c14-a783-a654d173d54e",
-            "id": "browser_source",
-            "versioned_id": "browser_source",
-            "settings": {
-                "url": "https://streamelements.com/overlay/625cf48d96c8cc4ea5c80b90/iVBkKBBDfWdRgVxM8t3LBo3_1fchsNs2rzWuoMj3HQC66qXV",
-                "width": 960,
-                "height": 540,
-                "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }"
-            },
-            "mixers": 255,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "ObsBrowser.Refresh": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "Full Screen Share (Laptop)",
-            "uuid": "b0fb5cc7-e265-4d21-8fb9-d9dc0b385ccc",
-            "id": "pipewire-screen-capture-source",
-            "versioned_id": "pipewire-screen-capture-source",
-            "settings": {
-                "RestoreToken": ""
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
         }
     ],
     "groups": [],
+    "scene_order": [
+        {
+            "name": "Scene"
+        }
+    ],
+    "current_scene": "Scene",
+    "current_program_scene": "Scene",
+    "canvases": [],
+    "current_transition": "Fade",
+    "transition_duration": 300,
+    "transitions": [],
     "quick_transitions": [
         {
             "name": "Cut",
@@ -476,11 +480,7 @@
             "fade_to_black": true
         }
     ],
-    "transitions": [],
     "saved_projectors": [],
-    "canvases": [],
-    "current_transition": "Fade",
-    "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
     "scaling_level": -6,

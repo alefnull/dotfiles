@@ -1,0 +1,7 @@
+normalbg = {{background}}
+normalfg = {{foreground}}
+promptbg = {{background}}
+promptfg = {{foreground}}
+selectionbg = {{color3}}
+selectionfg = {{background}}
+

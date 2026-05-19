@@ -2,6 +2,12 @@
 attack=2
 dithering=6
 gainBoost=false
+inputToLink=0
+inputToSidechain=0
+linkToInput=0
+linkToSidechain=0
 lookahead=2
 mode=1
+sidechainToInput=0
+sidechainToLink=0
 threshold=-1.5

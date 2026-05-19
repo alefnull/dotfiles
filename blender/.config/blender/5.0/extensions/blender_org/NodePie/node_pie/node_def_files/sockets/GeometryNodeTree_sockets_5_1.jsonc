@@ -1,0 +1,168 @@
+// This is a list of the socket types of all nodes
+// used for telling whether a node is valid during link drag.
+// It contains all of the new and updated nodes in this blender version.
+// It can be auto generated using the 'generate socket types file' operator
+{
+  "bl_version": [
+    5,
+    1
+  ],
+  "nodes": {
+    "GeometryNodeBoneInfo": {
+      "inputs": [
+        "NodeSocketObject",
+        "NodeSocketString"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketMatrix"
+      ]
+    },
+    "GeometryNodeStringToCurves": {
+      "inputs": [
+        "NodeSocketMenu",
+        "NodeSocketFont",
+        "NodeSocketString",
+        "NodeSocketFloatDistance",
+        "NodeSocketFloat"
+      ],
+      "outputs": [
+        "NodeSocketGeometry",
+        "NodeSocketVector",
+        "NodeSocketInt",
+        "NodeSocketString"
+      ]
+    },
+    "GeometryNodeUVPackIslands": {
+      "inputs": [
+        "NodeSocketVectorXYZ2D",
+        "NodeSocketMenu",
+        "NodeSocketBool",
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ],
+      "outputs": [
+        "NodeSocketVector"
+      ]
+    },
+    "GeometryNodeUVUnwrap": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketBool"
+      ],
+      "outputs": [
+        "NodeSocketVector"
+      ]
+    },
+    "GeometryNodeCubeGridTopology": {
+      "inputs": [
+        "NodeSocketVector",
+        "NodeSocketInt"
+      ],
+      "outputs": [
+        "NodeSocketBool"
+      ]
+    },
+    "GeometryNodeGridMean": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector",
+        "NodeSocketInt"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector",
+        "NodeSocketInt"
+      ]
+    },
+    "GeometryNodeGridMedian": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector",
+        "NodeSocketInt"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector",
+        "NodeSocketInt"
+      ]
+    },
+    "GeometryNodeGridClip": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector",
+        "NodeSocketInt",
+        "NodeSocketBool"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector",
+        "NodeSocketInt",
+        "NodeSocketBool"
+      ]
+    },
+    "GeometryNodeGridDilateAndErode": {
+      "inputs": [
+        "NodeSocketMenu",
+        "NodeSocketInt",
+        "NodeSocketBool",
+        "NodeSocketFloat",
+        "NodeSocketVector"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector",
+        "NodeSocketInt",
+        "NodeSocketBool"
+      ]
+    },
+    "GeometryNodeGridToPoints": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketVector",
+        "NodeSocketInt",
+        "NodeSocketBool"
+      ],
+      "outputs": [
+        "NodeSocketInt",
+        "NodeSocketBool",
+        "NodeSocketFloat",
+        "NodeSocketGeometry",
+        "NodeSocketVector"
+      ]
+    },
+    "FunctionNodeMatrixSVD": {
+      "inputs": [
+        "NodeSocketMatrix"
+      ],
+      "outputs": [
+        "NodeSocketVector",
+        "NodeSocketMatrix"
+      ]
+    },
+    "NodeGetBundleItem": {
+      "inputs": [
+        "NodeSocketBundle",
+        "NodeSocketString",
+        "NodeSocketBool"
+      ],
+      "outputs": [
+        "NodeSocketFloat",
+        "NodeSocketBundle",
+        "NodeSocketBool"
+      ]
+    },
+    "NodeStoreBundleItem": {
+      "inputs": [
+        "NodeSocketFloat",
+        "NodeSocketBundle",
+        "NodeSocketString"
+      ],
+      "outputs": [
+        "NodeSocketBundle"
+      ]
+    }
+  }
+}

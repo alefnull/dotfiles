@@ -1,0 +1,60 @@
+// This is a versioning file that only specifies the new nodes in 3.5, compared to the base file.
+{
+  "blender_version": [4, 1, 0],
+  "removals": {
+    "layout": {
+      "left": [["UV"]]
+    },
+    "nodes": [
+      "ShaderNodeTexMusgrave",
+      "GeometryNodeSDFVolumeSphere",
+      "GeometryNodeInputSignedDistance",
+      "GeometryNodeOffsetSDFVolume",
+      "GeometryNodeSampleVolume",
+      "GeometryNodeMeanFilterSDFVolume",
+      "GeometryNodeMeshToSDFVolume",
+      "GeometryNodePointsToSDFVolume",
+      "FunctionNodeRotateEuler"
+    ]
+  },
+  "additions": {
+    "layout": {
+      "right": [[], ["UV"]]
+    },
+    "categories": {
+      "GEOMETRY": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodeSplitToInstances",
+            "after_node": "GeometryNodeSeparateGeometry"
+          },
+          {
+            "identifier": "GeometryNodeSortElements",
+            "before_node": "GeometryNodeSplitToInstances"
+          }
+        ]
+      },
+      "UTILITIES": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodeIndexSwitch",
+            "after_node": "FunctionNodeFloatToInt"
+          }
+        ]
+      },
+      "INPUT": {
+        "nodes": [
+          {
+            "identifier": "GeometryNodeInputActiveCamera",
+            "before_node": "GeometryNodeCollectionInfo"
+          }
+        ]
+      },
+      "ROTATION": {
+        "nodes": [
+          { "identifier": "FunctionNodeRotateRotation" , "before_node": "FunctionNodeRotateVector"}
+        ]
+      }
+    }
+  }
+}

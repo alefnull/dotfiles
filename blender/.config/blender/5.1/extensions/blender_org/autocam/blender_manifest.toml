@@ -1,0 +1,17 @@
+# AutoCam - Blender Extension Manifest
+schema_version = "1.0.0"
+
+id = "autocam"
+version = "2.0.6"
+name = "AutoCam"
+tagline = "Intuitive camera tools, built for artists"
+maintainer = "RenderRides <support@renderrides.com>"
+
+type = "add-on"
+
+tags = ["Camera", "Animation", "Rigging", "Render", "Add Curve"]
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2025 RenderRides"]

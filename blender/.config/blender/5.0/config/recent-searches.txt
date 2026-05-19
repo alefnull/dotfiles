@@ -1,133 +1,173 @@
-Mesh ▸ Operations ▸ Mesh to Curve
 Color ▸ Mix Color
-
 Input ▸ Constant ▸ Integer
 Math ▸ Subtract
 Math ▸ Multiply
-Utilities ▸ Math ▸ Compare
-Utilities ▸ Vector ▸ Vector Math ▸ Scale
 Displacement ▸ Bump
 Utilities ▸ Math ▸ Mix
-Color ▸ Mix Color ▸ Multiply
 o
-Input ▸ Attribute
 Bump ▸ Height
 Mesh ▸ Operations ▸ Subdivision Surface
-Geometry ▸ Read ▸ Normal
-Mesh ▸ Operations ▸ Mesh to Points
 Utilities ▸ Rotation ▸ Rotate Vector
-Input ▸ Scene ▸ Scene Time
  0 Material.002
-Utilities ▸ Repeat
-Math ▸ Divide
 Separate XYZ ▸ Vector
-Color ▸ Mix Color ▸ Add
 Utilities ▸ Math ▸ Math ▸ Add
 Math ▸ Add
 Instances ▸ Instance on Elements
 Noise Nodes ▸ Dot Noise
-Color ▸ Mix Color ▸ Color
 Filter ▸ Glare
-Mesh ▸ Plane
-Mesh ▸ Operations ▸ Mesh to Volume
-Point ▸ Distribute Points in Volume
-Mesh ▸ Primitives ▸ UV Sphere
-Utilities ▸ Math ▸ Math ▸ Greater Than
-Utilities ▸ Math ▸ Math ▸ Compare
-Point ▸ Distribute Points on Faces
 Utilities ▸ Vector ▸ Vector Rotate
 Utilities ▸ Rotation ▸ Mix Rotation
 Transform ▸ Lens Distortion
-Utilities ▸ Vector ▸ Combine XYZ
 Input ▸ Constant ▸ Collection
 Geometry ▸ Read ▸ ID
 Input ▸ Constant ▸ Value
 r
 Utilities ▸ Rotation ▸ Rotation to Euler
-Utilities ▸ Rotation ▸ Euler to Rotation
 Geometry ▸ Operations ▸ Duplicate Elements
-Curve ▸ Operations ▸ Curve to Mesh
 Geometry ▸ Operations ▸ Merge by Distance
 Filter ▸ Blur ▸ Blur
 Mesh ▸ Primitives ▸ Cube
 Mesh to Volume ▸ Mesh
 Distribute Points in Volume ▸ Volume
-Instances ▸ Instance on Points
-Mesh ▸ Primitives ▸ Ico Sphere
-Mesh ▸ Write ▸ Set Shade Smooth
-Geometry ▸ Operations ▸ Separate Geometry
-Input ▸ Constant ▸ Boolean
 Set Material ▸ Geometry
 Shader ▸ Refraction BSDF
 Add Shader ▸ Shader
 Transparent BSDF ▸ BSDF
 Mix Shader ▸ Shader
-Shader ▸ Glass BSDF
 Shader ▸ Principled BSDF
 Shader ▸ Add Shader
 Glass BSDF ▸ BSDF
-Texture ▸ Noise Texture
 Utilities ▸ Math ▸ Boolean Math ▸ And
-Input ▸ Constant ▸ Vector
 Input ▸ Constant ▸ Rotation
 Geometry ▸ Geometry to Instance
 Curve ▸ Primitives ▸ Star
 Group ▸ Star
 Group ▸ Circle
-Generate ▸ Array
-Curve ▸ Primitives ▸ Curve Line
-Curve ▸ Primitives ▸ Curve Circle
-Geometry ▸ Operations ▸ Transform Geometry
 Resample Curve ▸ Curve
 Attribute ▸ Capture Attribute
 idx
-Geometry ▸ Read ▸ Position
 Geometry ▸ Read ▸ Index
-Geometry ▸ Write ▸ Set Position
 Input ▸ Geometry
 Texture ▸ Wave Texture
-Color ▸ Color Ramp
-Shader ▸ Emission
-Mesh ▸ Primitives ▸ Grid
-Mesh ▸ Operations ▸ Extrude Mesh
 Light ▸ Point
 Light ▸ Sun
 pin
 Rotate Vector ▸ Vector
 Utilities ▸ Random Rotation
 CGMatter ▸ Erode Selection [CGM]
-Boolean Math ▸ Or
-Instances ▸ Realize Instances
 Utilities ▸ Index Switch
 Switch ▸ Switch
  0 Material
-   Material.001
-   Material.002
 Join Geometry ▸ Geometry
 Utilities ▸ Switch
-Utilities ▸ Random Value
-Attribute ▸ Store Named Attribute
 b
 Instance ▸b|Boolean
 Boolean Math ▸ Not
-Geometry ▸ Join Geometry
 Utilities ▸ Math ▸ Boolean Math ▸ Not
 Geometry ▸ Read ▸ Named Attribute
 Point ▸b|Boolean
-view3d.camera_to_view ▸ Align Camera to View
-Mesh ▸ Operations ▸ Subdivide Mesh
-Geometry ▸ Operations ▸ Delete Geometry
 Random Value ▸ Value
-Geometry ▸ Material ▸ Set Material
-   Material
 Input ▸ Object Info ▸ Random
 Input ▸ Point Info ▸ Random
 Input ▸ Geometry ▸ Random Per Island
 Input ▸ Object Info
-Texture ▸ Voronoi Texture
-Color Ramp ▸ Factor
-Filter ▸ Glare ▸ Fog Glow
-Utilities ▸ Math ▸ Math ▸ Multiply
 Color ▸ Mix Color ▸ Mix
-Add ▸ Camera
 Utilities ▸ Vector ▸ Vector Math ▸ Add
+Math ▸ Less Than
+Utilities ▸ Vector ▸ Vector Math
+Generate ▸ Array
+Color ▸ Mix Color ▸ Multiply
+Utilities ▸ Math ▸ Math ▸ Sine
+Attribute ▸ Store Named Attribute
+dt
+Input ▸ Attribute
+Mesh ▸ Primitives ▸ Ico Sphere
+Input ▸ Constant ▸ Boolean
+Mesh ▸ Operations ▸ Triangulate
+Mesh ▸ Operations ▸ Dual Mesh
+Deform ▸ Simple Deform
+Input ▸ Scene ▸ Scene Time
+Vector Math ▸ Modulo
+Utilities ▸ Math ▸ Integer Math ▸ Modulo
+Map Range ▸ Value
+Utilities ▸ Rotation ▸ Euler to Rotation
+Color ▸ Mix Color ▸ Add
+Utilities ▸ Vector ▸ Mix Vector
+Math ▸ Divide
+Mesh ▸ Operations ▸ Mesh to Volume
+Point ▸ Distribute Points in Volume
+Utilities ▸ For Each Element
+Utilities ▸ Field ▸ Field Average
+CGMatter ▸ Grid Fill 2D [CGM]
+Curve ▸ Operations ▸ Resample Curve
+Instances ▸ Realize Instances
+Curve ▸ Write ▸ Set Curve Tilt
+Mesh ▸ Cube
+Generate ▸ Bevel
+Mesh ▸ Operations ▸ Mesh to Points
+Utilities ▸ Vector ▸ Vector Math ▸ Scale
+Color ▸ Mix Color ▸ Divide
+Utilities ▸ Math ▸ Math ▸ Divide
+Utilities ▸ Math ▸ Math ▸ Multiply
+Utilities ▸ Math ▸ Map Range
+Utilities ▸ Repeat
+Generate ▸ Skin
+Curve ▸ Primitives ▸ Curve Circle
+Generate ▸ Decimate
+
+   Material.002
+Shader ▸ Transparent BSDF
+   Material.003
+Shader ▸ Emission
+Texture ▸ Brick Texture
+Color ▸ Mix Color ▸ Color
+Mesh ▸ Primitives ▸ UV Sphere
+Geometry ▸ Operations ▸ Delete Geometry
+Utilities ▸ Rotation ▸ Align Rotation to Vector
+Instances ▸ Scale Instances
+Utilities ▸ Random Value
+Geometry ▸ Material ▸ Set Material
+   Material.001
+Shader ▸ Glass BSDF
+Mesh ▸ Write ▸ Set Shade Smooth
+   Material
+Light ▸ Area
+Mesh ▸ Capsule
+Mesh ▸ Operations ▸ Subdivide Mesh
+Geometry ▸ Operations ▸ Separate Geometry
+Compare ▸ Equal
+Utilities ▸ Vector ▸ Separate XYZ
+Boolean Math ▸ Or
+Boolean Math ▸ And
+Geometry ▸ Join Geometry
+Mesh ▸ Operations ▸ Mesh to Curve
+Curve ▸ Operations ▸ Curve to Mesh
+Mesh ▸ Primitives ▸ Mesh Line
+Curve ▸ Primitives ▸ Curve Line
+Utilities ▸ Vector ▸ Combine XYZ
+Object ▸ Set Origin ▸ Geometry to Origin
+Point ▸ Distribute Points on Faces
+Instances ▸ Instance on Points
+Add ▸ Camera
+view3d.camera_to_view ▸ Align Camera to View
+Filter ▸ Glare ▸ Fog Glow
+Mesh ▸ Plane
+Mesh ▸ Primitives ▸ Grid
+Texture ▸ Gradient Texture
+Geometry ▸ Read ▸ Normal
+Vector Math ▸ Multiply
+Geometry ▸ Read ▸ Position
+Texture ▸ Noise Texture
+Utilities ▸ Math ▸ Math
+Texture ▸ Voronoi Texture
+Add (Shift A) ▸ Mesh ▸ Plane
+Color Ramp ▸ Factor
+Utilities ▸ Math ▸ Math ▸ Compare
+Utilities ▸ Math ▸ Math ▸ Greater Than
+Utilities ▸ Math ▸ Compare
+Geometry ▸ Write ▸ Set Position
+Color ▸ Color Ramp
+Utilities ▸ Math ▸ Boolean Math ▸ Or
+Mesh ▸ Operations ▸ Extrude Mesh
+Input ▸ Constant ▸ Vector
+Geometry ▸ Operations ▸ Transform Geometry

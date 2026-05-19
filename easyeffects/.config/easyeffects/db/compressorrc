@@ -1,9 +1,15 @@
 [sie][Compressor#0]
 attack=15
 boostAmount=0
+inputToLink=0
+inputToSidechain=0
+linkToInput=0
+linkToSidechain=0
 makeup=3
 ratio=3
 release=200
 releaseThreshold=-40
 sidechainMode=1
+sidechainToInput=0
+sidechainToLink=0
 threshold=-18

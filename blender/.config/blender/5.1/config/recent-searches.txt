@@ -1,0 +1,17 @@
+Light ▸ Sun
+Color ▸ Alpha Over
+Color ▸ Invert Color
+Mesh ▸ Primitives ▸ Grid
+Mesh ▸ Operations ▸ Mesh to Volume
+Point ▸ Distribute Points in Volume
+Point ▸ Points to Curves
+Curve ▸ Operations ▸ Curve to Mesh
+Curve ▸ Primitives ▸ Curve Circle
+Geometry ▸ Material ▸ Set Material
+   Material
+Shader ▸ Emission
+Shader ▸ Transparent BSDF
+Color ▸ Color Ramp
+Filter ▸ Glare ▸ Fog Glow
+Add ▸ Camera
+view3d.camera_to_view ▸ Align Camera to View

@@ -1,3 +1,5 @@
 {NVIDIA Corporation/NVIDIA GeForce RTX 5070 Laptop GPU/NVIDIA 590.48.01}=SUPPORTED
 {Mesa/llvmpipe (LLVM 21.1.6, 256 bits)/4.5 (Core Profile) Mesa 25.3.5-arch1.1}=SUPPORTED
 {Intel Corporation/Intel(R) Graphics (ARL)/Intel open-source Mesa driver Mesa 26.0.1-arch1.1}=SUPPORTED
+{NVIDIA Corporation/NVIDIA GeForce RTX 5070 Laptop GPU/NVIDIA 595.58.03}=SUPPORTED
+{NVIDIA Corporation/NVIDIA GeForce RTX 5070 Laptop GPU/NVIDIA 595.71.05}=SUPPORTED
