@@ -1,3 +1,4 @@
+/home/alef/Documents/Blender/Assets/alefnull.blend
 /home/alef/Documents/Blender/Assets/mountain_generator.blend
 /home/alef/Documents/Blender/Assets/sci_fi_landscape.blend
 /home/alef/Documents/Blender/Assets/desert_zen.blend

@@ -8,7 +8,6 @@ packages:
 - aseprite
 - awesome-terminal-fonts
 - bat
-- blender-launcher-v2-bin
 - bluetui
 - bluez
 - bluez-utils
@@ -22,6 +21,8 @@ packages:
 - cava
 - ccls
 - chafa
+- name: com.modrinth.ModrinthApp
+  type: flatpak
 - dcli-arch-git
 - dexed-vst3
 - distrho-ports-vst3
@@ -55,7 +56,6 @@ packages:
 - hwinfo
 - hyprland
 - hyprpolkitagent
-- hytale-launcher-bin
 - iempluginsuite-vst3
 - imagemagick
 - imv
@@ -63,6 +63,7 @@ packages:
 - iwd
 - jc303-vst3
 - jdk-openjdk
+- jdk25-openjdk
 - js80p
 - kdenlive
 - keepassxc
@@ -249,11 +250,14 @@ packages:
 - uzdoom-git
 - vaporizer2-vst3
 - vcvrack-bin
+- ventoy-bin
 - vim
 - virt-manager
 - wallust
 - waybar
 - wget
+- wine-gecko
+- wine-staging
 - winetricks
 - wireless_tools
 - wireplumber
@@ -277,7 +281,6 @@ packages:
 - xorg-xinit
 - xsel
 - yay
-- yay-debug
 - zam-plugins-vst3
 - zoxide
 - zram-generator

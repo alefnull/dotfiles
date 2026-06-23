@@ -7,11 +7,44 @@ Point ▸ Distribute Points in Volume
 Point ▸ Points to Curves
 Curve ▸ Operations ▸ Curve to Mesh
 Curve ▸ Primitives ▸ Curve Circle
-Geometry ▸ Material ▸ Set Material
-   Material
 Shader ▸ Emission
 Shader ▸ Transparent BSDF
-Color ▸ Color Ramp
 Filter ▸ Glare ▸ Fog Glow
 Add ▸ Camera
 view3d.camera_to_view ▸ Align Camera to View
+Input ▸ Texture Coordinate ▸ Generated
+Input ▸ Texture Coordinate
+Utilities ▸ Math ▸ Math ▸ Power
+Utilities ▸ Vector ▸ Vector Math ▸ Distance
+Texture ▸ Gradient Texture
+Utilities ▸ Vector ▸ Vector Math ▸ Length
+Utilities ▸ Menu Switch
+Utilities ▸ Vector ▸ Radial Tiling
+Utilities ▸ Math ▸ Math ▸ Less Than
+Utilities ▸ Vector ▸ Separate XYZ
+Utilities ▸ Math ▸ Math ▸ Compare
+Vector Math ▸ Length
+Color ▸ Mix Color ▸ Add
+Utilities ▸ Math ▸ Math ▸ Add
+Vector Math ▸ Subtract
+Utilities ▸ Vector ▸ Combine XYZ
+Utilities ▸ Math ▸ Math ▸ Greater Than
+Utilities ▸ Math ▸ Math
+Input ▸ Value
+Utilities ▸ Math ▸ Math ▸ Subtract
+Utilities ▸ Vector ▸ Mapping
+Instances ▸ Instance on Points
+Mesh ▸ Primitives ▸ Cube
+Geometry ▸ Join Geometry
+Geometry ▸ Operations ▸ Transform Geometry
+CGMatter ▸ Soldify Extrude [CGM]
+Geometry ▸ Write ▸ Set Position
+Instances ▸ Realize Instances
+  Geometry Nodes
+Geometry ▸ Material ▸ Set Material
+Texture ▸ Brick Texture
+Color ▸ Mix Color ▸ Multiply
+Texture ▸ Noise Texture
+Color ▸ Color Ramp
+   Material
+   Material.001

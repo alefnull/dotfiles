@@ -1,25 +1,26 @@
 # backend = "full"
-backend = "resized"
-# backend = "fastresize"
+# backend = "resized"
+backend = "fastresize"
 # backend = "wal"
 # backend = "thumb"
 # backend = "kmeans"
 
 # color_space = "lab" # idc about this one..
 # color_space = "labmixed" # idc about this one..
-# color_space = "lch" # idc about this one..
-color_space = "lchmixed" # idc about this one..
+color_space = "lch" # idc about this one..
+# color_space = "lchmixed" # idc about this one..
 # color_space = "lchansi" # idc about this one..
 
-palette = "dark"
+palette = "dark16"
 check_contrast = true
 # threshold = 11
-saturation = 11
+# saturation = 11
 
 [templates]
 mako = { src = "mako-colors", dst = "~/.cache/wallust/mako-colors" }
 waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }
 hyprland = { src = "hyprland.conf", dst = "~/.config/hypr/config/wallust-colors.conf" }
+hyprland2 = { src = "hyprland.lua", dst = "~/.config/hypr/config/wallust-colors.lua" }
 wofi = { src = "waybar-colors.css", dst = "~/.config/wofi/colors.css" }
 vscode = { src = 'vscode.json', dst = '~/.cache/wallust/colors.json' }
 vscode2 = { src = 'vscode', dst = '~/.cache/wallust/colors' }
