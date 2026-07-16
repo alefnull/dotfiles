@@ -1,0 +1,39 @@
+# disinfo configuration file
+# Save to ~/.config/disinfo/config.toml
+
+# Color mode: "auto", "always", or "never"
+# "auto" enables color when stdout is a terminal.
+color = "auto"
+
+# Datetime format string for the "date" field (chrono format syntax).
+# Uncomment and customize to your preference:
+# datetime_format = "%Y-%m-%d %H:%M:%S"
+
+# Fields to display, in order. Uncomment any optional fields you want.
+fields = [
+    "os",  # Operating system name and version
+    "kernel",  # Kernel version string
+    "host",  # System hostname
+    "user",  # Current user name
+    "uptime",  # How long the system has been running
+    "date",  # Current local date and time
+    "cpu",  # CPU model and logical core count
+    "gpu",  # Graphics cards detected
+    "ram",  # Memory usage: used / total
+    # "swap",  # Swap space: used / total
+    # "disk",  # Root filesystem disk usage
+    # "board",  # Motherboard make and model
+    # "bios",  # BIOS/UEFI vendor, version, and date
+    # "shell",  # Current shell (parent process, fallback $SHELL)
+    # "session",  # Display server type: Wayland or X11
+    # "locale",  # System locale (from $LANG)
+    # "init",  # Init system (PID 1, e.g. systemd)
+    # "packages",  # Installed package counts by package manager
+    # "battery",  # Battery charge level and status
+    # "ip",  # Primary local IPv4 address
+    # "de",  # Desktop environment (from $XDG_CURRENT_DESKTOP)
+    # "wm",  # Window manager (from $DESKTOP_SESSION / $XDG_SESSION_DESKTOP)
+    # "display",  # Connected display monitors (sysfs + EDID)
+    # "terminal",  # Terminal emulator (from parent process tree)
+    # "editor",  # Default text editor (from $VISUAL / $EDITOR)
+]

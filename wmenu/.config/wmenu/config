@@ -1,0 +1,18 @@
+include = /home/alef/.config/wmenu/colors
+
+font = JetBrainsMono Nerd Font 16
+
+case_insensitive = true
+fuzzy = true
+fuzzy_case_sensitive = false
+history_size = 100
+
+bottom = true
+lines = 8
+inputw = -1
+cursor_style = 1 # 0=bar, 1=block
+
+prompt_run = run
+prompt_drun = drun
+prompt_emoji = emoji
+

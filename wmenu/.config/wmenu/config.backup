@@ -1,0 +1,22 @@
+include = /home/alef/.config/wmenu/colors
+font = JetBrainsMono Nerd Font 16
+case_insensitive = true
+fuzzy = true
+fuzzy_case_sensitive = false
+bottom = true
+lines = 8
+inputw = -1
+cursor_style = 1  # 0=bar, 1=block
+prompt_run = run
+prompt_drun = drun
+prompt_emoji = emoji
+
+# Key bindings
+# Syntax: key_<action> = [Modifier+]Key
+# Modifiers: Ctrl, Alt, Meta, Shift (can be combined with +)
+# Keys: Escape, Return, Tab, Space, Up, Down, Left, Right, Home, End, Page_Up, Page_Down, Delete, BackSpace, Insert, a-z, 0-9
+key_quit = Escape
+key_accept = Return
+key_next = Tab
+key_prev = Shift+Tab
+
