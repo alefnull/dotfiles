@@ -253,6 +253,7 @@ packages:
 - ventoy-bin
 - vim
 - virt-manager
+- vulkan-headers
 - wallust
 - waybar
 - wget

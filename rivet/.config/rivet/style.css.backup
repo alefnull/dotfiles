@@ -1,0 +1,143 @@
+/* Rivet Stylesheet - Uses CSS variables, supports Wallust colors */
+
+:root {
+    --font-family: 'JetBrainsMono Nerd Font', 'Inter', sans-serif;
+    --font-size: 18px;
+    --font-weight: bold;
+
+    --background: var(--wallust-background, #1e1e2e);
+    --foreground: var(--wallust-foreground, #cdd6f4);
+    --border-color: var(--wallust-color0, #45475a);
+    --accent: var(--wallust-color3, #89b4fa);
+    --accent2: var(--wallust-color0, #89b4fa);
+    --accent3: var(--wallust-color4, #89b4fa);
+
+    --warning: #f9e2af;
+    --critical: #f38ba8;
+
+    --margin-top: 0px;
+    --margin-bottom: 0px;
+    --margin-left: 0px;
+    --margin-right: 0px;
+    --border-radius: 0px;
+    --spacing: 5px;
+}
+
+window {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    margin: 0px;
+    padding: 0px;
+}
+
+.bar-content {
+    background: var(--background);
+    border-radius: var(--border-radius);
+    padding: 0px 4px;
+}
+
+label { text-shadow: none; }
+
+.left-section, .center-section, .right-section {
+    padding: 0px;
+    margin: 0px;
+}
+
+.battery-module, .workspaces-module, .cpu-module, .memory-module,
+.network-module, .volume-module, .window-module, .script-module,
+.brightness-module, .power-profiles-module, .power-module,
+.group-module {
+    margin: 0px;
+    padding: 0px 8px;
+    border-radius: var(--border-radius);
+    background: transparent;
+}
+
+.workspaces-module {
+    background: var(--background);
+    padding: 0px 12px 0px 12px;
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+}
+
+.workspace-button {
+    border: none;
+    padding: 0px 12px;
+    min-height: 0px;
+    color: var(--accent);
+    opacity: 0.7;
+    font-weight: 200;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.workspace-button.active {
+    font-weight: bold;
+    padding: 0px 12px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    opacity: 1;
+}
+.workspace-button:hover {
+    font-weight: bold;
+    padding: 0px 12px;
+    opacity: 1;
+}
+
+.window-module {
+    color: var(--accent);
+    padding: 0px 16px;
+}
+
+.clock-module {
+    margin: 0px;
+    padding: 0px 16px;
+    border-radius: var(--border-radius);
+    color: var(--accent3);
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+}
+
+.group-module, .powermodules-module {
+    color: var(--accent);
+    border-radius: var(--border-radius);
+    padding: 0px 8px;
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+}
+
+.group-module .network-module, .group-module .cpu-module, .group-module .memory-module,
+.group-module .volume-module, .group-module .brightness-module, .group-module .battery-module,
+.group-module .power-profiles-module, .group-module .power-module,
+.group-module .workspaces-module, .group-module .window-module,
+.group-module .script-module,
+.powermodules-module .network-module, .powermodules-module .cpu-module, .powermodules-module .memory-module,
+.powermodules-module .volume-module, .powermodules-module .brightness-module, .powermodules-module .battery-module,
+.powermodules-module .power-profiles-module, .powermodules-module .power-module {
+    background-color: transparent;
+    border: none;
+}
+
+.weather-module {
+  color: var(--accent3);
+  border-right: 2px solid var(--border-color);
+}
+
+.update-module {
+  color: var(--accent);
+  border-left: 2px solid var(--border-color);
+}
+
+.group-module box > *:first-child { border-top-left-radius: var(--border-radius); border-bottom-left-radius: var(--border-radius); }
+.group-module box > *:last-child { border-top-right-radius: var(--border-radius); border-bottom-right-radius: var(--border-radius); }
+
+tooltip, popover, calendar {
+    background: var(--background);
+    color: var(--accent);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px;
+}

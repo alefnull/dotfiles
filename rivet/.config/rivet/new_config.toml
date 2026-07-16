@@ -1,0 +1,127 @@
+# =============================================================================
+# RIVET CONFIGURATION
+# =============================================================================
+
+[bar]
+position = "top"
+margin_top = 0
+margin_bottom = 0
+margin_left = 0
+margin_right = 0
+width = 0
+exclusive = true
+layer = "top"
+opacity = 1.0
+spacing = 0
+wallust_colors = "~/.cache/wallust/colors.json"
+
+# ----- Standalone left-side modules ------------------------------------------
+
+[workspaces]
+position = "left"
+justify = "center"
+show = "names"
+range = ""
+show_all = true
+
+[window]
+position = "left"
+justify = "center"
+max_length = 40
+scroll = "hover"
+scroll_speed = 300
+show_icon = true
+truncation_mode = "end"
+truncation_symbol = "..."
+
+# ----- Standalone center modules ---------------------------------------------
+
+[clock]
+position = "center"
+justify = "center"
+format = "%-I:%M %p / %A, %B %-d"
+interval = 1
+
+[[script]]
+command = "sh -c 'curl -s \"wttr.in/?u&format=%c%t\" | tr -d \" +\"'"
+interval = 600
+position = "center"
+min_width = 80
+justify = "center"
+class = "weather-module"
+
+# ----- Groups (appear on the right side) -------------------------------------
+#
+# position = "left" on modules inside a group prevents them from also
+# being created as standalone widgets. The group determines the actual
+# bar position.
+
+[network]
+position = "left"
+interval = 2
+binary_units = true
+min_width = 80
+justify = "center"
+show_private_ips = true
+show_public_ip = true
+public_ip_interval = 600
+
+[[group]]
+position = "right"
+modules = ["network", "cpu", "memory", "volume", "brightness"]
+
+[[group]]
+name = "powermodules"
+position = "right"
+css_prefix = "powermodules"
+modules = ["battery", "power_profiles", "power"]
+
+[[script]]
+command = "sh -c 'echo [ | tr -d \"\\n\"; checkupdates 2>/dev/null | wc -l | tr -d \"\\n\"; echo ]"
+interval = 3600
+position = "right"
+class = "update-module"
+
+# ----- Commented module references (enable as needed) ------------------------
+#
+# These retain the non-default settings you may want if you uncomment them.
+#
+# [cpu]
+# interval = 2
+# warning = 80
+# critical = 95
+# show_per_core = true
+# min_width = 60
+# justify = "center"
+#
+# [memory]
+# interval = 5
+# warning = 80
+# critical = 90
+# format = "percentage"
+# show_swap = true
+# min_width = 60
+# justify = "center"
+#
+# [volume]
+# step = 1
+#
+# [brightness]
+# step = 5
+#
+# [battery]
+# adapter = "BAT0"
+# warning = 20
+# critical = 10
+# full_at = 98
+# format = "{icon} {capacity}%"
+# min_width = 60
+# justify = "center"
+#
+# [power_profiles]
+# min_width = 80
+# justify = "center"
+#
+# [power]
+# min_width = 50
+# justify = "center"

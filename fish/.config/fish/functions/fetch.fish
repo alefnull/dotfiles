@@ -1,3 +1,0 @@
-function fetch
-  fastfetch
-end

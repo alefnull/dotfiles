@@ -12,6 +12,11 @@
   "misc": {
     "hasShownWelcomeModal": true
   },
+  "network": {
+    "proxy": "",
+    "proxyPassword": "",
+    "proxyUsername": ""
+  },
   "notifications": {
     "showNotifications": true,
     "showPluginNotifications": true,

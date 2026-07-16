@@ -1,0 +1,144 @@
+/* Rivet Stylesheet — uses CSS variables, supports Wallust colors */
+
+:root {
+    --font-family: 'JetBrainsMono Nerd Font', 'Inter', sans-serif;
+    --font-size: 18px;
+    --font-weight: bold;
+
+    --background:  var(--wallust-background, #1e1e2e);
+    --foreground:  var(--wallust-foreground, #cdd6f4);
+    --border-color: var(--wallust-color0, #45475a);
+    --accent:      var(--wallust-color3, #89b4fa);
+    --accent2:     var(--wallust-color4, #a6e3a1);
+    --accent3:     var(--wallust-color7, #f5c2e7);
+
+    --warning:  #f9e2af;
+    --critical: #f38ba8;
+
+    --border-radius: 0px;
+    --spacing: 5px;
+}
+
+window {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    margin: 0px;
+    padding: 0px;
+}
+
+.bar-content {
+    background: var(--background);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 0px 8px;
+}
+
+label {
+    text-shadow: none;
+}
+
+.left-section, .center-section, .right-section {
+    padding: 0px;
+    margin: 0px;
+}
+
+.battery-module, .workspaces-module, .cpu-module, .memory-module,
+.network-module, .volume-module, .window-module, .script-module,
+.brightness-module, .power-profiles-module, .power-module,
+.group-module {
+    margin: 0px;
+    padding: 0px 8px;
+    border-radius: var(--border-radius);
+    background: transparent;
+}
+
+.workspaces-module {
+    background: var(--background);
+    padding: 0px 16px 0px 8px;
+    border-right: 1px solid var(--border-color);
+}
+
+.workspace-button {
+    border: none;
+    padding: 0px 12px;
+    color: var(--accent);
+    opacity: 0.7;
+    font-weight: 200;
+    border-radius: 0px;
+}
+
+.workspace-button.active {
+    font-weight: bold;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    opacity: 1;
+}
+
+.workspace-button:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+.window-module {
+    color: var(--accent);
+    padding: 0px 16px;
+    border-right: 1px solid var(--border-color);
+}
+
+.clock-module,
+.weather-module,
+.update-module {
+    margin: 0px;
+    padding: 0px 16px;
+    border-radius: var(--border-radius);
+    color: var(--accent3);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+
+.update-module {
+    color: var(--accent);
+}
+
+.group-module, .powermodules-module {
+    color: var(--accent);
+    border-radius: var(--border-radius);
+    padding: 0px 8px;
+    border-left: 1px solid var(--border-color);
+}
+
+.powermodules-module {
+    padding: 0px 0px 0px 8px;
+}
+
+/* Nested modules inside groups — strip the outer border/padding each would
+   otherwise add so they sit flush next to each other */
+.group-module > box > *,
+.powermodules-module > box > * {
+    background-color: transparent;
+    border: none;
+}
+
+.group-module box > *:first-child {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.group-module box > *:last-child {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+/* Error state — applied by modules on failure */
+.critical {
+    color: var(--critical, #f38ba8);
+}
+
+tooltip, popover, calendar {
+    background: var(--background);
+    color: var(--accent);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px;
+}

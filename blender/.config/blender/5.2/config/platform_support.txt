@@ -1,2 +1,0 @@
-{NVIDIA Corporation/NVIDIA GeForce RTX 5070 Laptop GPU/NVIDIA 590.48.01}=SUPPORTED
-{Intel/Mesa Intel(R) Graphics (ARL)/4.6 (Core Profile) Mesa 25.3.5-arch1.1}=SUPPORTED

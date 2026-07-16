@@ -18,130 +18,130 @@
 -- The wiki is the only authoritative reference for Lua syntax.
 
 hl.config({
-  animations = {
-    enabled = true,
-  },
+   animations = {
+      enabled = false,
+   },
 })
 
 hl.curve("overshot", {
-  type = "bezier",
-  points = { { 0.05, 0.9 }, { 0.1, 1.05 } }
+   type = "bezier",
+   points = { { 0.05, 0.9 }, { 0.1, 1.05 } }
 })
 hl.curve("smoothIn", {
-  type = "bezier",
-  points = { { 0.25, 1.0 }, { 0.5, 1.0 } }
+   type = "bezier",
+   points = { { 0.25, 1.0 }, { 0.5, 1.0 } }
 })
 hl.curve("smoothOut", {
-  type = "bezier",
-  points = { { 0.05, 0.9 }, { 0.1, 1.05 } }
+   type = "bezier",
+   points = { { 0.05, 0.9 }, { 0.1, 1.05 } }
 })
 hl.curve("softSnap", {
-  type = "bezier",
-  points = { { 0.4, 0.0 }, { 0.2, 1.0 } }
+   type = "bezier",
+   points = { { 0.4, 0.0 }, { 0.2, 1.0 } }
 })
 hl.curve("fluent", {
-  type = "bezier",
-  points = { { 0.0, 0.0 }, { 0.2, 1.0 } }
+   type = "bezier",
+   points = { { 0.0, 0.0 }, { 0.2, 1.0 } }
 })
 
 hl.animation({
-  leaf = "windows",
-  enabled = true,
-  speed = 3.0,
-  curve = "fluent",
-  style = "slide",
+   leaf = "windows",
+   enabled = true,
+   speed = 3.0,
+   curve = "fluent",
+   style = "slide",
 })
 hl.animation({
-  leaf = "windowsIn",
-  enabled = true,
-  speed = 3.0,
-  curve = "fluent",
-  style = "slide",
+   leaf = "windowsIn",
+   enabled = true,
+   speed = 3.0,
+   curve = "fluent",
+   style = "slide",
 })
 hl.animation({
-  leaf = "windowsOut",
-  enabled = true,
-  speed = 3.0,
-  curve = "fluent",
-  style = "slide",
+   leaf = "windowsOut",
+   enabled = true,
+   speed = 3.0,
+   curve = "fluent",
+   style = "slide",
 })
 hl.animation({
-  leaf = "windowsMove",
-  enabled = true,
-  speed = 3.0,
-  curve = "overshot",
+   leaf = "windowsMove",
+   enabled = true,
+   speed = 3.0,
+   curve = "overshot",
 })
 hl.animation({
-  leaf = "layersIn",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothIn",
+   leaf = "layersIn",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothIn",
 })
 hl.animation({
-  leaf = "layersOut",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothOut",
+   leaf = "layersOut",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothOut",
 })
 hl.animation({
-  leaf = "fade",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothIn",
+   leaf = "fade",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothIn",
 })
 hl.animation({
-  leaf = "fadeIn",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothIn",
+   leaf = "fadeIn",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothIn",
 })
 hl.animation({
-  leaf = "fadeOut",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothOut",
+   leaf = "fadeOut",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothOut",
 })
 hl.animation({
-  leaf = "fadeSwitch",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothIn",
+   leaf = "fadeSwitch",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothIn",
 })
 hl.animation({
-  leaf = "fadeShadow",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothIn",
+   leaf = "fadeShadow",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothIn",
 })
 hl.animation({
-  leaf = "fadeDim",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothIn",
+   leaf = "fadeDim",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothIn",
 })
 hl.animation({
-  leaf = "fadeDpms",
-  enabled = true,
-  speed = 3.0,
-  curve = "smoothIn",
+   leaf = "fadeDpms",
+   enabled = true,
+   speed = 3.0,
+   curve = "smoothIn",
 })
 hl.animation({
-  leaf = "fadeLayers",
-  enabled = true,
-  speed = 3.0,
-  curve = "softSnap",
+   leaf = "fadeLayers",
+   enabled = true,
+   speed = 3.0,
+   curve = "softSnap",
 })
 hl.animation({
-  leaf = "workspaces",
-  enabled = true,
-  speed = 3.0,
-  curve = "softSnap",
-  style = "slidefadevert 50%",
+   leaf = "workspaces",
+   enabled = true,
+   speed = 3.0,
+   curve = "softSnap",
+   style = "slidefadevert 50%",
 })
 hl.animation({
-  leaf = "specialWorkspace",
-  enabled = true,
-  speed = 3.0,
-  curve = "fluent",
-  style = "slidefadevert 50%",
+   leaf = "specialWorkspace",
+   enabled = true,
+   speed = 3.0,
+   curve = "fluent",
+   style = "slidefadevert 50%",
 })

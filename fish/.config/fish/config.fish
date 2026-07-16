@@ -11,13 +11,15 @@ set -gx OLLAMA_GPU_MEMORY_FRACTION 0.8
 set -gx EDITOR '/home/alef/.local/share/bob/nvim-bin/nvim'
 set -gx VISUAL '/home/alef/.local/share/bob/nvim-bin/nvim'
 set -gx GIT_EDITOR '/home/alef/.local/share/bob/nvim-bin/nvim'
+set -gx GROFF_NO_SGR 1
+set -gx MANPAGER '/usr/sbin/most'
 
 set -gx DOTFILES "$HOME/dotfiles"
 set -gx RACK_DIR "$HOME/dev/Rack-SDK"
 set -gx RACK_USER_DIR "$HOME/.local/share/Rack2"
 
 alias clr='clear'
-alias cls='clear && fastfetch'
+alias cls='clear && disinfo'
 alias ls='eza --color=auto --git -lh'
 alias ll='eza --color=auto --git -lah'
 alias cat='bat'

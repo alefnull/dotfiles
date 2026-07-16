@@ -1,0 +1,178 @@
+# =============================================================================
+# RIVET CONFIGURATION
+# =============================================================================
+
+[bar]
+position = "top"
+margin_top = 0
+margin_bottom = 0
+margin_left = 0
+margin_right = 0
+width = 0
+exclusive = true
+layer = "top"
+opacity = 1.0
+spacing = 0
+wallust_colors = "~/.cache/wallust/colors.json"
+
+[workspaces]
+enabled = true
+position = "left"
+justify = "center"
+show = "names"
+range = ""
+show_all = false
+
+[window]
+enabled = true
+position = "left"
+justify = "center"
+max_length = 30
+scroll = "hover"
+scroll_speed = 300
+show_icon = true
+truncation_mode = "end"
+truncation_symbol = "..."
+
+[clock]
+enabled = true
+position = "center"
+justify = "center"
+format = "%-I:%M %p / %A, %B %-d"
+interval = 1
+timezone = ""
+
+# [cpu]
+# enabled = true
+# position = "left"
+# interval = 2
+# warning = 80
+# critical = 95
+# show_per_core = true
+# min_width = 60
+# justify = "center"
+# class = ""
+#
+# [memory]
+# enabled = true
+# position = "left"
+# interval = 5
+# warning = 80
+# critical = 90
+# format = "percentage"
+# show_swap = true
+# min_width = 60
+# justify = "center"
+# class = ""
+#
+# [network]
+# enabled = true
+# position = "left"
+# interval = 2
+# interface = ""
+# binary_units = true
+# min_width = 80
+# justify = "center"
+# class = ""
+#
+# [volume]
+# enabled = true
+# position = "right"
+# interval = 2
+# step = 1
+# min_width = 50
+# justify = "center"
+# class = ""
+#
+# [brightness]
+# enabled = true
+# position = "right"
+# interval = 5
+# step = 5
+# min_width = 50
+# justify = "center"
+# class = ""
+#
+# [battery]
+# enabled = true
+# position = "right"
+# interval = 10
+# adapter = "BAT0"
+# warning = 20
+# critical = 10
+# full_at = 98
+# format = "{icon} {capacity}%"
+# min_width = 60
+# justify = "center"
+# class = ""
+#
+# [power_profiles]
+# enabled = true
+# position = "right"
+# min_width = 80
+# justify = "center"
+# class = ""
+#
+# [power]
+# enabled = true
+# position = "right"
+# min_width = 50
+# justify = "center"
+# class = ""
+
+[[group]]
+enabled = true
+position = "right"
+spacing = 0
+homogeneous = false
+container_margin = 0
+orientation = "horizontal"
+modules = ["network", "cpu", "memory", "volume", "brightness"]
+
+[[group]]
+enabled = true
+name = "powermodules"
+position = "right"
+css_prefix = "powermodules"
+spacing = 0
+homogeneous = false
+container_margin = 0
+orientation = "horizontal"
+modules = ["battery", "power_profiles", "power"]
+
+# =============================================================================
+# SCRIPT MODULE (uncomment to use)
+# =============================================================================
+
+# Weather (requires curl)
+# Shows weather icon and temperature in Fahrenheit
+# [[script]]
+# enabled = false
+# command = "sh -c 'curl -s \"wttr.in/?u&format=%c%t\" | tr -d \" +\"'"
+# interval = 600
+# position = "center"
+# min_width = 80
+# justify = "center"
+# class = "weather-module"
+
+# Full date
+# [[script]]
+# enabled = false
+# command = "date '+%a %b %-d'"
+# interval = 300
+# position = "left"
+
+# System updates (Arch Linux)
+# [[script]]
+# enabled = false
+# command = "checkupdates 2>/dev/null | wc -l | tr -d '\\n'; echo ' updates'"
+# tooltip = "checkupdates 2>/dev/null"
+# interval = 300
+# position = "left"
+
+# Disk usage (root)
+# [[script]]
+# enabled = false
+# command = "df -h / | awk 'NR==2 {print $3 \"/\" $2}'"
+# interval = 60
+# position = "left"
