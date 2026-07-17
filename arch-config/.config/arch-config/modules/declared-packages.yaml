@@ -149,6 +149,7 @@ packages:
 - equicord-openasar
 - legcord
 - btop
+- speedtest-cli
 exclude: []
 conflicts: []
 pre_install_hook: null
