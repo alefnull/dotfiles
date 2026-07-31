@@ -17,7 +17,6 @@ packages:
 - sdl2_ttf
 - sdl2_mixer
 - blockbench
-- material-maker-bin
 - wev
 - inkscape
 - lib2geom
@@ -55,8 +54,6 @@ packages:
 - bob
 - television
 - gimp
-- helix
-- felix-rs
 - lldb
 - fish-lsp
 - python-pyqt5
@@ -66,7 +63,6 @@ packages:
 - awww
 - gtk4-layer-shell
 - glib
-- tofi-git
 - mangohud
 - protonplus
 - swc-git
@@ -84,14 +80,11 @@ packages:
 - tcl
 - python-pywalfox
 - tk
-- hyprmod-git
 - gperf
 - zig
 - wlclock
 - cudnn
 - sic
-- hexchat
-- irssi
 - weechat
 - weechat-notify-send
 - xdg-desktop-portal
@@ -116,10 +109,7 @@ packages:
 - gksu
 - terminus-font
 - dragonfly-reverb
-- yabridge
-- yabridgectl
 - downgrade
-- neo-matrix
 - unimatrix-git
 - wiki-tui
 - durdraw
@@ -135,7 +125,6 @@ packages:
 - lua-language-server
 - ttf-nerd-fonts-meta
 - airwindows-consolidated-bin
-- blender-launcher-git
 - gradle
 - jdtls
 - rust
@@ -146,10 +135,12 @@ packages:
 - rust-src
 - bluez-tools
 - doomtools-bin
-- equicord-openasar
-- legcord
 - btop
 - speedtest-cli
+- blender-launcher-bin
+- arnis-bin
+- superfile
+- legcord-bin
 exclude: []
 conflicts: []
 pre_install_hook: null

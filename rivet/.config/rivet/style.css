@@ -36,7 +36,7 @@ window {
 .bar-content {
     background: var(--background);
     border-radius: var(--border-radius);
-    border: 1px solid var(--background);
+    border: 1px solid var(--border-color);
     padding: 0px 8px;
     min-height: var(--height);
 }

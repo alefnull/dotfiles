@@ -27,4 +27,4 @@ packages:
   - paru         # AUR helper (required for AUR package management)
   - yay         # AUR helper (required for AUR package management)
   - fzf          # Fuzzy finder (required for dcli search/module/backup TUI)
-  - timeshift    # System backup tool (required for dcli backup commands)
+  # - timeshift    # System backup tool (required for dcli backup commands)

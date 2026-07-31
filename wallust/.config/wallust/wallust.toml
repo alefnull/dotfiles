@@ -1,7 +1,7 @@
 # backend = "full"
 # backend = "resized"
-backend = "fastresize"
-# backend = "wal"
+# backend = "fastresize"
+backend = "wal"
 # backend = "thumb"
 # backend = "kmeans"
 
@@ -18,21 +18,11 @@ check_contrast = true
 
 [templates]
 mako = { src = "mako-colors", dst = "~/.cache/wallust/mako-colors" }
-waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }
-hyprland = { src = "hyprland.conf", dst = "~/.config/hypr/config/wallust-colors.conf" }
-hyprland2 = { src = "hyprland.lua", dst = "~/.config/hypr/config/wallust-colors.lua" }
-wofi = { src = "waybar-colors.css", dst = "~/.config/wofi/colors.css" }
+hyprland = { src = "hyprland.lua", dst = "~/.config/hypr/config/wallust-colors.lua" }
 vscode = { src = 'vscode.json', dst = '~/.cache/wallust/colors.json' }
 vscode2 = { src = 'vscode', dst = '~/.cache/wallust/colors' }
 neopywal = { src = 'colors_neopywal.vim', dst = '~/.cache/wallust/colors_neopywal.vim' }
 wlogout = { src = 'waybar-colors.css', dst = '~/.config/wlogout/colors.css' }
-vencord = { src = 'discord-colors.css', dst = '~/.cache/wallust/discord-colors.css' }
-spicetify = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/text/color.ini' }
-spicetify2 = { src = 'spicetify-colors.ini', dst = '~/.config/spicetify/Themes/nightlight/color.ini' }
-qutebrowser = { src = 'qute_colors.py', dst = '~/.config/qutebrowser/qute_colors.py' }
-ghostty = { src = 'ghostty-colors', dst = '~/.config/ghostty/themes/wallust' }
-swaync = { src = 'swaync', dst = '~/.config/swaync/colors.css' }
-# themecord = { src = 'colors-discord.css', dst = '~/.cache/wallust/colors-discord.css' }
 wmenu = { src = 'wmenu-colors', dst = '~/.config/wmenu/colors' }
 pywalzen = { src = 'vscode.json', dst = '~/.cache/wal/colors.json' }
 kitty = { src = 'kitty-colors.conf', dst = '~/.config/kitty/colors.conf' }

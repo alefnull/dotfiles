@@ -69,14 +69,14 @@ timezone = ""
 [network]
 enabled = true
 position = "left"
-interval = 2
+interval = 5
 interface = ""
 binary_units = true
 min_width = 80
 justify = "center"
 class = ""
-show_private_ips = true
-show_public_ip = true
+show_private_ips = false
+show_public_ip = false
 public_ip_interval = 600
 
 [volume]
